@@ -1,0 +1,2048 @@
+---
+title: "GerminationCombined"
+output: html_document
+date: "2024-07-31"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r Setup}
+library(tidyverse);library(lme4);library(emmeans);library(sjPlot);library(sjmisc);library(lmerTest);library(ggplot2);library(ggpubr);library(ggeffects);library(partR2);library(survival); library(cmprsk); library(tidycmprsk); library(ggsurvfit); library(paletteer);library(ape);library(phyr);library(phytools); library(V.PhyloMaker);library(BIOMASS);library(coda);library(MCMCglmm)
+
+germ_combined <- read.csv("germ_combined.csv")
+germ_combined_time <- read.csv("germ_combined_time.csv")
+germ <- read.csv("germ.csv")
+germ_time <- read.csv("germ_time.csv")
+comatsa_seeds2 <- read.csv("comatsa_seeds2.csv")
+comatsa_seeds2_time <- read.csv("comatsa_seeds2_time.csv")
+mammal_tree <- read.tree("mammal_megatree.tre")
+
+```
+
+```{r Captive and Wild Combined}
+
+#Germination Rate
+combined_model <- glm(data= germ_combined, Germination ~ Treatment*Type, family=binomial())
+summary_combined_model <- summary(combined_model)
+
+combined_model_time <- lm(data= germ_combined_time, Time ~ Treatment*Type, family=binomial())
+summary_combined_model_time <- summary(combined_model_time)
+
+combined_model_time2 <- lm(data= germ_combined_time, Time ~ Treatment+Type, family=binomial())
+summary_combined_model_time2 <- summary(combined_model_time2)
+
+
+combined_predict <-  ggpredict(combined_model, terms = c("Type", "Treatment"))
+combined_predict2 <- as.data.frame(cbind(combined_predict$predicted, combined_predict$std.error, combined_predict$conf.low, combined_predict$conf.high))
+colnames(combined_predict2) <- c("predicted", "std.error", "conf.low", "conf.high")
+combined_predict2$Treatment <- c("Gut-passed, Washed", "Gut-passed ","Control","Control, Washed","Gut-passed, Washed", "Gut-passed ","Control","Control, Washed")
+combined_predict2$Type <- c(rep("Captive", 4), rep("Wild", 4))
+
+combined_plot <- ggplot(data=combined_predict2, aes(x= Type, y=predicted, color=Treatment,shape = Treatment))+
+   geom_pointrange(aes(ymin=conf.low, ymax=conf.high), size=0.7,
+                 position=position_dodge(.5))+
+  theme_classic()+
+  ylab("Germination Rate")+
+  xlab("Data Type")+
+  theme(axis.text.x = element_text( vjust = 1, hjust=1))+
+  guides(fill=guide_legend(title="Habitat"), alpha=FALSE)+
+  scale_alpha_manual(values= c(0.2,1))+
+  scale_color_manual("Treatment:",values = c("black", "gray56", "goldenrod4", "goldenrod1"))+
+  scale_shape_manual("Treatment:",values = c(19,17,15,8))
+
+#Time-to-germination
+combined_predict_time <-  ggpredict(combined_model_time2, terms = c("Type", "Treatment"))
+combined_predict_time2 <- as.data.frame(cbind(combined_predict_time$predicted, combined_predict_time$std.error, combined_predict_time$conf.low, combined_predict_time$conf.high))
+colnames(combined_predict_time2) <- c("predicted", "std.error", "conf.low", "conf.high")
+combined_predict_time2$Treatment <- c("Gut-passed, Washed", "Gut-passed ","Control","Control, Washed","Gut-passed, Washed", "Gut-passed ","Control","Control, Washed")
+combined_predict_time2$Type <- c(rep("Captive", 4), rep("Wild", 4))
+
+combined_plot_time <- ggplot(data=combined_predict_time2, aes(x= Type, y=predicted, color=Treatment, shape = Treatment))+
+   geom_pointrange(aes(ymin=conf.low, ymax=conf.high), size=0.7,
+                 position=position_dodge(.5))+
+  theme_classic()+
+  ylab("Time (Days)")+
+  xlab("Data Type")+
+  theme(axis.text.x = element_text(vjust = 1, hjust=1))+
+  guides(fill=guide_legend(title="Habitat"), alpha=FALSE)+
+  scale_alpha_manual(values= c(0.2,1))+
+  scale_color_manual("Treatment:", values = c( "black", "gray56", "goldenrod4", "goldenrod1"))+
+  scale_shape_manual("Treatment:",values = c(19,17,15,8))
+
+
+#More Plots
+
+my_comparisons <- list( c("Wild", "Captive") )
+length_plot <- ggplot(data = germ_combined, aes(x = Type, y=Length)) +
+  geom_boxplot()+
+  ylab("log Seed Length (mm)")+
+  xlab("Data Type")+
+  theme_classic()
+
+germ_combined2 <- germ_combined %>% dplyr::select(Weight, Type, Lemur)%>% distinct() %>% filter(Lemur !="UNKNOWN") %>% drop_na()
+
+weight_plot <- ggplot(data = germ_combined2, aes(x = Type, y=Weight)) +
+  geom_boxplot()+
+  ylab("log Body Weight (g)")+
+  xlab("Data Type")+
+  theme_classic()
+
+ggarrange(combined_plot, combined_plot_time, length_plot, weight_plot, common.legend = TRUE, labels = c("a", "b", "c", "d"), heights = c(2,2,1,1))
+ggarrange(combined_plot, combined_plot_time,common.legend = TRUE, labels = c("a", "b"))
+ggarrange(length_plot, weight_plot,common.legend = TRUE, labels = c("a", "b"))
+
+
+
+```
+
+```{r Set up phylogenies}
+
+#Lemur Phylogeny
+lemur_species <- c("Lemur_catta", "Eulemur_mongoz", "Eulemur_flavifrons", "Varecia_rubra", "Eulemur_coronatus", "Varecia_variegata", "Microcebus_murinus", "Cheirogaleus_medius")
+
+germ$Lemur_Species2 <- germ$Lemur_Species
+germ$Lemur_Species2[germ$Lemur_Species2=="L. catta"] <- "Lemur_catta"
+germ$Lemur_Species2[germ$Lemur_Species2=="E. mongoz"] <-  "Eulemur_mongoz"
+germ$Lemur_Species2[germ$Lemur_Species2=="E. flavifrons"]<- "Eulemur_flavifrons"
+germ$Lemur_Species2[germ$Lemur_Species2=="V. rubra"]<- "Varecia_rubra"
+germ$Lemur_Species2[germ$Lemur_Species2=="E. coronatus"]<- "Eulemur_coronatus"
+germ$Lemur_Species2[germ$Lemur_Species2=="V. variegata"]<- "Varecia_variegata"
+germ$Lemur_Species2[germ$Lemur_Species2=="M. murinus"]<- "Microcebus_murinus"
+germ$Lemur_Species2[germ$Lemur_Species2=="C. medius"]<- "Cheirogaleus_medius"
+germ$Lemur_Species2[germ$Lemur_Species2=="*Control"] <- NA
+germ$Lemur_Species2[germ$Lemur_Species2=="Control"] <- NA
+
+species <- c("Lemur_catta", "Eulemur_mongoz", "Eulemur_flavifrons", "Varecia_rubra", 
+             "Eulemur_coronatus", "Varecia_variegata", "Microcebus_murinus", 
+             "Cheirogaleus_medius")
+split_names <- strsplit(species, "_")
+species_list <- data.frame(
+  species = species,
+  genus = sapply(split_names, `[`, 1),
+  stringsAsFactors = FALSE
+)
+
+gen_list <- data.frame(
+  genus = c("Lemur", "Eulemur", "Varecia", "Microcebus", "Cheirogaleus"),
+  family = c("Lemuridae", "Lemuridae", "Lemuridae", "Cheirogaleidae", "Cheirogaleidae"),
+  order = c("Primates", "Primates", "Primates", "Primates", "Primates"),
+  stringsAsFactors = FALSE
+)
+
+lemur_tree <- read.tree("~/Downloads/fbd421new.tre")
+
+trimmed_tree <- drop.tip(lemur_tree, setdiff(lemur_tree$tip.label, species))
+
+ultrametric_tree <- force.ultrametric(trimmed_tree)
+
+
+lemur_Ainv <- inverseA(ultrametric_tree)$Ainv
+rownames(lemur_Ainv) <- colnames(lemur_Ainv) <- c("Node2","Node7","Node3","Node4","Node5","Node6", ultrametric_tree$tip.label)
+lemur_Ainv_filtered <- lemur_Ainv[lemur_species, lemur_species, drop = FALSE]
+
+#Plant Phylogeny
+germ$Plant_Species_Common_Name2 <- germ$Plant_Species_Common_Name
+germ$Plant_Species_Common_Name2[germ$Plant_Species_Common_Name2=="Capsicum annuum"]<-"Capsicum_annuum"
+germ$Plant_Species_Common_Name2[germ$Plant_Species_Common_Name2=="Cucumis melo var. cantalupensis"]<-"Cucumis_melo"
+germ$Plant_Species_Common_Name2[germ$Plant_Species_Common_Name2=="Solanum lycopersicum"]<-"Solanum_lycopersicum"
+germ$Plant_Species_Common_Name2[germ$Plant_Species_Common_Name2=="Actinidia deliciosa"]<-"Actinidia_deliciosa"
+germ$Plant_Species_Common_Name2[germ$Plant_Species_Common_Name2=="Selenicereus undatus"]<-"Selenicereus_undatus"
+germ$Plant_Species_Common_Name2[germ$Plant_Species_Common_Name2=="Cucumis melo L."]<-"Cucumis_melo"
+germ$Plant_Species_Common_Name2[germ$Plant_Species_Common_Name2=="Cucurbita moschata"]<-"Cucurbita_moschata"
+germ$Plant_Species_Common_Name2[germ$Plant_Species_Common_Name2=="Rubus fruticosus"]<-"Rubus_fruticosus"
+germ$Plant_Species_Common_Name2[germ$Plant_Species_Common_Name2=="Malus pumila"]<-"Malus_pumila"
+germ$Plant_Species_Common_Name2[germ$Plant_Species_Common_Name2=="Oxycoccus macrocarpus"]<-"Oxycoccus_macrocarpus"
+plant_species <- data.frame(unique(germ$Plant_Species_Common_Name2))
+plant_species$genus <- c("Capsicum", "Cucumis", "Solanum", "Actinidia", "Selenicereus", "Cucurbita", "Rubus", "Malus", "Oxycoccus")
+colnames(plant_species)[1] <- "species"
+plant_species$species <- gsub("_", " ", plant_species$species)
+plant_family <- getTaxonomy(plant_species$genus)
+plant_species$family <- plant_family$family
+plant_phylogeny <-  V.PhyloMaker::phylo.maker(sp.list = plant_species, tree = GBOTB.extended)
+plant_phylogeny2 <- plant_phylogeny$scenario.3
+plant_species2 <- gsub(" ", "_", plant_species$species)
+plant_phylogeny2$node.label <- NULL
+
+species_Ainv <- inverseA(plant_phylogeny2)$Ainv
+rownames(species_Ainv) <- colnames(species_Ainv) <- c("Node2","Node6","Node3","Node4","Node5","Node7","Node8", plant_phylogeny2$tip.label)
+species_Ainv_filtered <- species_Ainv[plant_species2, plant_species2, drop = FALSE]
+
+germ_time$Plant_Species_Common_Name2 <- germ_time$Plant_Species_Common_Name
+germ_time$Plant_Species_Common_Name2[germ_time$Plant_Species_Common_Name2=="Capsicum annuum"]<-"Capsicum_annuum"
+germ_time$Plant_Species_Common_Name2[germ_time$Plant_Species_Common_Name2=="Cucumis melo var. cantalupensis"]<-"Cucumis_melo"
+germ_time$Plant_Species_Common_Name2[germ_time$Plant_Species_Common_Name2=="Solanum lycopersicum"]<-"Solanum_lycopersicum"
+germ_time$Plant_Species_Common_Name2[germ_time$Plant_Species_Common_Name2=="Actinidia deliciosa"]<-"Actinidia_deliciosa"
+germ_time$Plant_Species_Common_Name2[germ_time$Plant_Species_Common_Name2=="Selenicereus undatus"]<-"Selenicereus_undatus"
+germ_time$Plant_Species_Common_Name2[germ_time$Plant_Species_Common_Name2=="Cucumis melo L."]<-"Cucumis_melo"
+germ_time$Plant_Species_Common_Name2[germ_time$Plant_Species_Common_Name2=="Cucurbita moschata"]<-"Cucurbita_moschata"
+germ_time$Plant_Species_Common_Name2[germ_time$Plant_Species_Common_Name2=="Rubus fruticosus"]<-"Rubus_fruticosus"
+germ_time$Plant_Species_Common_Name2[germ_time$Plant_Species_Common_Name2=="Malus pumila"]<-"Malus_pumila"
+germ_time$Plant_Species_Common_Name2[germ_time$Plant_Species_Common_Name2=="Oxycoccus macrocarpus"]<-"Oxycoccus_macrocarpus"
+
+
+#Wild plants
+comatsa_seeds2$Plante[comatsa_seeds2$Plante=="Cryptocaria"] <- "Cryptocarya"
+plant_species_wild <- as.data.frame(unique(comatsa_seeds2$Plante))
+colnames(plant_species_wild)[1] <- "genus"
+plant_family2 <- getTaxonomy(plant_species_wild$genus)
+plant_species_wild$family <- plant_family2$family
+plant_species_wild$species <- c("Grewia nervosa", "Cryptocarya concinna", "Syzygium calcadense", "Pandanus carmichaelii", "Adina cordifolia", "Sterculia lanceolata")
+plant_species_wild <- plant_species_wild[,c(3,1,2)]
+plant_phylogeny_wild <-  V.PhyloMaker::phylo.maker(sp.list = plant_species_wild, tree = GBOTB.extended)
+plant_phylogeny2_wild <- plant_phylogeny_wild$scenario.3
+plant_phylogeny2_wild$tip.label <- c("Adina", "Sterculia", "Grewia", "Syzygium", "Pandanus", "Cryptocarya")
+plot(plant_phylogeny2_wild)
+plant_species2_wild <- gsub(" ", "_", plant_species_wild$species)
+plant_phylogeny2$node.label <- NULL
+
+plant_phylogeny2_wild$node.label <- NULL
+species_Ainv_wild <- inverseA(plant_phylogeny2_wild)$Ainv
+rownames(species_Ainv_wild) <- colnames(species_Ainv_wild) <- c("Node2","Node3","Node4","Node5", plant_phylogeny2_wild$tip.label)
+species_Ainv_filtered_wild <- species_Ainv_wild[plant_species_wild$genus, plant_species_wild$genus, drop = FALSE]
+
+
+
+#Map Traits
+
+lengths_captive <- germ %>% select(Length, Plant_Species_Common_Name2) %>% drop_na()%>% group_by(Plant_Species_Common_Name2) %>% summarise(Length=mean(Length))
+
+lengths_wild <- comatsa_seeds2 %>% select(L, Plante) %>% drop_na()%>% group_by(Plante) %>% summarise(Length=mean(L))
+
+mean_trait <- c(Actinidia_deliciosa = 2.276723, 
+                Capsicum_annuum = 4.547217,
+                Cucumis_melo = 10.732763, 
+                Cucurbita_moschata = 13.052039	, 
+                Malus_pumila = 7.986889,
+                Oxycoccus_macrocarpus=2.102167,
+                Rubus_fruticosus=3.401143,
+                Selenicereus_undatus=2.238268,
+                Solanum_lycopersicum=4.064198)
+
+mean_trait2 <- c(Adina = 15.067674	, 
+                Cryptocarya = 16.778761,
+                Grewia = 6.380765, 
+                Pandanus = 13.412530, 
+                Sterculia =9.464398,
+                Syzygium=11.544171)
+
+trait_map <- contMap(plant_phylogeny2, mean_trait, plot = FALSE, lwd = 4, outline = FALSE, ftype = "reg", type = "phylogram")
+
+plot(trait_map, lwd = 4, mar = c(5, 4, 8, 2))
+
+trait_map3 <- contMap(plant_phylogeny2_wild, mean_trait2, plot = FALSE, lwd = 4, outline = FALSE, ftype = "reg", type = "phylogram")
+
+plot(trait_map3, lwd = 4, mar = c(5, 4, 8, 2))
+
+
+```
+
+```{r Captive Treatment Models}
+#Germination Rate
+germ_filtered <- germ %>% filter(Lemur_Species !="*Control", Lemur_Species !="Control", Treatment !="Control") %>% drop_na(Lemur_Species) %>% mutate(animal = as.factor(Lemur_Species2), species = as.factor(Plant_Species_Common_Name2)) %>% drop_na(Length, Treatment)
+
+germ_filtered$Lemur_Name <- interaction(germ_filtered$Lemur_Species, germ_filtered$Name)
+germ$Lemur_Name <- interaction(germ$Lemur_Species, germ$Name)
+germ_time$Lemur_Name <- interaction(germ_time$Lemur_Species, germ_time$Name)
+
+ginverse_list <- list(animal = lemur_Ainv_filtered, species = species_Ainv_filtered)
+germ$Treatment <- as.factor(germ$Treatment)
+
+prior <- list(
+  G = list(
+    G1 = list(V = 1, nu = 0.002), 
+    G2 = list(V = 1, nu = 0.002)
+  ),
+  R = list(V = 1, fix = 1)
+)
+
+prior_t2 <- list(
+  G = list(
+    G1 = list(V = 1, nu = 0.002),  # species random effect
+    G2 = list(V = 1, nu = 0.002),  # Lemur_Species2 random effect
+    G3 = list(V = 1, nu = 0.002)   # Lemur_Name random effect
+  ),
+  R = list(V = 1, nu = 0.002)      # Residual variance (fixed)
+)
+
+treatment_phylo1 <- MCMCglmm(
+  germ ~ Treatment, 
+  random = ~ animal + species + Lemur_Name, 
+  family = "categorical",
+  ginverse = ginverse_list, 
+  data = germ_filtered, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+treatment_phylo1b <- MCMCglmm(
+  germ ~ Treatment, 
+  random = ~ animal + species + Lemur_Name, 
+  family = "categorical",
+  ginverse = ginverse_list, 
+  data = germ_filtered, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+treatment_phylo1c <- MCMCglmm(
+  germ ~ Treatment, 
+  random = ~ animal + species + Lemur_Name, 
+  family = "categorical",
+  ginverse = ginverse_list, 
+  data = germ_filtered, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+
+treatment_phylo1_summary <- summary(treatment_phylo1)
+treatment_phylo1_summary$DIC
+plot(treatment_phylo1$Sol)
+
+treatment_phylo1mcmc_chains <- mcmc.list(as.mcmc(treatment_phylo1$Sol), as.mcmc(treatment_phylo1b$Sol), as.mcmc(treatment_phylo1c$Sol))
+
+treatment_phylo1gelman_results <- gelman.diag(treatment_phylo1mcmc_chains)
+plot(treatment_phylo1mcmc_chains)
+
+
+treatment_phylo2 <- MCMCglmm(
+  germ ~ Treatment, 
+  random = ~ species + Lemur_Species2 +Lemur_Name, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_filtered, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+treatment_phylo2b <- MCMCglmm(
+  germ ~ Treatment, 
+  random = ~ species + Lemur_Species2 +Lemur_Name, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_filtered, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+treatment_phylo2c <- MCMCglmm(
+  germ ~ Treatment, 
+  random = ~ species + Lemur_Species2 +Lemur_Name, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_filtered, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+
+treatment_phylo2mcmc_chains <- mcmc.list(as.mcmc(treatment_phylo2$Sol), as.mcmc(treatment_phylo2b$Sol), as.mcmc(treatment_phylo2c$Sol))
+
+treatment_phylo2gelman_results <- gelman.diag(treatment_phylo2mcmc_chains)
+plot(treatment_phylo2mcmc_chains)
+
+treatment_phylo2_summary <- summary(treatment_phylo2)
+treatment_phylo2_summary$DIC
+
+germ$species <- germ$Plant_Species_Common_Name2
+
+treatment_phylo3 <- MCMCglmm(
+  germ ~ Treatment, 
+  random = ~ species + Lemur_Species2+Lemur_Name, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+treatment_phylo3b <- MCMCglmm(
+  germ ~ Treatment, 
+  random = ~ species + Lemur_Species2+Lemur_Name, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+treatment_phylo3c <- MCMCglmm(
+  germ ~ Treatment, 
+  random = ~ species + Lemur_Species2+Lemur_Name, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+
+treatment_phylo3mcmc_chains <- mcmc.list(as.mcmc(treatment_phylo3$Sol), as.mcmc(treatment_phylo3b$Sol), as.mcmc(treatment_phylo3c$Sol))
+
+treatment_phylo3gelman_results <- gelman.diag(treatment_phylo3mcmc_chains)
+plot(treatment_phylo2mcmc_chains)
+
+treatment_phylo3_summary <- summary(treatment_phylo3)
+
+germ$Treatment2 <- NULL
+germ$Treatment2[germ$Treatment=="Gut-passed, Washed"] <- "aGut-passed, Washed"
+germ$Treatment2[germ$Treatment=="Gut-passed"] <- "Gut-passed, Unwashed"
+germ$Treatment2[germ$Treatment=="Control"] <- "Control"
+germ$Treatment2[germ$Treatment=="Control, Washed"] <- "Control, Washed"
+
+treatment_phylo3_test <- MCMCglmm(
+  germ ~ Treatment2, 
+  random = ~ species + Lemur_Species2+Lemur_Name, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ, 
+  prior = prior_t2, 
+  verbose = FALSE
+)
+
+summary(treatment_phylo3_test)
+
+#Time-to-germination
+germ_time$species <- germ_time$Plant_Species_Common_Name2
+
+treatment_phylo4 <- MCMCglmm(
+  log(GerminationTime) ~ Treatment, 
+  random = ~ species + Lemur_Species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+
+treatment_phylo4b <- MCMCglmm(
+  log(GerminationTime) ~ Treatment, 
+  random = ~ species + Lemur_Species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+
+treatment_phylo4c <- MCMCglmm(
+  log(GerminationTime) ~ Treatment, 
+  random = ~ species + Lemur_Species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+
+treatment_phylo4mcmc_chains <- mcmc.list(as.mcmc(treatment_phylo4$Sol), as.mcmc(treatment_phylo4b$Sol), as.mcmc(treatment_phylo4c$Sol))
+
+treatment_phylo4gelman_results <- gelman.diag(treatment_phylo4mcmc_chains)
+treatment_phylo4gelman_results
+
+treatment_phylo4_summary <- summary(treatment_phylo4)
+
+
+germ_time$Treatment2 <- NULL
+germ_time$Treatment2[germ_time$Treatment=="Gut-passed, Washed"] <- "aGut-passed, Washed"
+germ_time$Treatment2[germ_time$Treatment=="Gut-passed"] <- "Gut-passed, Unwashed"
+germ_time$Treatment2[germ_time$Treatment=="Control"] <- "Control"
+germ_time$Treatment2[germ_time$Treatment=="Control, Washed"] <- "Control, Washed"
+
+treatment_phylo4_test <- MCMCglmm(
+  log(GerminationTime) ~ Treatment2, 
+  random = ~ species + Lemur_Species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time, 
+  prior = prior, 
+  verbose = FALSE
+)
+
+summary(treatment_phylo4_test)
+
+#Survival Analysis
+#Set up data
+germ_time2 <- germ %>% select(Germination.Date, Date, germ, Treatment, Lemur_Species, Plant_Species_Common_Name, Length_log, mLength_log, Sex, Age, Weight, mWeight, GerminationTime)
+
+
+germ_time2$GerminationTime[is.na(germ_time2$GerminationTime)] <- 101
+germ_time2$germ <- as.factor(germ_time2$germ)
+germ_time2 <- germ_time2 %>% filter(GerminationTime <102) %>% filter(GerminationTime >0)
+
+#Treatment survival model
+treatment_survival_results <- cuminc(Surv(GerminationTime, germ) ~ Treatment, data = germ_time2)%>%
+tbl_cuminc() %>% 
+  add_p()
+
+```
+
+```{r Captive Treatment Lambda}
+
+#Lambda including lemur phylogeny
+vcv_samples <- treatment_phylo1$VCV
+var_animal <- vcv_samples[, "animal"]
+var_species <- vcv_samples[, "species"]
+var_residual <- vcv_samples[, "units"]  # This may not be present for categorical models
+total_variance <- var_animal + var_species + var_residual
+lambda_animal <- var_animal / total_variance
+lambda_species <- var_species / total_variance
+lambda_animal_mean <- mean(lambda_animal)
+lambda_animal_ci <- HPDinterval(as.mcmc(lambda_animal), prob = 0.95)
+lambda_species_mean <- mean(lambda_species)
+lambda_species_ci <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+cat("Lambda for animal:\n")
+cat("Mean λ:", lambda_animal_mean, "\n") # 0.09152821 
+cat("95% CI for λ:", lambda_animal_ci[1], "-", lambda_animal_ci[2], "\n\n")# 0.003771899 - 0.2293603 
+cat("Lambda for species:\n")
+cat("Mean λ:", lambda_species_mean, "\n")#0.78193 
+cat("95% CI for λ:", lambda_species_ci[1], "-", lambda_species_ci[2], "\n")#0.5912612 - 0.9520928 
+
+#Germination Rate Treatment Model
+vcv_samples <- treatment_phylo3$VCV
+var_phylo <- vcv_samples[, "species"]
+var_lemur <- vcv_samples[, "Lemur_Species2"]
+var_residual <- vcv_samples[, "units"]  # This might not exist if residual variance is fixed for categorical family
+total_variance <- var_phylo + var_lemur + var_residual
+lambda_samples <- var_phylo / total_variance
+lambda_mean <- mean(lambda_samples)
+lambda_ci <- HPDinterval(as.mcmc(lambda_samples), prob = 0.95)
+print(paste("Mean λ:", lambda_mean))#"Mean λ: 0.75313912417734"
+print(paste("95% CI for λ:", lambda_ci[1], "-", lambda_ci[2]))#"95% CI for λ: 0.573266226720467 - 0.929096659831858"
+
+#Time-To-Germination Treatment Model
+vcv_samples <- treatment_phylo4$VCV
+var_species <- vcv_samples[, "species"]
+var_lemur <- vcv_samples[, "Lemur_Species"]
+var_residual <- vcv_samples[, "units"]
+total_variance <- var_species + var_lemur + var_residual
+lambda_species <- var_species / total_variance
+lambda_species_mean <- mean(lambda_species)
+lambda_species_ci <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+cat("Lambda for species:\n")
+cat("Mean λ:", lambda_species_mean, "\n")# 0.2648558
+cat("95% CI for λ:", lambda_species_ci[1], "-", lambda_species_ci[2], "\n")#0.07588762 - 0.4752233 4821844 
+
+
+```
+
+```{r Plot Captive Treatment Results}
+#Germination Rate
+
+intercept_samples <- treatment_phylo3$Sol[, "(Intercept)"]
+treatment_effects_samples <- treatment_phylo3$Sol[, grepl("^Treatment", colnames(treatment_phylo3$Sol))]
+logistic <- function(x) exp(x) / (1 + exp(x))
+intercept_probs <- logistic(intercept_samples)
+treatment_probs <- apply(treatment_effects_samples, 2, function(effect) logistic(intercept_samples + effect))
+intercept_probs_mcmc <- as.mcmc(intercept_probs)
+treatment_probs_mcmc <- lapply(1:ncol(treatment_probs), function(i) as.mcmc(treatment_probs[, i]))
+mean_intercept_prob <- mean(intercept_probs)
+ci_intercept <- HPDinterval(intercept_probs_mcmc, prob = 0.95)
+mean_treatment_probs <- sapply(treatment_probs_mcmc, mean)
+ci_treatment <- sapply(treatment_probs_mcmc, function(x) HPDinterval(as.mcmc(x), prob = 0.95))
+treatment_levels <- c(levels(germ$Treatment))
+
+plot_data <- data.frame(
+  Treatment = treatment_levels,
+  Mean_Prob = c(mean_intercept_prob, mean_treatment_probs),
+  Lower_CI = c(ci_intercept[1], ci_treatment[1, ]),
+  Upper_CI = c(ci_intercept[2], ci_treatment[2, ])
+)
+
+treatment_plot <- ggplot(data=plot_data, aes(x= Treatment, y=Mean_Prob, shape=Treatment, color=Treatment))+
+   geom_pointrange(aes(ymin=Lower_CI, ymax=Upper_CI), size=0.7,
+                 position=position_dodge(.5),color = c("black", "gray56", "goldenrod4", "goldenrod1"))+
+  theme_classic()+
+  ylab("Probability")+
+  xlab("Treatment")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+  guides(fill=guide_legend(title="Habitat"), alpha=FALSE)+
+  scale_alpha_manual(values= c(0.2,1))+
+  scale_shape_manual(values = c(19,17,15,8))+guides(shape = "none")
+
+
+#Time-to-germination
+
+
+intercept_samples <- treatment_phylo4$Sol[, "(Intercept)"]
+treatment_effects_samples <- treatment_phylo4$Sol[, grepl("^Treatment", colnames(treatment_phylo4$Sol))]
+intercept_samples_mcmc <- as.mcmc(intercept_samples)
+treatment_effects_mcmc <- lapply(1:ncol(treatment_effects_samples), function(i) as.mcmc(treatment_effects_samples[, i]))
+mean_intercept_log <- mean(intercept_samples)
+ci_intercept_log <- HPDinterval(intercept_samples_mcmc, prob = 0.95)
+mean_treatment_preds_log <- sapply(treatment_effects_mcmc, function(effect) mean(intercept_samples + effect))
+ci_treatment_preds_log <- t(sapply(treatment_effects_mcmc, function(effect) HPDinterval(as.mcmc(intercept_samples + effect), prob = 0.95)))
+mean_predictions_log <- c(mean_intercept_log, mean_treatment_preds_log)
+ci_predictions_log <- rbind(ci_intercept_log, ci_treatment_preds_log)
+mean_predictions <- exp(mean_predictions_log)
+ci_predictions <- exp(ci_predictions_log)
+treatment_levels <- c( levels(as.factor(germ_time$Treatment)))
+
+predictions_df <- data.frame(
+  Treatment = treatment_levels,
+  Mean_Predicted = mean_predictions,
+  Lower_CI = ci_predictions[, 1],
+  Upper_CI = ci_predictions[, 2]
+)
+
+treatment_plotTime <- ggplot(data=predictions_df, aes(x= Treatment, y=Mean_Predicted, shape=Treatment, color=Treatment))+
+   geom_pointrange(aes(ymin=Lower_CI, ymax=Upper_CI), size=0.7,
+                 position=position_dodge(.5),color = c("black", "gray56", "goldenrod4", "goldenrod1"))+
+  theme_classic()+
+  ylab("Time (Days)")+
+  xlab("Treatment")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+  guides(fill=guide_legend(title="Habitat"), alpha=FALSE)+
+  scale_alpha_manual(values= c(0.2,1))+
+  scale_shape_manual(values = c(19,17,15,8))+guides(shape = "none")
+
+#Survival plot
+treatment_survival_plot <- cuminc(Surv(GerminationTime, germ) ~ Treatment, data = germ_time2)%>%
+ggcuminc()+ theme_classic()+
+add_confidence_interval()+
+ylab("Cumulative Germ.")+
+  xlab("Time (Days)")+ 
+scale_fill_manual(values = c("black", "gray56", "goldenrod4", "goldenrod1"))+
+scale_color_manual(values = c("black", "gray56", "goldenrod4", "goldenrod1"))+
+ theme(legend.position="bottom")
+  
+
+ggarrange(treatment_plot, treatment_plotTime,treatment_survival_plot, labels = c("a", "b", "c"), ncol = 1, nrow=3)
+
+
+
+```
+
+```{r Captive Species Models}
+#Germination Rate
+
+germ_filtered$Lemur_Species <- as.factor(germ_filtered$Lemur_Species)
+germ_filtered$germ <- as.factor(germ_filtered$germ)
+
+prior2 <- list(
+  G = list(
+    G1 = list(V = 1, nu = 0.002)
+  ),
+  R = list(
+    V = 1, nu = 0.002
+  )
+)
+
+
+species_phylo2 <- MCMCglmm(
+  germ ~ Treatment + Lemur_Species, 
+  random = ~  species, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_filtered, 
+  prior = prior2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+species_phylo2b <- MCMCglmm(
+  germ ~ Treatment + Lemur_Species, 
+  random = ~  species, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_filtered, 
+  prior = prior2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+species_phylo2c <- MCMCglmm(
+  germ ~ Treatment + Lemur_Species, 
+  random = ~  species, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_filtered, 
+  prior = prior2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+species_phylo2mcmc_chains <- mcmc.list(as.mcmc(species_phylo2$Sol), as.mcmc(species_phylo2b$Sol), as.mcmc(species_phylo2c$Sol))
+species_phylo2gelman_results <- gelman.diag(species_phylo2mcmc_chains)
+species_phylo2gelman_results
+species_phylo2_summary <- summary(species_phylo2)
+
+
+#Time-to-germination
+
+germ_time_clean <- germ_time %>% drop_na(Treatment, Lemur_Species) %>% filter(Lemur_Species!="*Control")
+germ_time_clean$species <- germ_time_clean$Plant_Species_Common_Name2
+
+species_phylo3 <- MCMCglmm(
+  log(GerminationTime) ~ Treatment + Lemur_Species, 
+  random = ~ species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time_clean, 
+  prior = prior2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+species_phylo3b <- MCMCglmm(
+  log(GerminationTime) ~ Treatment + Lemur_Species, 
+  random = ~ species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time_clean, 
+  prior = prior2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+species_phylo3c <- MCMCglmm(
+  log(GerminationTime) ~ Treatment + Lemur_Species, 
+  random = ~ species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time_clean, 
+  prior = prior2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+species_phylo3mcmc_chains <- mcmc.list(as.mcmc(species_phylo3$Sol), as.mcmc(species_phylo3b$Sol), as.mcmc(species_phylo3c$Sol))
+species_phylo3gelman_results <- gelman.diag(species_phylo3mcmc_chains)
+species_phylo3gelman_results
+
+species_phylo3_summary <- summary(species_phylo3)
+
+species_output <- as.data.frame(rbind(species_phylo2_summary$solutions,species_phylo3_summary$solutions))
+species_output$Variable <- rownames(species_output)
+species_output$post.mean <- round(species_output$post.mean, 3)
+species_output$`l-95% CI` <- round(species_output$`l-95% CI`, 3)
+species_output$`u-95% CI` <- round(species_output$`u-95% CI`, 3)
+species_output$pMCMC <- round(species_output$pMCMC, 3)
+
+write.csv(species_output, "species_output.csv")
+
+
+#Species survival model
+cumulative_species <- cuminc(Surv(GerminationTime, germ) ~ Lemur_Species, data = germ_time2)%>%
+  tbl_cuminc() %>% 
+  add_p()
+
+```
+
+```{r Plot Captive Species Models}
+#Germination Rate
+
+summary(species_phylo2)
+intercept_samples <- species_phylo2$Sol[, "(Intercept)"]
+species_effects_samples <- species_phylo2$Sol[, grepl("^Lemur_Species", colnames(species_phylo2$Sol))]+0.56209
+logistic <- function(x) exp(x) / (1 + exp(x))
+intercept_probs <- logistic(intercept_samples)
+intercept_probs <- matrix(sapply(intercept_samples , logistic), nrow = 13500, ncol = 7)
+species_probs <- matrix(sapply(species_effects_samples, logistic), nrow = 13500, ncol = 7)
+intercept_probs_mcmc <- as.mcmc(intercept_probs)
+species_probs_mcmc <- lapply(1:ncol(species_probs), function(i) as.mcmc(species_probs[, i]))
+
+intercept_samples2 <- intercept_samples -0.21683 
+intercept_probs2 <- logistic(intercept_samples2)
+intercept_probs2 <- matrix(sapply(intercept_samples2 , logistic), nrow = 13500, ncol = 7)
+intercept_probs_mcmc2 <- as.mcmc(intercept_probs2)
+
+species_effects_samples2 <- species_effects_samples -0.21683 
+species_probs2 <- matrix(sapply(species_effects_samples2, logistic), nrow = 13500, ncol = 7)
+species_probs_mcmc2 <- lapply(1:ncol(species_probs2), function(i) as.mcmc(species_probs2[, i]))
+
+
+mean_intercept_prob <- mean(intercept_probs)
+ci_intercept <- HPDinterval(intercept_probs_mcmc, prob = 0.95)
+mean_species_probs <- sapply(species_probs_mcmc, mean)
+ci_species <- sapply(species_probs_mcmc, function(x) HPDinterval(as.mcmc(x), prob = 0.95))
+species_levels <- c(levels(germ_filtered$Lemur_Species))
+
+mean_intercept_prob2 <- mean(intercept_probs2)
+ci_intercept2 <- HPDinterval(intercept_probs_mcmc2, prob = 0.95)
+mean_species_probs2 <- sapply(species_probs_mcmc2, mean)
+ci_species2 <- sapply(species_probs_mcmc2, function(x) HPDinterval(as.mcmc(x), prob = 0.95))
+
+
+
+plot_data <- data.frame(
+  Species = species_levels,
+  Mean_Prob = c(mean_intercept_prob, mean_species_probs),
+  Lower_CI = c(ci_intercept[1], ci_species[1, ]),
+  Upper_CI = c(ci_intercept[8], ci_species[2, ])) %>% mutate(Type ="Washed")
+
+plot_data2 <-data.frame(
+   Species = species_levels,
+  Mean_Prob = c(mean_intercept_prob2, mean_species_probs2),
+  Lower_CI = c(ci_intercept2[1], ci_species2[1, ]),
+  Upper_CI = c(ci_intercept2[8], ci_species2[2, ])) %>% mutate(Type = "Unwashed")
+
+plot_data3 <- rbind(plot_data, plot_data2)
+
+mean(na.omit(germ$germ[germ$Treatment=="Control"]))
+mean(na.omit(germ$germ[germ$Treatment=="Control, Washed"]))
+
+custom_colors <- c("#1f77b4", "#ff7f0e", "#2ca02c", "#d62728",
+                   "#9467bd", "#8c564b", "#e377c2", "#17becf")
+
+species_plot <- ggplot(data=plot_data3, aes(x= Species, y=Mean_Prob, linetype=Type))+
+  geom_hline(aes(yintercept=0.349835), linetype="solid", color="grey")+
+geom_hline(aes(yintercept=0.4188791), linetype="dashed", color="grey")+guides(linetype= "none")+
+   geom_pointrange(aes(ymin=Lower_CI, ymax=Upper_CI), size=0.5,position=position_dodge(.5),color =c(custom_colors, custom_colors))+
+  theme_classic()+
+  ylab("Probability")+
+  xlab("Lemur Species")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+  guides(fill=guide_legend(title="Habitat"), alpha=FALSE)+
+  scale_alpha_manual(values= c(0.2,1))
+
+#Time-to-germination
+
+summary(species_phylo3)
+intercept_samples <- species_phylo3$Sol[, "(Intercept)"]
+species_effects_samples <- species_phylo3$Sol[, grepl("^Lemur_Species", colnames(species_phylo3$Sol))]+2.244992
+logistic <- function(x) exp(x)
+intercept_probs <- logistic(intercept_samples)
+intercept_probs <- matrix(sapply(intercept_samples , logistic), nrow = 13500, ncol = 7)
+species_probs <- matrix(sapply(species_effects_samples, logistic), nrow = 13500, ncol = 7)
+intercept_probs_mcmc <- as.mcmc(intercept_probs)
+species_probs_mcmc <- lapply(1:ncol(species_probs), function(i) as.mcmc(species_probs[, i]))
+
+intercept_samples3 <- intercept_samples-0.075590
+intercept_probs3 <- logistic(intercept_samples3)
+intercept_probs3 <- matrix(sapply(intercept_samples3 , logistic), nrow = 13500, ncol = 7)
+intercept_probs_mcmc3 <- as.mcmc(intercept_probs3)
+
+species_effects_samples3 <- species_effects_samples-0.075590
+species_probs3 <- matrix(sapply(species_effects_samples3, logistic), nrow = 13500, ncol = 7)
+species_probs_mcmc3<- lapply(1:ncol(species_probs3), function(i) as.mcmc(species_probs3[, i]))
+
+
+mean_intercept_prob <- mean(intercept_probs)
+ci_intercept <- HPDinterval(intercept_probs_mcmc, prob = 0.95)
+mean_species_probs <- sapply(species_probs_mcmc, mean)
+ci_species <- sapply(species_probs_mcmc, function(x) HPDinterval(as.mcmc(x), prob = 0.95))
+species_levels <- c(levels(germ_filtered$Lemur_Species))
+
+mean_intercept_prob3 <- mean(intercept_probs3)
+ci_intercept3 <- HPDinterval(intercept_probs_mcmc3, prob = 0.95)
+mean_species_probs3 <- sapply(species_probs_mcmc3, mean)
+ci_species3 <- sapply(species_probs_mcmc3, function(x) HPDinterval(as.mcmc(x), prob = 0.95))
+
+
+
+plot_data <- data.frame(
+  Species = species_levels,
+  Mean_Prob = c(mean_intercept_prob, mean_species_probs),
+  Lower_CI = c(ci_intercept[1], ci_species[1, ]),
+  Upper_CI = c(ci_intercept[8], ci_species[2, ])) %>% mutate(Type ="Washed")
+
+plot_data3 <-data.frame(
+   Species = species_levels,
+  Mean_Prob = c(mean_intercept_prob3, mean_species_probs3),
+  Lower_CI = c(ci_intercept3[1], ci_species3[1, ]),
+  Upper_CI = c(ci_intercept3[8], ci_species3[2, ])) %>% mutate(Type = "Unwashed")
+
+plot_data3 <- rbind(plot_data, plot_data3)
+
+mean(na.omit(germ_time$GerminationTime[germ_time$Treatment=="Control"]))
+mean(na.omit(germ_time$GerminationTime[germ_time$Treatment=="Control, Washed"]))
+
+
+species_plot_time <- ggplot(data=plot_data3, aes(x= Species, y=Mean_Prob, linetype=Type))+
+  geom_hline(aes(yintercept=16.5), linetype="solid", color="grey")+
+geom_hline(aes(yintercept=13.10563), linetype="dashed", color="grey")+guides(linetype= "none")+
+   geom_pointrange(aes(ymin=Lower_CI, ymax=Upper_CI), size=0.5,position=position_dodge(.5),color =c(custom_colors, custom_colors))+
+  theme_classic()+
+  ylab("Time (Days)")+
+  xlab("Lemur Species")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+  guides(fill=guide_legend(title="Habitat"), alpha=FALSE)+
+  scale_alpha_manual(values= c(0.3,1))
+
+#Species survival plot
+species_survival_plot <- cuminc(Surv(GerminationTime, germ) ~ Lemur_Species, data = germ_time2)%>%
+ggcuminc()+ theme_classic()+
+add_confidence_interval()+
+ylab("Cumulative Germ.")+
+  xlab("Time (Days)")+ 
+scale_fill_manual(values = c("black", custom_colors))+
+scale_color_manual(values = c("black", custom_colors))+
+ theme(legend.position="bottom")
+  
+  
+ggarrange(species_plot, species_plot_time,species_survival_plot, labels = c("a", "b", "c"), ncol = 1, nrow=3)
+
+```
+
+```{r Lambda for Captive Species Models}
+#Germination rate
+vcv_samples <- species_phylo1$VCV
+var_animal <- vcv_samples[, "animal"]
+var_species <- vcv_samples[, "species"]
+var_residual <- vcv_samples[, "units"]  # This may not exist if not estimated
+total_variance <- var_animal + var_species + var_residual
+lambda_animal <- var_animal / total_variance
+lambda_species <- var_species / total_variance
+lambda_animal_mean <- mean(lambda_animal)
+lambda_animal_ci <- HPDinterval(as.mcmc(lambda_animal), prob = 0.95)
+lambda_species_mean <- mean(lambda_species)
+lambda_species_ci <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+cat("Lambda for animal:\n")
+cat("Mean λ:", lambda_animal_mean, "\n") #λ: 0.7337508 
+cat("95% CI for λ:", lambda_animal_ci[1], "-", lambda_animal_ci[2], "\n\n")#0.00121419 - 1 
+cat("Lambda for species:\n")
+cat("Mean λ:", lambda_species_mean, "\n")#0.2308958 
+cat("95% CI for λ:", lambda_species_ci[1], "-", lambda_species_ci[2], "\n")#1.578445e-10 - 0.891191 
+
+vcv_samples <- species_phylo2$VCV
+var_species <- vcv_samples[, "species"]
+var_residual <- vcv_samples[, "units"]  # This might be fixed or estimated
+total_variance <- var_species + var_residual
+lambda_species <- var_species / total_variance
+lambda_species_mean <- mean(lambda_species)
+lambda_species_ci <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+cat("Lambda for species:\n")
+cat("Mean λ:", lambda_species_mean, "\n")#0.741633 
+cat("95% CI for λ:", lambda_species_ci[1], "-", lambda_species_ci[2], "\n")#0.5359009 - 0.9523722 
+
+#Time-to-germination
+vcv_samples <- species_phylo3$VCV
+var_species <- vcv_samples[, "species"]
+var_residual <- vcv_samples[, "units"]
+total_variance <- var_species + var_residual
+lambda_species <- var_species / total_variance
+lambda_species_mean <- mean(lambda_species)
+lambda_species_ci <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+cat("Lambda for species:\n")
+cat("Mean λ:", lambda_species_mean, "\n")#0.5823094 
+cat("95% CI for λ:", lambda_species_ci[1], "-", lambda_species_ci[2], "\n")#0.3430014 - 0.8180433 
+
+
+```
+
+```{r Captive Seed Length}
+
+#Germination Rate
+germ$species <- germ$Plant_Species_Common_Name2
+germ <- germ %>% drop_na(species, Treatment, Length)
+
+seed_phlyo1 <- MCMCglmm(
+  germ ~ Length*Treatment, 
+  random = ~  species + Lemur_Species, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+seed_phlyo1b <- MCMCglmm(
+  germ ~ Length*Treatment, 
+  random = ~  species + Lemur_Species, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+seed_phlyo1c <- MCMCglmm(
+  germ ~ Length*Treatment, 
+  random = ~  species + Lemur_Species, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+seed_phlyo1mcmc_chains <- mcmc.list(as.mcmc(seed_phlyo1$Sol), as.mcmc(seed_phlyo1b$Sol), as.mcmc(seed_phlyo1c$Sol))
+seed_phlyo1gelman_results <- gelman.diag(seed_phlyo1mcmc_chains)
+seed_phlyo1gelman_results
+
+seed_phlyo1_summary <- summary(seed_phlyo1)
+
+#Time-to-germination
+germ_time$species <- germ_time$Plant_Species_Common_Name2
+germ_time <- germ_time %>% drop_na(Length, Treatment) %>% mutate(Treatment = as.factor(Treatment))
+
+seed_phlyo2 <- MCMCglmm(
+  log(GerminationTime) ~ Length*Treatment, 
+  random = ~ species + Lemur_Species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+seed_phlyo2_summary <- summary(seed_phlyo2)
+
+seed_phlyo3 <- MCMCglmm(
+  log(GerminationTime) ~ Length+Treatment, 
+  random = ~ species + Lemur_Species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+seed_phlyo3b <- MCMCglmm(
+  log(GerminationTime) ~ Length+Treatment, 
+  random = ~ species + Lemur_Species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+seed_phlyo3c <- MCMCglmm(
+  log(GerminationTime) ~ Length+Treatment, 
+  random = ~ species + Lemur_Species, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered), 
+  data = germ_time, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+seed_phlyo3mcmc_chains <- mcmc.list(as.mcmc(seed_phlyo3$Sol), as.mcmc(seed_phlyo3b$Sol), as.mcmc(seed_phlyo3c$Sol))
+seed_phlyo3gelman_results <- gelman.diag(seed_phlyo3mcmc_chains)
+seed_phlyo3gelman_results
+seed_phlyo3_summary <- summary(seed_phlyo3)
+
+captive_seeds <- as.data.frame(rbind(seed_phlyo1_summary$solutions, seed_phlyo3_summary$solutions))
+captive_seeds$Variable <- rownames(captive_seeds)
+captive_seeds$post.mean <- round(captive_seeds$post.mean, 3)
+captive_seeds$`l-95% CI` <- round(captive_seeds$`l-95% CI`, 3)
+captive_seeds$`u-95% CI` <- round(captive_seeds$`u-95% CI`, 3)
+captive_seeds$pMCMC <- round(captive_seeds$pMCMC, 3)
+
+write.csv(captive_seeds, "captive_seeds.csv")
+
+```
+
+```{r Lambda for Captive Seed Length}
+#Germination Rate
+variance_components <- seed_phlyo1$VCV
+phylogenetic_variance <- variance_components[, "species"]
+residual_variance <- variance_components[, "units"]
+total_variance <- phylogenetic_variance + residual_variance
+lambda <- phylogenetic_variance / total_variance
+mean_lambda <- mean(lambda)
+ci_lambda <- HPDinterval(as.mcmc(lambda), prob = 0.95)
+cat("Mean lambda:", mean_lambda, "\n")#0.8630864 
+cat("95% CI for lambda:", ci_lambda, "\n")#0.7494259 0.9594791 
+
+
+#Time-to-germination
+species_var <- seed_phlyo3$VCV[, "species"]
+residual_var <- seed_phlyo3$VCV[, "units"]
+lambda_samples <- species_var / (species_var + residual_var)
+lambda_mean <- mean(lambda_samples)
+lambda_CI <- quantile(lambda_samples, probs = c(0.025, 0.975))
+lambda_mean
+lambda_CI
+
+```
+
+```{r Captive Seed Length Plot}
+# Germination Rate
+summary(seed_phlyo1)
+fixed_effects_samples <- seed_phlyo1$Sol
+length_vals <- seq(min(germ$Length), max(germ$Length), length.out = 100)
+treatment_levels <- levels(germ$Treatment)
+pred_grid <- expand.grid(Length = length_vals, Treatment = treatment_levels)
+intercept_samples <- fixed_effects_samples[, "(Intercept)"]
+length_samples <- fixed_effects_samples[, "Length"]
+treatment_samples <- fixed_effects_samples[, grepl("^Treatment", colnames(fixed_effects_samples)), drop = FALSE]
+interaction_samples <- fixed_effects_samples[, grepl("^Length:Treatment", colnames(fixed_effects_samples)), drop = FALSE]
+logistic <- function(x) exp(x) / (1 + exp(x))
+predict_logit <- function(intercept, length, treatment, interaction, length_val, treatment_val) {
+  treatment_idx <- which(treatment_levels == treatment_val)
+  treatment_effect <- if (treatment_idx == 1) 0 else treatment[, treatment_idx - 1]  # Assuming the first level is the reference
+  interaction_effect <- if (treatment_idx == 1) 0 else interaction[, treatment_idx - 1]
+  intercept + length * length_val + treatment_effect + interaction_effect * length_val
+}
+
+predictions_logit <- matrix(NA, nrow = nrow(pred_grid), ncol = length(intercept_samples))
+for (i in 1:nrow(pred_grid)) {
+  length_val <- pred_grid$Length[i]
+  treatment_val <- as.character(pred_grid$Treatment[i])
+  predictions_logit[i, ] <- predict_logit(intercept_samples, length_samples, treatment_samples, interaction_samples, length_val, treatment_val)
+}
+
+predictions_prob <- logistic(predictions_logit)
+pred_mean <- apply(predictions_prob, 1, mean)
+pred_ci <- t(apply(predictions_prob, 1, function(x) HPDinterval(as.mcmc(x), prob = 0.95)))
+pred_grid$Mean <- pred_mean
+pred_grid$Lower_CI <- pred_ci[, 1]
+pred_grid$Upper_CI <- pred_ci[, 2]
+
+captive_length_rate <- ggplot(pred_grid, aes(x = Length, y = Mean, color = Treatment)) +
+  geom_line(size = 1) +
+  theme_classic() +
+  labs(x = "Seed Length (cm)",
+       y = "Probability",
+       color = "Treatment",
+       fill = "Treatment") +
+  scale_color_manual("Treatment:", values=c("black", "gray56", "goldenrod4", "goldenrod1"))
+
+captive_length_rate2 <-captive_length_rate +geom_point(data=germ,aes(x = Length, y = germ),colors= c("black", "gray56", "goldenrod4", "goldenrod1"), size=1, position = position_jitter(width = 0, height = 0.02), alpha=0.3)
+
+#Time-to-germination
+
+fixed_effects_samples <- seed_phlyo3$Sol
+length_vals <- seq(min(germ_time$Length), max(germ_time$Length), length.out = 100)
+treatment_levels <- levels(germ_time$Treatment)
+pred_grid <- expand.grid(Length = length_vals, Treatment = treatment_levels)
+intercept_samples <- fixed_effects_samples[, "(Intercept)"]
+length_samples <- fixed_effects_samples[, "Length"]
+treatment_samples <- fixed_effects_samples[, grepl("^Treatment", colnames(fixed_effects_samples)), drop = FALSE]
+predict_log <- function(intercept, length, treatment, length_val, treatment_val) {
+  treatment_idx <- which(treatment_levels == treatment_val)
+  treatment_effect <- if (treatment_idx == 1) 0 else treatment[, treatment_idx - 1]  # Assuming the first level is the reference
+  intercept + length * length_val + treatment_effect
+}
+predictions_log <- matrix(NA, nrow = nrow(pred_grid), ncol = length(intercept_samples))
+for (i in 1:nrow(pred_grid)) {
+  length_val <- pred_grid$Length[i]
+  treatment_val <- as.character(pred_grid$Treatment[i])
+  predictions_log[i, ] <- predict_log(intercept_samples, length_samples, treatment_samples, length_val, treatment_val)
+}
+predictions <- exp(predictions_log)
+pred_mean <- apply(predictions, 1, mean)
+pred_ci <- t(apply(predictions, 1, function(x) HPDinterval(as.mcmc(x), prob = 0.95)))
+pred_grid$Mean <- pred_mean
+pred_grid$Lower_CI <- pred_ci[, 1]
+pred_grid$Upper_CI <- pred_ci[, 2]
+
+
+captive_length_time <- ggplot(pred_grid, aes(x = Length, y = Mean, color = Treatment)) +
+  geom_line(size = 1) +
+  theme_classic() +
+  labs(x = "Seed Length (mm)",
+       y = "Time (Days)",
+       color = "Treatment",
+       fill = "Treatment") +
+  scale_color_manual("Treatment:", values=c("black", "gray56", "goldenrod4", "goldenrod1"))
+
+captive_length_time2 <-captive_length_time +geom_point(data=germ_time,aes(x = Length, y = GerminationTime),colors= c("black", "gray56", "goldenrod4", "goldenrod1"), size=1, position = position_jitter(width = 0, height = 0.02), alpha=0.1) +ylim(0,20)
+
+ggarrange(captive_length_rate2, captive_length_time2, labels = c("a", "b"), common.legend = TRUE)
+
+```
+
+```{r Captive Lemur Traits}
+#Germination Rate
+
+germ_filtered$Weight_z <- scale(germ_filtered$Weight)
+germ_filtered$Age_z <- scale(germ_filtered$Age)
+
+germ_filtered$Activity<-NULL
+germ_filtered$Activity[germ_filtered$Lemur_Species=="C. medius"] <- "Nocturnal"
+germ_filtered$Activity[germ_filtered$Lemur_Species=="M. murinus"] <- "Nocturnal"
+germ_filtered$Activity[germ_filtered$Lemur_Species=="L. catta"] <- "Diurnal"
+germ_filtered$Activity[germ_filtered$Lemur_Species=="E. mongoz"] <-"Diurnal"
+germ_filtered$Activity[germ_filtered$Lemur_Species=="E. flavifrons"] <- "Diurnal"
+germ_filtered$Activity[germ_filtered$Lemur_Species=="V. rubra"] <- "Diurnal"
+germ_filtered$Activity[germ_filtered$Lemur_Species=="E. coronatus"] <- "Diurnal"
+germ_filtered$Activity[germ_filtered$Lemur_Species=="V. variegata"] <- "Diurnal"
+
+germ_filtered2 <- germ_filtered %>% drop_na(Treatment, Weight_z, Age_z, Sex, Activity)
+
+
+lemur_phylo1 <- MCMCglmm(
+  germ ~ Treatment + Weight_z+ Age_z+ Sex +Activity, 
+  random = ~ animal + species, 
+  family = "categorical",
+  ginverse = ginverse_list, 
+  data = germ_filtered2, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+lemur_phylo1b <- MCMCglmm(
+  germ ~ Treatment + Weight_z+ Age_z+ Sex +Activity, 
+  random = ~ animal + species, 
+  family = "categorical",
+  ginverse = ginverse_list, 
+  data = germ_filtered2, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+lemur_phylo1c <- MCMCglmm(
+  germ ~ Treatment + Weight_z+ Age_z+ Sex +Activity, 
+  random = ~ animal + species, 
+  family = "categorical",
+  ginverse = ginverse_list, 
+  data = germ_filtered2, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+lemur_phylo1mcmc_chains <- mcmc.list(as.mcmc(lemur_phylo1$Sol), as.mcmc(lemur_phylo1b$Sol), as.mcmc(lemur_phylo1c$Sol))
+lemur_phylo1gelman_results <- gelman.diag(lemur_phylo1mcmc_chains)
+lemur_phylo1gelman_results
+
+lemur_phylo1_summary <- summary(lemur_phylo1)
+
+#Time-to-germination
+germ_time_filtered <- germ_time
+
+germ_time_filtered$Lemur_Species2 <- germ_time_filtered$Lemur_Species
+germ_time_filtered$Lemur_Species2[germ_time_filtered$Lemur_Species2=="L. catta"] <- "Lemur_catta"
+germ_time_filtered$Lemur_Species2[germ_time_filtered$Lemur_Species2=="E. mongoz"] <-  "Eulemur_mongoz"
+germ_time_filtered$Lemur_Species2[germ_time_filtered$Lemur_Species2=="E. flavifrons"]<- "Eulemur_flavifrons"
+germ_time_filtered$Lemur_Species2[germ_time_filtered$Lemur_Species2=="V. rubra"]<- "Varecia_rubra"
+germ_time_filtered$Lemur_Species2[germ_time_filtered$Lemur_Species2=="E. coronatus"]<- "Eulemur_coronatus"
+germ_time_filtered$Lemur_Species2[germ_time_filtered$Lemur_Species2=="V. variegata"]<- "Varecia_variegata"
+germ_time_filtered$Lemur_Species2[germ_time_filtered$Lemur_Species2=="M. murinus"]<- "Microcebus_murinus"
+germ_time_filtered$Lemur_Species2[germ_time_filtered$Lemur_Species2=="C. medius"]<- "Cheirogaleus_medius"
+germ_time_filtered$Lemur_Species2[germ_time_filtered$Lemur_Species2=="*Control"] <- NA
+germ_time_filtered$Lemur_Species2[germ_time_filtered$Lemur_Species2=="Control"] <- NA
+
+germ_time_filtered$Activity<-NULL
+germ_time_filtered$Activity[germ_time_filtered$Lemur_Species=="C. medius"] <- "Nocturnal"
+germ_time_filtered$Activity[germ_time_filtered$Lemur_Species=="M. murinus"] <- "Nocturnal"
+germ_time_filtered$Activity[germ_time_filtered$Lemur_Species=="L. catta"] <- "Diurnal"
+germ_time_filtered$Activity[germ_time_filtered$Lemur_Species=="E. mongoz"] <-"Diurnal"
+germ_time_filtered$Activity[germ_time_filtered$Lemur_Species=="E. flavifrons"] <- "Diurnal"
+germ_time_filtered$Activity[germ_time_filtered$Lemur_Species=="V. rubra"] <- "Diurnal"
+germ_time_filtered$Activity[germ_time_filtered$Lemur_Species=="E. coronatus"] <- "Diurnal"
+germ_time_filtered$Activity[germ_time_filtered$Lemur_Species=="V. variegata"] <- "Diurnal"
+
+germ_time_filtered$animal <- germ_time_filtered$Lemur_Species2
+
+germ_time_filtered <- germ_time_filtered %>% drop_na(Lemur_Species2, Weight, Age, Sex)
+
+germ_time_filtered$Weight_z <- scale(germ_time_filtered$Weight)
+germ_time_filtered$Age_z <- scale(germ_time_filtered$Age)
+
+germ_time_filtered$species <- germ_time_filtered$Plant_Species_Common_Name2
+
+
+lemur_phylo2 <- MCMCglmm(
+  log(GerminationTime) ~ Treatment + Weight_z+ Age_z+ Sex + Activity, 
+  random = ~ animal + species, 
+  family = "gaussian",
+  ginverse = ginverse_list, 
+  data = germ_time_filtered, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+lemur_phylo2b <- MCMCglmm(
+  log(GerminationTime) ~ Treatment + Weight_z+ Age_z+ Sex + Activity, 
+  random = ~ animal + species, 
+  family = "gaussian",
+  ginverse = ginverse_list, 
+  data = germ_time_filtered, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+lemur_phylo2c <- MCMCglmm(
+  log(GerminationTime) ~ Treatment + Weight_z+ Age_z+ Sex + Activity, 
+  random = ~ animal + species, 
+  family = "gaussian",
+  ginverse = ginverse_list, 
+  data = germ_time_filtered, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+lemur_phylo2mcmc_chains <- mcmc.list(as.mcmc(lemur_phylo2$Sol), as.mcmc(lemur_phylo2b$Sol), as.mcmc(lemur_phylo2c$Sol))
+lemur_phylo2gelman_results <- gelman.diag(lemur_phylo2mcmc_chains)
+lemur_phylo2gelman_results
+
+lemur_phylo2_summary <- summary(lemur_phylo2)
+
+lemur_traits <- as.data.frame(rbind(lemur_phylo1_summary$solutions, lemur_phylo2_summary$solutions))
+lemur_traits$Variable <- rownames(lemur_traits)
+lemur_traits$post.mean <- round(lemur_traits$post.mean, 3)
+lemur_traits$`l-95% CI` <- round(lemur_traits$`l-95% CI`, 3)
+lemur_traits$`u-95% CI` <- round(lemur_traits$`u-95% CI`, 3)
+lemur_traits$pMCMC <- round(lemur_traits$pMCMC, 3)
+
+write.csv(lemur_traits, "lemur_traits.csv")
+
+```
+
+```{r Captive Lemur Traits Lambda}
+
+#Germination rate
+variance_components <- lemur_phylo1$VCV
+phylogenetic_variance_species <- variance_components[, "species"]
+phylogenetic_variance_animal <- variance_components[, "animal"]
+residual_variance <- variance_components[, "units"]
+total_variance <- phylogenetic_variance_species + phylogenetic_variance_animal + residual_variance
+lambda_species <- phylogenetic_variance_species / total_variance
+lambda_animal <- phylogenetic_variance_animal / total_variance
+mean_lambda_species <- mean(lambda_species)
+ci_lambda_species <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+mean_lambda_animal <- mean(lambda_animal)
+ci_lambda_animal <- HPDinterval(as.mcmc(lambda_animal), prob = 0.95)
+cat("Mean lambda for species:", mean_lambda_species, "\n")# 0.7511053 
+cat("95% CI for lambda for species:", ci_lambda_species, "\n")# 0.516822 0.9499167 
+cat("Mean lambda for animal:", mean_lambda_animal, "\n")# 0.1303566  
+cat("95% CI for lambda for animal:", ci_lambda_animal, "\n")#0.009959614 0.3677703 
+
+#Time-to-germination
+variance_components <- lemur_phylo2$VCV
+phylogenetic_variance_species <- variance_components[, "species"]
+phylogenetic_variance_animal <- variance_components[, "animal"]
+residual_variance <- variance_components[, "units"]
+total_variance <- phylogenetic_variance_species + phylogenetic_variance_animal + residual_variance
+lambda_species <- phylogenetic_variance_species / total_variance
+lambda_animal <- phylogenetic_variance_animal / total_variance
+mean_lambda_species <- mean(lambda_species)
+ci_lambda_species <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+mean_lambda_animal <- mean(lambda_animal)
+ci_lambda_animal <- HPDinterval(as.mcmc(lambda_animal), prob = 0.95)
+cat("Mean lambda for species:", mean_lambda_species, "\n")# 0.2384719 
+cat("95% CI for lambda for species:", ci_lambda_species, "\n")#0.08376675 0.4545756 
+cat("Mean lambda for animal:", mean_lambda_animal, "\n")#0.009057621 
+cat("95% CI for lambda for animal:", ci_lambda_animal, "\n")#: 0.0002206047 0.03475405 
+
+```
+
+```{r Plot Captive Lemur Traits}
+#Germination Rate
+
+fixed_effects_samples <- lemur_phylo1$Sol
+fixed_effects_names <- colnames(fixed_effects_samples)
+effect_summary <- apply(fixed_effects_samples, 2, function(x) {
+  mean_x <- mean(x)
+  ci_x <- HPDinterval(as.mcmc(x), prob = 0.95)
+  return(c(mean = mean_x, lower = ci_x[1], upper = ci_x[2]))
+})
+effect_summary_df <- as.data.frame(t(effect_summary))
+effect_summary_df$Effect <- rownames(effect_summary_df)
+
+effect_summary_df$Effect[effect_summary_df$Effect=="Weight_z"] <- "Body Mass"
+effect_summary_df$Effect[effect_summary_df$Effect=="TreatmentGut-passed, Washed"] <- "Gut-Passed, Washed"
+effect_summary_df$Effect[effect_summary_df$Effect=="Age_z"] <- "Age"
+effect_summary_df$Effect[effect_summary_df$Effect=="SexM"] <- "Male"
+effect_summary_df$Effect[effect_summary_df$Effect=="ActivityNocturnal"] <- "Nocturnal"
+
+
+lemur_plot_rate <- ggplot(effect_summary_df[-1,], aes(x = Effect, y = mean))+
+  geom_hline(yintercept=0, linetype="dashed", color="grey60") +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.2) +
+  coord_flip()+
+  theme_classic() +
+  labs(x = "",
+       y = "Estimated Effect")
+
+#Time-to-germination
+
+fixed_effects_samples <- lemur_phylo2$Sol
+
+# Extract the names of the fixed effects
+fixed_effects_names <- colnames(fixed_effects_samples)
+
+# Calculate the mean and 95% credible intervals for each fixed effect
+effect_summary <- apply(fixed_effects_samples, 2, function(x) {
+  mean_x <- mean(x)
+  ci_x <- HPDinterval(as.mcmc(x), prob = 0.95)
+  return(c(mean = mean_x, lower = ci_x[1], upper = ci_x[2]))
+})
+
+# Convert to a data frame for plotting
+effect_summary_df <- as.data.frame(t(effect_summary))
+effect_summary_df$Effect <- rownames(effect_summary_df)
+
+# Convert the effects to their original scale (exp) for interpretation
+effect_summary_df$mean_exp <- exp(effect_summary_df$mean)
+effect_summary_df$lower_exp <- exp(effect_summary_df$lower)
+effect_summary_df$upper_exp <- exp(effect_summary_df$upper)
+
+effect_summary_df$Effect[effect_summary_df$Effect=="Weight_z"] <- "Body Mass"
+effect_summary_df$Effect[effect_summary_df$Effect=="TreatmentGut-passed, Washed"] <- "Gut-Passed, Washed"
+effect_summary_df$Effect[effect_summary_df$Effect=="Age_z"] <- "Age"
+effect_summary_df$Effect[effect_summary_df$Effect=="SexM"] <- "Male"
+effect_summary_df$Effect[effect_summary_df$Effect=="ActivityNocturnal"] <- "Nocturnal"
+
+# Plot the effect sizes using ggplot2 and flip the axes
+ggplot(effect_summary_df, aes(x = Effect, y = mean_exp)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_exp, ymax = upper_exp), width = 0.1) +
+  coord_flip() +
+  theme_classic() +
+  labs(title = "Model Effect Sizes with 95% Credible Intervals (Original Scale)",
+       x = "Effect",
+       y = "Estimated Effect Size (exp-transformed)") +
+  theme(axis.text.y = element_text(angle = 45, hjust = 1))
+
+lemur_plot_time <- ggplot(effect_summary_df[-1,], aes(x = Effect, y = mean_exp))+
+  geom_hline(yintercept=1, linetype="dashed", color="grey60") +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower_exp, ymax = upper_exp), width = 0.1) +
+  coord_flip()+
+  theme_classic() +
+  labs(x = "",
+       y = "Estimated Effect")
+
+ggarrange(lemur_plot_rate , lemur_plot_time, labels = c("a", "b"))
+
+```
+
+```{r Wild Lemur Treatment}
+
+#Germination rate
+
+comatsa_seeds3 <- comatsa_seeds2 %>% mutate(species=Plante)
+comatsa_seeds3$Germination <- as.factor(comatsa_seeds3$Germination)
+comatsa_seeds3$lemr
+
+prior_t2 <- list(
+  G = list(
+    G1 = list(V = 1, nu = 0.002), # Prior for 'species' random effect
+    G2 = list(V = 1, nu = 0.002) # Prior for 'Lemur_Species2' random effect
+  ),
+  R = list(V = 1, fix = 1) # Residual variance for categorical data
+)
+
+wild_treatment_phylo1 <- MCMCglmm(
+  Germination ~ Treatment, 
+  random = ~ species + Lemur, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds3, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+wild_treatment_phylo1b <- MCMCglmm(
+  Germination ~ Treatment, 
+  random = ~ species + Lemur, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds3, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+wild_treatment_phylo1c <- MCMCglmm(
+  Germination ~ Treatment, 
+  random = ~ species + Lemur, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds3, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+wild_treatment_phylo1mcmc_chains <- mcmc.list(as.mcmc(wild_treatment_phylo1$Sol), as.mcmc(wild_treatment_phylo1b$Sol), as.mcmc(wild_treatment_phylo1c$Sol))
+wild_treatment_phylo1gelman_results <- gelman.diag(wild_treatment_phylo1mcmc_chains)
+wild_treatment_phylo1gelman_results
+
+wild_treatment_phylo1_summary <- summary(wild_treatment_phylo1)
+
+comatsa_seeds3$Treatment2 <- NULL
+comatsa_seeds3$Treatment2[comatsa_seeds3$Treatment=="Gut Passed, Washed"] <- "aGut-passed, Washed"
+comatsa_seeds3$Treatment2[comatsa_seeds3$Treatment=="Gut Passed, Unwashed"] <- "Gut-passed, Unwashed"
+comatsa_seeds3$Treatment2[comatsa_seeds3$Treatment=="Control"] <- "Control"
+comatsa_seeds3$Treatment2[comatsa_seeds3$Treatment=="Control, Washed"] <- "Control, Washed"
+
+
+wild_treatment_phylo1_test <- MCMCglmm(
+  Germination ~ Treatment2, 
+  random = ~ species + Lemur, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds3, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+
+wild_treatment_phylo1_testb <- MCMCglmm(
+  Germination ~ Treatment2, 
+  random = ~ species + Lemur, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds3, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+
+wild_treatment_phylo1_testc <- MCMCglmm(
+  Germination ~ Treatment2, 
+  random = ~ species + Lemur, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds3, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+wild_treatment_phylo1mcmc_chains <- mcmc.list(as.mcmc(wild_treatment_phylo1$Sol), as.mcmc(wild_treatment_phylo1b$Sol), as.mcmc(wild_treatment_phylo1c$Sol))
+wild_treatment_phylo1gelman_results <- gelman.diag(wild_treatment_phylo1mcmc_chains)
+wild_treatment_phylo1gelman_results
+
+summary(wild_treatment_phylo1_test)
+
+
+#Time-to-germination
+
+comatsa_seeds2_time2 <- comatsa_seeds2_time %>% filter(Germination ==1) %>% mutate(species = Plante)
+comatsa_seeds2_time2$species <- as.factor(comatsa_seeds2_time2$species)
+comatsa_seeds2_time2$species[comatsa_seeds2_time2$species=="Cryptocaria"] <- "Cryptocarya"
+
+wild_treatment_phylo2 <- MCMCglmm(
+  log(Time) ~ Treatment, 
+  random = ~ species + Lemur, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds2_time2, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+wild_treatment_phylo2b <- MCMCglmm(
+  log(Time) ~ Treatment, 
+  random = ~ species + Lemur, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds2_time2, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+wild_treatment_phylo2c <- MCMCglmm(
+  log(Time) ~ Treatment, 
+  random = ~ species + Lemur, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds2_time2, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+wild_treatment_phylo2mcmc_chains <- mcmc.list(as.mcmc(wild_treatment_phylo2$Sol), as.mcmc(wild_treatment_phylo2b$Sol), as.mcmc(wild_treatment_phylo2c$Sol))
+wild_treatment_phylo2gelman_results <- gelman.diag(wild_treatment_phylo2mcmc_chains)
+wild_treatment_phylo2gelman_results
+
+
+wild_treatment_phylo2_summary <- summary(wild_treatment_phylo2)
+
+wild_treatment <- as.data.frame(rbind(wild_treatment_phylo1_summary$solutions, wild_treatment_phylo2_summary$solutions))
+wild_treatment$post.mean <- round(wild_treatment$post.mean, 3)
+wild_treatment$`l-95% CI` <- round(wild_treatment$`l-95% CI`, 3)
+wild_treatment$`u-95% CI` <- round(wild_treatment$`u-95% CI`, 3)
+wild_treatment$pMCMC <- round(wild_treatment$pMCMC, 3)
+
+write.csv(wild_treatment, "wild_treatment.csv")
+
+#Survival
+
+comatsa_seeds2_time <-comatsa_seeds2 
+comatsa_seeds2_time$Germination <- as.factor(comatsa_seeds2_time$Germination)
+comatsa_seeds2_time$Time[is.na(comatsa_seeds2_time$Time)] <- 100
+
+treatment_survival_comatsa <- cuminc(Surv(Time, Germination) ~ Treatment, data = comatsa_seeds2_time)%>%
+tbl_cuminc() %>% 
+  add_p()
+
+
+```
+
+```{r Wild Treatment Lambda}
+#Germination Rate
+variance_components <- wild_treatment_phylo1$VCV
+phylogenetic_variance_species <- variance_components[, "species"]
+residual_variance <- variance_components[, "units"]
+total_variance <- phylogenetic_variance_species + residual_variance
+lambda_species <- phylogenetic_variance_species / total_variance
+mean_lambda_species <- mean(lambda_species)
+ci_lambda_species <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+cat("Mean lambda for species:", mean_lambda_species, "\n")#0.8735256 
+cat("95% CI for lambda for species:", ci_lambda_species, "\n")#0.7404393 0.982931 
+
+#Time-to-germination
+variance_components <- wild_treatment_phylo2$VCV
+phylogenetic_variance_species <- variance_components[, "species"]
+residual_variance <- variance_components[, "units"]
+total_variance <- phylogenetic_variance_species + residual_variance
+lambda_species <- phylogenetic_variance_species / total_variance
+mean_lambda_species <- mean(lambda_species)
+ci_lambda_species <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+cat("Mean lambda for species:", mean_lambda_species, "\n")#0.2757348 
+cat("95% CI for lambda for species:", ci_lambda_species, "\n")# 0.04171162 0.6061142
+
+```
+
+```{r Wild Treatment Plots}
+#Germination rate
+
+intercept_samples <- wild_treatment_phylo1$Sol[, "(Intercept)"]
+treatment_effects_samples <- wild_treatment_phylo1$Sol[, grepl("^Treatment", colnames(wild_treatment_phylo1$Sol))]
+logistic <- function(x) exp(x) / (1 + exp(x))
+intercept_probs <- logistic(intercept_samples)
+treatment_probs <- apply(treatment_effects_samples, 2, function(effect) logistic(intercept_samples + effect))
+intercept_probs_mcmc <- as.mcmc(intercept_probs)
+treatment_probs_mcmc <- lapply(1:ncol(treatment_probs), function(i) as.mcmc(treatment_probs[, i]))
+mean_intercept_prob <- mean(intercept_probs)
+ci_intercept <- HPDinterval(intercept_probs_mcmc, prob = 0.95)
+mean_treatment_probs <- sapply(treatment_probs_mcmc, mean)
+ci_treatment <- sapply(treatment_probs_mcmc, function(x) HPDinterval(as.mcmc(x), prob = 0.95))
+treatment_levels <- c(levels(as.factor(germ$Treatment)))
+
+plot_data <- data.frame(
+  Treatment = treatment_levels,
+  Mean_Prob = c(mean_intercept_prob, mean_treatment_probs),
+  Lower_CI = c(ci_intercept[1], ci_treatment[1, ]),
+  Upper_CI = c(ci_intercept[2], ci_treatment[2, ])
+)
+
+treatment_plot_wild <- ggplot(data=plot_data, aes(x= Treatment, y=Mean_Prob, shape=Treatment, color=Treatment))+
+   geom_pointrange(aes(ymin=Lower_CI, ymax=Upper_CI), size=0.7,
+                 position=position_dodge(.5),color = c("black", "gray56", "goldenrod4", "goldenrod1"))+
+  theme_classic()+
+  ylab("Probability")+
+  xlab("Treatment")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+  guides(fill=guide_legend(title="Habitat"), alpha=FALSE)+
+  scale_alpha_manual(values= c(0.2,1))+
+  scale_shape_manual(values = c(19,17,15,8))+guides(shape = "none")
+
+#Time-to-germination
+
+intercept_samples <- wild_treatment_phylo2$Sol[, "(Intercept)"]
+treatment_effects_samples <- wild_treatment_phylo2$Sol[, grepl("^Treatment", colnames(wild_treatment_phylo2$Sol))]
+intercept_samples_mcmc <- as.mcmc(intercept_samples)
+treatment_effects_mcmc <- lapply(1:ncol(treatment_effects_samples), function(i) as.mcmc(treatment_effects_samples[, i]))
+mean_intercept_log <- mean(intercept_samples)
+ci_intercept_log <- HPDinterval(intercept_samples_mcmc, prob = 0.95)
+mean_treatment_preds_log <- sapply(treatment_effects_mcmc, function(effect) mean(intercept_samples + effect))
+ci_treatment_preds_log <- t(sapply(treatment_effects_mcmc, function(effect) HPDinterval(as.mcmc(intercept_samples + effect), prob = 0.95)))
+mean_predictions_log <- c(mean_intercept_log, mean_treatment_preds_log)
+ci_predictions_log <- rbind(ci_intercept_log, ci_treatment_preds_log)
+mean_predictions <- exp(mean_predictions_log)
+ci_predictions <- exp(ci_predictions_log)
+treatment_levels <- c( levels(germ_time$Treatment))
+
+predictions_df <- data.frame(
+  Treatment = treatment_levels,
+  Mean_Predicted = mean_predictions,
+  Lower_CI = ci_predictions[, 1],
+  Upper_CI = ci_predictions[, 2]
+)
+
+treatment_plotTime_wild <- ggplot(data=predictions_df, aes(x= Treatment, y=Mean_Predicted, shape=Treatment, color=Treatment))+
+   geom_pointrange(aes(ymin=Lower_CI, ymax=Upper_CI), size=0.7,
+                 position=position_dodge(.5),color = c("black", "gray56", "goldenrod4", "goldenrod1"))+
+  theme_classic()+
+  ylab("Time (Days)")+
+  xlab("Treatment")+
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))+
+  guides(fill=guide_legend(title="Habitat"), alpha=FALSE)+
+  scale_alpha_manual(values= c(0.2,1))+
+  scale_shape_manual(values = c(19,17,15,8))+guides(shape = "none")
+
+
+
+#Survival
+treatment_survival_plot_wild <- cuminc(Surv(Time, Germination) ~ Treatment, data = comatsa_seeds2_time)%>%
+ggcuminc()+ theme_classic()+
+add_confidence_interval()+
+ylab("Cumulative Germ.")+
+scale_color_manual(values =  c("black", "gray56", "goldenrod4", "goldenrod1"))+
+scale_fill_manual(values =  c("black", "gray56", "goldenrod4", "goldenrod1"))+
+xlab("Time (Days)")+
+ theme(legend.position="bottom")
+
+
+
+ggarrange(treatment_plot_wild, treatment_plotTime_wild,treatment_survival_plot_wild, labels = c("a", "b", "c"), ncol = 1, nrow=3)
+
+
+```
+
+```{r Wild Seed Length}
+
+#Germination rate
+comatsa_seeds3$L[comatsa_seeds3$L=="1302"] <- NA
+comatsa_seeds3$L[comatsa_seeds3$L=="69.69"] <- NA
+comatsa_seeds3 <- comatsa_seeds3 %>% drop_na(species, Treatment, L)
+comatsa_seeds3$Treatment <- as.factor(comatsa_seeds3$Treatment)
+
+
+seed_phlyo1_wild <- MCMCglmm(
+  Germination ~ L*Treatment, 
+  random = ~  species + Lemur, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds3, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+seed_phlyo1_wildb <- MCMCglmm(
+  Germination ~ L*Treatment, 
+  random = ~  species + Lemur, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds3, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+seed_phlyo1_wildc <- MCMCglmm(
+  Germination ~ L*Treatment, 
+  random = ~  species + Lemur, 
+  family = "categorical",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds3, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+seed_phlyo1_wildmcmc_chains <- mcmc.list(as.mcmc(seed_phlyo1_wild$Sol), as.mcmc(seed_phlyo1_wildb$Sol), as.mcmc(seed_phlyo1_wildc$Sol))
+seed_phlyo1_wildgelman_results <- gelman.diag(seed_phlyo1_wildmcmc_chains)
+seed_phlyo1_wildgelman_results
+
+
+seed_phlyo1_summary_wild <- summary(seed_phlyo1_wild)
+
+#time-to-germination
+
+comatsa_seeds2_time2$L[comatsa_seeds2_time2$L=="1302"] <- NA
+comatsa_seeds2_time2$L[comatsa_seeds2_time2$L=="69.69"] <- NA
+
+comatsa_seeds2_time3 <- comatsa_seeds2_time2 %>% drop_na(L, Treatment, Time)
+
+wild_treatment_phylo2 <- MCMCglmm(
+  log(Time) ~ L*Treatment, 
+  random = ~ species + Lemur, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds2_time3, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+wild_treatment_phylo2b <- MCMCglmm(
+  log(Time) ~ L*Treatment, 
+  random = ~ species + Lemur, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds2_time3, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+wild_treatment_phylo2c <- MCMCglmm(
+  log(Time) ~ L*Treatment, 
+  random = ~ species + Lemur, 
+  family = "gaussian",
+  ginverse = list(species = species_Ainv_filtered_wild), 
+  data = comatsa_seeds2_time3, 
+  prior = prior, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
+wild_treatment_phylo2mcmc_chains <- mcmc.list(as.mcmc(wild_treatment_phylo2$Sol), as.mcmc(wild_treatment_phylo2b$Sol), as.mcmc(wild_treatment_phylo2c$Sol))
+wild_treatment_phylo2elman_results <- gelman.diag(wild_treatment_phylo2mcmc_chains)
+wild_treatment_phylo2gelman_results
+
+wild_treatment_phylo2_summary <- summary(wild_treatment_phylo2)
+
+wild_seeds <- as.data.frame(rbind(seed_phlyo1_summary_wild$solutions, wild_treatment_phylo2_summary$solutions))
+wild_seeds$post.mean <- round(wild_seeds$post.mean,3)
+wild_seeds$`l-95% CI` <- round(wild_seeds$`l-95% CI`,3)
+wild_seeds$`u-95% CI` <- round(wild_seeds$`u-95% CI`,3)
+wild_seeds$pMCMC <- round(wild_seeds$pMCMC,3)
+
+write.csv(wild_seeds, "wild_seeds.csv")
+
+```
+
+```{r Wild Seed Lambda}
+
+#Germination rate
+ariance_components <- seed_phlyo1_wild$VCV
+phylogenetic_variance_species <- variance_components[, "species"]
+residual_variance <- variance_components[, "units"]
+total_variance <- phylogenetic_variance_species + residual_variance
+lambda_species <- phylogenetic_variance_species / total_variance
+mean_lambda_species <- mean(lambda_species)
+ci_lambda_species <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+cat("Mean lambda for species:", mean_lambda_species, "\n")# 0.2611769 
+cat("95% CI for lambda for species:", ci_lambda_species, "\n")#0.0179206 0.5745035 
+
+#Time to germination
+variance_components <- wild_treatment_phylo2$VCV
+phylogenetic_variance_species <- variance_components[, "species"]
+residual_variance <- variance_components[, "units"]
+total_variance <- phylogenetic_variance_species + residual_variance
+lambda_species <- phylogenetic_variance_species / total_variance
+mean_lambda_species <- mean(lambda_species)
+ci_lambda_species <- HPDinterval(as.mcmc(lambda_species), prob = 0.95)
+cat("Mean lambda for species:", mean_lambda_species, "\n")#0.2110462
+cat("95% CI for lambda for species:", ci_lambda_species, "\n")# 0.002683472 0.5307649 
+
+```
+
+```{r Wild Seed Length Plot}
+#Germination Rate
+
+fixed_effects_samples <- seed_phlyo1_wild$Sol
+L_vals <- seq(min(comatsa_seeds3$L), max(comatsa_seeds3$L), L.out = 100)
+treatment_levels <- levels(comatsa_seeds3$Treatment)
+pred_grid <- expand.grid(L = L_vals, Treatment = treatment_levels)
+intercept_samples <- fixed_effects_samples[, "(Intercept)"]
+L_samples <- fixed_effects_samples[, "L"]
+treatment_samples <- fixed_effects_samples[, grepl("^Treatment", colnames(fixed_effects_samples)), drop = FALSE]
+interaction_samples <- fixed_effects_samples[, grepl("^L:Treatment", colnames(fixed_effects_samples)), drop = FALSE]
+logistic <- function(x) exp(x) / (1 + exp(x))
+predict_logit <- function(intercept, L, treatment, interaction, L_val, treatment_val) {
+  treatment_idx <- which(treatment_levels == treatment_val)
+  treatment_effect <- if (treatment_idx == 1) 0 else treatment[, treatment_idx - 1]  # Assuming the first level is the reference
+  interaction_effect <- if (treatment_idx == 1) 0 else interaction[, treatment_idx - 1]
+  intercept + L * L_val + treatment_effect + interaction_effect * L_val
+}
+
+predictions_logit <- matrix(NA, nrow = nrow(pred_grid), ncol = length(intercept_samples))
+for (i in 1:nrow(pred_grid)) {
+  L_val <- pred_grid$L[i]
+  treatment_val <- as.character(pred_grid$Treatment[i])
+  predictions_logit[i, ] <- predict_logit(intercept_samples, L_samples, treatment_samples, interaction_samples, L_val, treatment_val)
+}
+
+predictions_prob <- logistic(predictions_logit)
+pred_mean <- apply(predictions_prob, 1, mean)
+pred_ci <- t(apply(predictions_prob, 1, function(x) HPDinterval(as.mcmc(x), prob = 0.95)))
+pred_grid$Mean <- pred_mean
+pred_grid$Lower_CI <- pred_ci[, 1]
+pred_grid$Upper_CI <- pred_ci[, 2]
+
+
+p1 <- ggplot(pred_grid, aes(x = L, y = Mean, color = Treatment)) +
+  geom_line(size = 1) +
+  theme_classic() +
+  labs(x = "Seed Length (cm)",
+       y = "Probability",
+       color = "Treatment",
+       fill = "Treatment") +
+  scale_color_manual("Treatment:", values = c("black", "gray56", "goldenrod4", "goldenrod1"))
+
+comatsa_seeds3$Germination <- comatsa_seeds3$Germination-1
+
+p2 <- ggplot(comatsa_seeds3, aes(x = L, y = Germination, color = Treatment)) +
+  geom_point(size = 1, position = position_jitter(width = 0, height = 0.02), alpha = 0.1) +
+  theme_classic() +
+  labs(x = "Seed Length (cm)",
+       y = "Germination",
+       color = "Treatment",
+       fill = "Treatment") +
+  scale_color_manual("Treatment:",values = c("black", "gray56", "goldenrod4", "goldenrod1"))
+
+# Display the point plot
+print(p2)
+levels(comatsa_seeds3$Treatment)
+levels(pred_grid$Treatment)
+
+
+wild_seeds_rate <- p1 + geom_point(data=comatsa_seeds3,aes(x = L, y = Germination), size=1, position = position_jitter(width = 0, height = 0.02), alpha=0.3)
+
+
+#Time-to-germination
+
+comatsa_seeds2_time3$Treatment <- as.factor(comatsa_seeds2_time3$Treatment)
+
+
+fixed_effects_samples <- wild_treatment_phylo2$Sol
+L_vals <- seq(min(comatsa_seeds2_time3$L), max(comatsa_seeds2_time3$L), L.out = 100)
+treatment_levels <- levels(comatsa_seeds2_time3$Treatment)
+pred_grid <- expand.grid(L = L_vals, Treatment = treatment_levels)
+intercept_samples <- fixed_effects_samples[, "(Intercept)"]
+L_samples <- fixed_effects_samples[, "L"]
+treatment_samples <- fixed_effects_samples[, grepl("^Treatment", colnames(fixed_effects_samples)), drop = FALSE]
+predict_log <- function(intercept, L, treatment, L_val, treatment_val) {
+  treatment_idx <- which(treatment_levels == treatment_val)
+  treatment_effect <- if (treatment_idx == 1) 0 else treatment[, treatment_idx - 1]  # Assuming the first level is the reference
+  intercept + L * L_val + treatment_effect
+}
+predictions_log <- matrix(NA, nrow = nrow(pred_grid), ncol = length(intercept_samples))
+for (i in 1:nrow(pred_grid)) {
+  L_val <- pred_grid$L[i]
+  treatment_val <- as.character(pred_grid$Treatment[i])
+  predictions_log[i, ] <- predict_log(intercept_samples, L_samples, treatment_samples, L_val, treatment_val)
+}
+predictions <- exp(predictions_log)
+pred_mean <- apply(predictions, 1, mean)
+pred_ci <- t(apply(predictions, 1, function(x) HPDinterval(as.mcmc(x), prob = 0.95)))
+pred_grid$Mean <- pred_mean
+pred_grid$Lower_CI <- pred_ci[, 1]
+pred_grid$Upper_CI <- pred_ci[, 2]
+
+ 
+captive_L_time <- ggplot(pred_grid, aes(x = L, y = Mean, color = Treatment)) +
+  geom_line(size = 1) +
+  theme_classic() +
+  labs(x = "Seed Length (mm)",
+       y = "Time (Days)",
+       color = "Treatment",
+       fill = "Treatment") +
+  scale_color_manual("Treatment:",values=c("black", "gray56", "goldenrod4", "goldenrod1"))
+
+unique(comatsa_seeds2_time3$Treatment)
+#comatsa_seeds2_time3$Treatment[comatsa_seeds2_time3$Treatment== "Gut Passed, Unwashed"] <-  "Gut-passed"
+#comatsa_seeds2_time3$Treatment[comatsa_seeds2_time3$Treatment== "Gut Passed, Washed"] <-  "Gut-passed, Washed"
+
+
+captive_L_time2 <-captive_L_time +geom_point(data=comatsa_seeds2_time3,aes(x = L, y = Time),colors= c("black", "gray56", "goldenrod4", "goldenrod1"), size=1, position = position_jitter(width = 0, height = 0.02), alpha=0.1) +ylim(0,35)
+
+ggarrange(wild_seeds_rate, captive_L_time2, labels = c("a", "b"), common.legend = TRUE)
+
+
+```
+
+
+

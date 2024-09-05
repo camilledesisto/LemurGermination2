@@ -1,0 +1,2131 @@
+"","Lemur","Plante","L","Treatment","Control","Germination","Sex","Date","GerminationDate","Time"
+"1","Eulemur albifrons","Grewia",10.23,"Gut Passed, Unwashed","0","1","",2023-06-13,2023-07-11,28
+"2","Eulemur albifrons","Grewia",9.1,"Gut Passed, Unwashed","0","1","",2023-06-13,2023-06-24,11
+"3","Eulemur albifrons","Grewia",9.83,"Gut Passed, Unwashed","0","1","",2023-06-13,2023-06-24,11
+"4","Eulemur albifrons","Grewia",9.21,"Gut Passed, Unwashed","0","1","",2023-06-13,2023-06-28,15
+"5","Eulemur albifrons","Grewia",9.33,"Gut Passed, Unwashed","0","1","",2023-06-13,2023-07-11,28
+"6","Eulemur rubriventer","Cryptocaria",14.53,"Gut Passed, Unwashed","0","1","",2023-06-21,2023-07-26,35
+"7","Control","Syzygium",6.99,"Control","1","0","",2023-06-22,NA,100
+"8","Control","Syzygium",7.41,"Control","1","0","",2023-06-22,NA,100
+"9","Control","Syzygium",8.71,"Control","1","0","",2023-06-22,NA,100
+"10","Control","Syzygium",7.89,"Control","1","0","",2023-06-22,NA,100
+"11","Control","Syzygium",8.25,"Control","1","1","",2023-06-22,2023-09-12,82
+"12","Control","Syzygium",7.32,"Control","1","1","",2023-06-22,2023-09-12,82
+"13","Control","Syzygium",7.43,"Control","1","1","",2023-06-22,2023-08-25,64
+"14","Control","Syzygium",5.92,"Control","1","0","",2023-06-22,NA,100
+"15","Control","Syzygium",6.64,"Control","1","0","",2023-06-22,NA,100
+"16","Control","Syzygium",8.23,"Control","1","0","",2023-06-22,NA,100
+"17","Control","Syzygium",7.85,"Control","1","0","",2023-06-22,NA,100
+"18","Control","Syzygium",7.07,"Control","1","0","",2023-06-22,NA,100
+"19","Control","Syzygium",8.07,"Control","1","0","",2023-06-22,NA,100
+"20","Control","Syzygium",8.47,"Control","1","1","",2023-06-22,2023-08-28,67
+"21","Control","Syzygium",7.65,"Control","1","0","",2023-06-22,NA,100
+"22","Control","Syzygium",7.72,"Control","1","1","",2023-06-22,2023-08-19,58
+"23","Control","Syzygium",9.02,"Control","1","0","",2023-06-22,NA,100
+"24","Control","Syzygium",7.51,"Control","1","0","",2023-06-22,NA,100
+"25","Control","Syzygium",5.8,"Control","1","0","",2023-06-22,NA,100
+"26","Control","Syzygium",7.25,"Control","1","0","",2023-06-22,NA,100
+"27","Control","Syzygium",6.99,"Control","1","0","",2023-06-22,NA,100
+"28","Control","Syzygium",8.12,"Control","1","0","",2023-06-22,NA,100
+"29","Control","Syzygium",7.15,"Control","1","0","",2023-06-22,NA,100
+"30","Control","Syzygium",7.15,"Control","1","0","",2023-06-22,NA,100
+"31","Eulemur rubriventer","Syzygium",29.71,"Gut Passed, Unwashed","0","0","F",2023-07-04,NA,100
+"32","Eulemur rubriventer","Syzygium",26.49,"Gut Passed, Unwashed","0","0","F",2023-07-04,NA,100
+"33","Eulemur rubriventer","Syzygium",7.1,"Gut Passed, Unwashed","0","1","F",2023-07-04,2023-07-11,7
+"34","Eulemur rubriventer","Syzygium",6,"Gut Passed, Unwashed","0","1","F",2023-07-04,2023-08-04,31
+"35","Eulemur rubriventer","Syzygium",8.78,"Gut Passed, Unwashed","0","1","F",2023-07-04,2023-08-04,31
+"36","Eulemur rubriventer","Syzygium",6.14,"Gut Passed, Unwashed","0","1","F",2023-07-04,2023-09-30,88
+"37","Eulemur rubriventer","Syzygium",5.53,"Gut Passed, Unwashed","0","1","F",2023-07-04,2023-08-04,31
+"38","Eulemur rubriventer","Syzygium",7.16,"Gut Passed, Unwashed","0","1","F",2023-07-04,2023-07-26,22
+"39","Eulemur rubriventer","Syzygium",6.41,"Gut Passed, Unwashed","0","0","F",2023-07-04,NA,100
+"40","Eulemur rubriventer","Syzygium",5.76,"Gut Passed, Unwashed","0","1","F",2023-07-04,2023-08-16,43
+"41","Eulemur rubriventer","Syzygium",8.83,"Gut Passed, Unwashed","0","1","F",2023-07-04,2023-08-25,52
+"42","Eulemur rubriventer","Syzygium",5.4,"Gut Passed, Unwashed","0","1","F",2023-07-04,2023-07-26,22
+"43","Eulemur rubriventer","Syzygium",7.45,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-10-03,91
+"44","Eulemur rubriventer","Syzygium",8.61,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-08-22,49
+"45","Eulemur rubriventer","Syzygium",5.86,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-10-03,91
+"46","Eulemur rubriventer","Syzygium",6.12,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-08-04,31
+"47","Eulemur rubriventer","Syzygium",5.97,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-07-29,25
+"48","Eulemur rubriventer","Syzygium",5.43,"Gut Passed, Unwashed","0","0","",2023-07-04,NA,100
+"49","Eulemur rubriventer","Syzygium",6.54,"Gut Passed, Unwashed","0","0","",2023-07-04,2024-01-25,100
+"50","Eulemur rubriventer","Syzygium",5.26,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-08-16,43
+"51","Eulemur rubriventer","Syzygium",6.12,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-07-26,22
+"52","Eulemur rubriventer","Syzygium",4.49,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-07-26,22
+"53","Eulemur rubriventer","Syzygium",4.86,"Gut Passed, Unwashed","0","0","",2023-07-04,NA,100
+"54","Eulemur rubriventer","Syzygium",4.45,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-08-22,49
+"55","Eulemur rubriventer","Syzygium",5.5,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-07-26,22
+"56","Eulemur rubriventer","Syzygium",6.12,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-08-22,49
+"57","Eulemur rubriventer","Syzygium",5.67,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-07-23,19
+"58","Eulemur rubriventer","Syzygium",5.51,"Gut Passed, Unwashed","0","1","",2023-07-04,2023-08-10,37
+"59","Eulemur albifrons","Syzygium",10.9,"Gut Passed, Unwashed","0","1","",2023-07-05,2023-08-10,36
+"60","Eulemur rubriventer","Syzygium",13.19,"Gut Passed, Unwashed","0","1","M",2023-07-06,2023-07-29,23
+"61","Eulemur rubriventer","Syzygium",10.8,"Gut Passed, Unwashed","0","1","M",2023-07-06,2023-07-29,23
+"62","Eulemur rubriventer","Syzygium",11.78,"Gut Passed, Unwashed","0","1","M",2023-07-06,2023-09-06,62
+"63","Eulemur rubriventer","Syzygium",11.81,"Gut Passed, Unwashed","0","1","M",2023-07-06,2023-07-16,10
+"64","Eulemur rubriventer","Syzygium",9.91,"Gut Passed, Unwashed","0","1","M",2023-07-06,2023-07-16,10
+"65","Eulemur rubriventer","Syzygium",6.24,"Gut Passed, Unwashed","0","1","M",2023-07-06,2023-07-26,20
+"66","Eulemur rubriventer","Grewia",9.86,"Gut Passed, Unwashed","0","1","F",2023-07-06,2023-07-20,14
+"67","Eulemur rubriventer","Grewia",9.56,"Gut Passed, Unwashed","0","1","F",2023-07-06,2023-07-11,5
+"68","Eulemur rubriventer","Grewia",10.56,"Gut Passed, Unwashed","0","1","F",2023-07-06,2023-07-16,10
+"69","Eulemur rubriventer","Grewia",9.79,"Gut Passed, Unwashed","0","1","F",2023-07-06,2023-07-20,14
+"70","Eulemur rubriventer","Grewia",9.34,"Gut Passed, Unwashed","0","1","F",2023-07-06,2023-07-16,10
+"71",NA,"Syzygium",10.71,"Gut Passed, Unwashed","0","0","",2023-07-11,NA,100
+"72","Control","Syzygium",10.8,"Control","1","0","",2023-07-11,2023-11-11,100
+"73","Control","Syzygium",10.63,"Control","1","0","",2023-07-11,2023-11-17,100
+"74","Control","Syzygium",10.24,"Control","1","0","",2023-07-11,2023-11-05,100
+"75","Control","Syzygium",11.45,"Control","1","0","",2023-07-11,NA,100
+"76","Eulemur rubriventer","Syzygium",9.17,"Gut Passed, Unwashed","0","1","F",2023-07-12,2023-08-22,41
+"77","Control","Syzygium",12.95,"Control","1","1","",2023-07-12,2023-07-23,11
+"78","Control","Syzygium",14.76,"Control","1","1","",2023-07-12,2023-08-01,20
+"79","Control","Syzygium",18.8,"Control","1","1","",2023-07-12,2023-07-20,8
+"80","Control","Syzygium",15.2,"Control","1","1","",2023-07-12,2023-07-29,17
+"81","Control","Syzygium",16.24,"Control","1","1","",2023-07-12,2023-08-01,20
+"82","Eulemur rubriventer","Grewia",10.22,"Gut Passed, Unwashed","0","0","F",2023-07-12,NA,100
+"83","Eulemur albifrons","Syzygium",7.68,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-08-01,19
+"84","Eulemur albifrons","Syzygium",8.17,"Gut Passed, Unwashed","0","0","",2023-07-13,NA,100
+"85","Eulemur albifrons","Syzygium",7.86,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-29,16
+"86","Eulemur albifrons","Syzygium",6.04,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-26,13
+"87","Eulemur albifrons","Syzygium",7.37,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-26,13
+"88","Eulemur albifrons","Syzygium",6.95,"Gut Passed, Unwashed","0","0","",2023-07-13,NA,100
+"89","Eulemur albifrons","Syzygium",8.5,"Gut Passed, Unwashed","0","0","",2023-07-13,NA,100
+"90","Eulemur albifrons","Syzygium",7.47,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-08-01,19
+"91","Eulemur albifrons","Syzygium",9.03,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-26,13
+"92","Eulemur albifrons","Syzygium",7.07,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-26,13
+"93","Eulemur albifrons","Syzygium",7.79,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-08-04,22
+"94","Eulemur albifrons","Syzygium",7.07,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-29,16
+"95","Eulemur albifrons","Syzygium",6.47,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-08-01,19
+"96","Eulemur albifrons","Syzygium",6.06,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-26,13
+"97","Eulemur albifrons","Syzygium",8.32,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-08-01,19
+"98","Eulemur albifrons","Syzygium",6.56,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-29,16
+"99","Eulemur albifrons","Syzygium",7.61,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-29,16
+"100","Eulemur albifrons","Syzygium",6.25,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-26,13
+"101","Eulemur albifrons","Syzygium",5.9,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-26,13
+"102","Eulemur albifrons","Syzygium",8.59,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-26,13
+"103","Eulemur albifrons","Syzygium",6.9,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-23,10
+"104","Eulemur albifrons","Syzygium",7.15,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-08-07,25
+"105","Eulemur albifrons","Syzygium",6.12,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-26,13
+"106","Eulemur albifrons","Syzygium",5.42,"Gut Passed, Unwashed","0","1","",2023-07-13,2023-07-26,13
+"107",NA,"Cryptocaria",15.01,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-08-16,32
+"108",NA,"Syzygium",6.85,"Gut Passed, Unwashed","0","0","",2023-07-15,NA,100
+"109",NA,"Syzygium",9.28,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-08-16,32
+"110",NA,"Syzygium",9.19,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-07-29,14
+"111",NA,"Syzygium",7.04,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-08-04,20
+"112",NA,"Syzygium",9.67,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-08-10,26
+"113",NA,"Syzygium",7.67,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-08-10,26
+"114",NA,"Syzygium",9.36,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-08-04,20
+"115",NA,"Syzygium",6.57,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-08-04,20
+"116",NA,"Cryptocaria",16.03,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-08-16,32
+"117",NA,"Cryptocaria",14.46,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-08-28,44
+"118",NA,"Cryptocaria",16.05,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-08-16,32
+"119",NA,"Grewia",8.99,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-09-09,56
+"120",NA,"Grewia",10.22,"Gut Passed, Unwashed","0","1","",2023-07-15,2023-07-23,8
+"121",NA,"Syzygium",9.45,"Gut Passed, Unwashed","0","0","",2023-07-15,NA,100
+"122",NA,"Syzygium",11.39,"Gut Passed, Unwashed","0","0","",2023-07-15,NA,100
+"123","Control","Grewia",8.83,"Control","1","1","",2023-07-15,2023-08-28,44
+"124","Control","Grewia",9.85,"Control","1","1","",2023-07-15,2023-08-07,23
+"125","Control","Grewia",9.27,"Control","1","0","",2023-07-15,NA,100
+"126","Control","Grewia",9.6,"Control","1","1","",2023-07-15,2023-10-15,92
+"127","Control","Grewia",9.3,"Control","1","0","",2023-07-15,NA,100
+"128","Control","Grewia",10.77,"Control","1","1","",2023-07-15,2023-07-29,14
+"129","Control","Grewia",9.79,"Control","1","0","",2023-07-15,NA,100
+"130","Control","Grewia",10.01,"Control","1","1","",2023-07-15,2023-08-01,17
+"131","Control","Grewia",10.19,"Control","1","1","",2023-07-15,2023-07-23,8
+"132","Control","Grewia",9.14,"Control","1","1","",2023-07-15,2023-07-29,14
+"133","Control","Grewia",9.5,"Control","1","1","",2023-07-15,2023-08-07,23
+"134","Control","Grewia",9.78,"Control","1","0","",2023-07-15,NA,100
+"135","Control","Grewia",10.46,"Control","1","0","",2023-07-15,NA,100
+"136","Control","Grewia",9.22,"Control","1","1","",2023-07-15,2023-08-01,17
+"137","Control","Grewia",8.8,"Control","1","1","",2023-07-15,2023-08-01,17
+"138","Control","Grewia",9.65,"Control","1","0","",2023-07-15,NA,100
+"139","Control","Grewia",9.83,"Control","1","0","",2023-07-15,NA,100
+"140","Control","Grewia",8.94,"Control","1","1","",2023-07-15,2023-08-01,17
+"141","Control","Grewia",10.7,"Control","1","1","",2023-07-15,2023-07-29,14
+"142","Control","Grewia",8.41,"Control","1","1","",2023-07-15,2023-08-01,17
+"143","Control","Syzygium",16.62,"Control","1","0","",2023-07-16,NA,100
+"144","Control","Syzygium",14.75,"Control","1","1","",2023-07-16,2023-07-29,13
+"145","Control","Syzygium",16.86,"Control","1","1","",2023-07-16,2023-07-29,13
+"146","Control","Syzygium",15.17,"Control","1","0","",2023-07-16,NA,100
+"147","Control","Syzygium",14.23,"Control","1","0","",2023-07-16,NA,100
+"148","Control","Syzygium",18.17,"Control","1","0","",2023-07-16,NA,100
+"149","Control","Syzygium",15.19,"Control","1","1","",2023-07-16,2023-08-04,19
+"150","Control","Syzygium",17.18,"Control","1","1","",2023-07-16,2023-08-28,43
+"151","Control","Syzygium",16.74,"Control","1","1","",2023-07-16,2023-08-28,43
+"152","Control","Syzygium",16.44,"Control","1","1","",2023-07-16,2023-07-29,13
+"153","Control","Syzygium",14.06,"Control","1","1","",2023-07-16,2023-07-26,10
+"154","Control","Syzygium",14.5,"Control","1","1","",2023-07-16,2023-07-26,10
+"155","Control","Syzygium",13.73,"Control","1","1","",2023-07-16,2023-08-16,31
+"156","Control","Syzygium",15.78,"Control","1","1","",2023-07-16,2023-08-01,16
+"157","Control","Syzygium",15.02,"Control","1","1","",2023-07-16,2023-07-29,13
+"158","Control","Syzygium",14.04,"Control","1","1","",2023-07-16,2023-07-29,13
+"159","Control","Syzygium",13.09,"Control","1","1","",2023-07-16,2023-08-01,16
+"160","Control","Syzygium",15.29,"Control","1","1","",2023-07-16,2023-07-29,13
+"161",NA,"Syzygium",11.28,"Gut Passed, Unwashed","0","1","",2023-07-17,2023-08-16,30
+"162",NA,"Syzygium",9.88,"Gut Passed, Unwashed","0","1","",2023-07-17,2023-08-04,18
+"163",NA,"Syzygium",7.26,"Gut Passed, Unwashed","0","1","",2023-07-18,2023-08-01,14
+"164",NA,"Syzygium",8.34,"Gut Passed, Unwashed","0","1","",2023-07-18,2023-08-10,23
+"165",NA,"Syzygium",8.74,"Gut Passed, Unwashed","0","1","",2023-07-18,2023-08-16,29
+"166",NA,"Syzygium",9.47,"Gut Passed, Unwashed","0","0","",2023-07-18,NA,100
+"167",NA,"Syzygium",6.45,"Gut Passed, Unwashed","0","1","",2023-07-18,2023-08-16,29
+"168",NA,"Syzygium",5.26,"Gut Passed, Unwashed","0","1","",2023-07-18,2023-09-21,65
+"169",NA,"Syzygium",5.29,"Gut Passed, Unwashed","0","1","",2023-07-18,2023-08-01,14
+"170",NA,"Syzygium",9.03,"Gut Passed, Unwashed","0","1","",2023-07-18,2023-08-31,44
+"171","Eulemur rubriventer","Syzygium",17.05,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-01,13
+"172",NA,"Syzygium",9.82,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-09-18,61
+"173",NA,"Syzygium",10.38,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-10,22
+"174",NA,"Syzygium",10.59,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-16,28
+"175",NA,"Syzygium",11.39,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-16,28
+"176",NA,"Syzygium",11.03,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-10,22
+"177",NA,"Syzygium",10.12,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-09-18,61
+"178",NA,"Syzygium",10.13,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-28,40
+"179",NA,"Syzygium",9.41,"Gut Passed, Unwashed","0","0","",2023-07-19,NA,100
+"180",NA,"Syzygium",10.34,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-07,19
+"181",NA,"Syzygium",10.28,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-10,22
+"182",NA,"Syzygium",8.65,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-16,28
+"183",NA,"Syzygium",10.61,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-19,31
+"184",NA,"Syzygium",9.56,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-16,28
+"185",NA,"Syzygium",10.54,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-07,19
+"186",NA,"Syzygium",10.72,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-07,19
+"187",NA,"Syzygium",9.15,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-16,28
+"188",NA,"Syzygium",6.47,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-04,16
+"189",NA,"Syzygium",11.19,"Gut Passed, Unwashed","0","1","",2023-07-19,2023-08-22,34
+"190",NA,"Cryptocaria",14.47,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-09-09,51
+"191",NA,"Syzygium",6.61,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-08-01,12
+"192",NA,"Syzygium",6.48,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-09-09,51
+"193",NA,"Syzygium",6.32,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-09-09,51
+"194",NA,"Syzygium",69.69,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-08-25,36
+"195",NA,"Syzygium",7.71,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-08-16,27
+"196",NA,"Syzygium",6.22,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-08-07,18
+"197",NA,"Syzygium",4.65,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-07-26,6
+"198",NA,"Cryptocaria",15.27,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-08-10,21
+"199",NA,"Cryptocaria",13.02,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-08-16,27
+"200",NA,"Syzygium",5.86,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-09-12,54
+"201",NA,"Syzygium",6.29,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-09-03,45
+"202",NA,"Syzygium",6.45,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-07-29,9
+"203",NA,"Syzygium",4.33,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-07-29,9
+"204",NA,"Syzygium",11.53,"Gut Passed, Unwashed","0","0","",2023-07-20,NA,100
+"205",NA,"Syzygium",9.27,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-08-19,30
+"206",NA,"Syzygium",5.22,"Gut Passed, Unwashed","0","1","",2023-07-20,2023-08-01,12
+"207",NA,"Syzygium",13.84,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-08-01,10
+"208",NA,"Syzygium",7.47,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-08-04,13
+"209",NA,"Syzygium",8.41,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-08-04,13
+"210",NA,"Syzygium",11.19,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-09-12,52
+"211",NA,"Syzygium",8.68,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-09-12,52
+"212",NA,"Syzygium",10.41,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-09-06,46
+"213",NA,"Syzygium",11.73,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-09-15,55
+"214",NA,"Syzygium",10.14,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-10-09,79
+"215",NA,"Syzygium",8.56,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-09-09,49
+"216",NA,"Syzygium",10.07,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-08-19,28
+"217",NA,"Syzygium",10.5,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-08-19,28
+"218",NA,"Syzygium",1302,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-08-19,28
+"219",NA,"Syzygium",9.52,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-09-06,46
+"220",NA,"Syzygium",12.25,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-09-03,43
+"221",NA,"Syzygium",9.13,"Gut Passed, Unwashed","0","0","",2023-07-22,NA,100
+"222",NA,"Syzygium",8.37,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-08-04,13
+"223",NA,"Syzygium",6.88,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-08-04,13
+"224",NA,"Syzygium",8.9,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-09-09,49
+"225",NA,"Syzygium",8.77,"Gut Passed, Unwashed","0","0","",2023-07-22,NA,100
+"226",NA,"Syzygium",8.7,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-08-10,19
+"227",NA,"Syzygium",17.95,"Gut Passed, Unwashed","0","1","",2023-07-22,2023-08-31,40
+"228","Control","Syzygium",12.29,"Control","1","0","",2023-07-22,NA,100
+"229","Control","Syzygium",11.16,"Control","1","0","",2023-07-22,NA,100
+"230","Control","Syzygium",11.09,"Control","1","1","",2023-07-22,2023-10-06,76
+"231","Control","Syzygium",10.32,"Control","1","1","",2023-07-22,2023-10-06,76
+"232","Control","Syzygium",10.3,"Control","1","0","",2023-07-22,NA,100
+"233","Control","Syzygium",11.33,"Control","1","1","",2023-07-22,2023-10-06,76
+"234","Control","Syzygium",11.56,"Control","1","1","",2023-07-22,2023-10-06,76
+"235","Control","Syzygium",9.95,"Control","1","1","",2023-07-22,2023-09-21,61
+"236","Control","Syzygium",9.63,"Control","1","1","",2023-07-22,2023-10-06,76
+"237","Control","Syzygium",10.59,"Control","1","1","",2023-07-22,2023-10-18,88
+"238","Control","Syzygium",10.84,"Control","1","0","",2023-07-22,NA,100
+"239","Control","Syzygium",9.46,"Control","1","1","",2023-07-22,2023-09-06,46
+"240","Control","Syzygium",9.55,"Control","1","1","",2023-07-22,2023-09-30,70
+"241","Control","Syzygium",9.54,"Control","1","0","",2023-07-22,NA,100
+"242","Control","Syzygium",10.52,"Control","1","0","",2023-07-22,NA,100
+"243","Control","Syzygium",10.27,"Control","1","1","",2023-07-22,2023-09-09,49
+"244","Control","Syzygium",8.6,"Control","1","1","",2023-07-22,2023-08-16,25
+"245","Control","Syzygium",7.57,"Control","1","1","",2023-07-22,2023-08-19,28
+"246","Control","Syzygium",6.95,"Control","1","0","",2023-07-22,NA,100
+"247","Control","Syzygium",5.34,"Control","1","1","",2023-07-22,2023-08-07,16
+"248","Control","Syzygium",6.17,"Control","1","1","",2023-07-22,2023-08-16,25
+"249","Control","Syzygium",5.82,"Control","1","1","",2023-07-22,2023-08-16,25
+"250","Control","Syzygium",5.38,"Control","1","1","",2023-07-22,2023-08-10,19
+"251","Control","Syzygium",6.6,"Control","1","1","",2023-07-22,2023-08-16,25
+"252","Control","Syzygium",6.33,"Control","1","1","",2023-07-22,2023-08-25,34
+"253","Control","Syzygium",5.95,"Control","1","1","",2023-07-22,2023-08-10,19
+"254","Control","Syzygium",6.2,"Control","1","1","",2023-07-22,2023-08-16,25
+"255","Control","Syzygium",6.01,"Control","1","1","",2023-07-22,2023-08-16,25
+"256","Control","Syzygium",6.39,"Control","1","1","",2023-07-22,2023-09-09,49
+"257","Control","Syzygium",4.76,"Control","1","1","",2023-07-22,2023-08-16,25
+"258","Control","Syzygium",5.82,"Control","1","1","",2023-07-22,2023-08-16,25
+"259","Control","Syzygium",6.18,"Control","1","1","",2023-07-22,2023-08-16,25
+"260","Control","Syzygium",5.15,"Control","1","1","",2023-07-22,2023-08-25,34
+"261","Control","Syzygium",4.84,"Control","1","1","",2023-07-22,2023-08-16,25
+"262","Control","Syzygium",5.76,"Control","1","1","",2023-07-22,2023-08-25,34
+"263","Control","Syzygium",6.97,"Control","1","1","",2023-07-22,2023-09-09,49
+"264","Control","Syzygium",5.98,"Control","1","1","",2023-07-22,2023-08-16,25
+"265","Control","Syzygium",6.4,"Control","1","1","",2023-07-22,2023-08-25,34
+"266","Control","Syzygium",5.73,"Control","1","1","",2023-07-22,2023-09-09,49
+"267","Control","Syzygium",4.98,"Control","1","0","",2023-07-22,NA,100
+"268","Control","Syzygium",5.4,"Control","1","1","",2023-07-22,2023-08-25,34
+"269","Control","Syzygium",4.66,"Control","1","1","",2023-07-22,2023-08-07,16
+"270","Control","Syzygium",4.4,"Control","1","1","",2023-07-22,2023-08-31,40
+"271","Control","Cryptocaria",15.83,"Control","1","1","",2023-07-23,2023-08-25,33
+"272","Control","Cryptocaria",19.01,"Control","1","1","",2023-07-23,2023-08-25,33
+"273","Control","Cryptocaria",18.46,"Control","1","1","",2023-07-23,2023-08-25,33
+"274","Control","Cryptocaria",18.57,"Control","1","1","",2023-07-23,2023-08-25,33
+"275","Control","Cryptocaria",15.65,"Control","1","0","",2023-07-23,NA,100
+"276","Control","Cryptocaria",14.07,"Control","1","0","",2023-07-23,NA,100
+"277",NA,"Syzygium",7.54,"Gut Passed, Unwashed","0","0","",2023-07-25,NA,100
+"278",NA,"Syzygium",7,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-03,40
+"279","Eulemur rubriventer","Syzygium",16.96,"Gut Passed, Unwashed","0","0","",2023-07-25,NA,100
+"280","Eulemur rubriventer","Syzygium",16.91,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-19,25
+"281","Eulemur rubriventer","Cryptocaria",16.08,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-31,37
+"282","Eulemur rubriventer","Syzygium",7.38,"Gut Passed, Unwashed","0","0","",2023-07-25,NA,100
+"283","Eulemur rubriventer","Syzygium",10.77,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-09,46
+"284","Eulemur rubriventer","Syzygium",9.19,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-09,46
+"285","Eulemur rubriventer","Syzygium",9.19,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"286","Eulemur rubriventer","Syzygium",10.37,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-10-09,76
+"287","Eulemur rubriventer","Syzygium",8.31,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-28,34
+"288","Eulemur rubriventer","Syzygium",9.66,"Gut Passed, Unwashed","0","0","",2023-07-25,NA,100
+"289","Eulemur rubriventer","Syzygium",8.65,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-03,40
+"290","Eulemur rubriventer","Syzygium",8.99,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"291","Eulemur rubriventer","Syzygium",8.04,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-03,40
+"292","Eulemur rubriventer","Syzygium",7.76,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"293","Eulemur rubriventer","Syzygium",7.31,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-03,40
+"294","Eulemur rubriventer","Syzygium",8.19,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-09,46
+"295","Eulemur rubriventer","Syzygium",7.96,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-28,34
+"296","Eulemur rubriventer","Syzygium",8.38,"Gut Passed, Unwashed","0","0","",2023-07-25,NA,100
+"297","Eulemur rubriventer","Grewia",9.4,"Gut Passed, Unwashed","0","0","",2023-07-25,NA,100
+"298",NA,"Syzygium",10.79,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-09,46
+"299",NA,"Syzygium",9.64,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-25,31
+"300",NA,"Syzygium",12.28,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"301",NA,"Syzygium",8.83,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-28,34
+"302",NA,"Syzygium",9.73,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"303",NA,"Syzygium",9.17,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-28,34
+"304",NA,"Syzygium",10.43,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-25,31
+"305",NA,"Syzygium",8.65,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"306",NA,"Syzygium",8.92,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-09,46
+"307",NA,"Syzygium",11.68,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-03,40
+"308",NA,"Syzygium",10.49,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-03,40
+"309",NA,"Syzygium",10.17,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-24,61
+"310",NA,"Syzygium",11.31,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-09,46
+"311",NA,"Syzygium",10.24,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"312",NA,"Syzygium",11.73,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-24,61
+"313",NA,"Syzygium",12.63,"Gut Passed, Unwashed","0","0","",2023-07-25,NA,100
+"314",NA,"Syzygium",10.3,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-03,40
+"315",NA,"Syzygium",11.3,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"316",NA,"Syzygium",9.31,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-09,46
+"317",NA,"Syzygium",10.41,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-09,46
+"318",NA,"Syzygium",8.78,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-25,31
+"319",NA,"Syzygium",9.35,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"320",NA,"Syzygium",8.16,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-10,16
+"321",NA,"Syzygium",8.42,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-10,16
+"322",NA,"Syzygium",10.36,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"323",NA,"Syzygium",9.56,"Gut Passed, Unwashed","0","0","",2023-07-25,NA,100
+"324",NA,"Syzygium",8.88,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"325",NA,"Syzygium",9.25,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-28,34
+"326",NA,"Syzygium",9.06,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-28,34
+"327",NA,"Syzygium",8.64,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-09-21,58
+"328",NA,"Syzygium",8.8,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-10-12,79
+"329",NA,"Syzygium",9.07,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-28,34
+"330",NA,"Syzygium",9.03,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"331",NA,"Syzygium",8.83,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-19,25
+"332",NA,"Syzygium",9.66,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"333",NA,"Syzygium",8.39,"Gut Passed, Unwashed","0","0","",2023-07-25,NA,100
+"334",NA,"Syzygium",8.07,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-16,22
+"335",NA,"Syzygium",9.18,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-19,25
+"336",NA,"Syzygium",6.49,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-10-15,82
+"337",NA,"Syzygium",6.67,"Gut Passed, Unwashed","0","0","",2023-07-25,2023-11-05,100
+"338",NA,"Syzygium",10.84,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-01,7
+"339",NA,"Syzygium",10.45,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-04,10
+"340",NA,"Syzygium",10.7,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-04,10
+"341",NA,"Syzygium",10.68,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-04,10
+"342",NA,"Syzygium",9.41,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-04,10
+"343",NA,"Syzygium",11.27,"Gut Passed, Unwashed","0","0","",2023-07-25,NA,100
+"344",NA,"Syzygium",7.27,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-10,16
+"345",NA,"Syzygium",7.52,"Gut Passed, Unwashed","0","1","",2023-07-25,2023-08-01,7
+"346",NA,"Syzygium",11.02,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-10,15
+"347",NA,"Syzygium",10.69,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-28,33
+"348",NA,"Syzygium",8.49,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-16,21
+"349",NA,"Syzygium",11.01,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-04,9
+"350",NA,"Syzygium",9.68,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-10,15
+"351",NA,"Syzygium",10.32,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-04,9
+"352",NA,"Syzygium",9.35,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-10,15
+"353",NA,"Syzygium",13.4,"Gut Passed, Unwashed","0","0","",2023-07-26,NA,100
+"354",NA,"Syzygium",6.91,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-03,39
+"355",NA,"Syzygium",7.29,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-21,57
+"356",NA,"Syzygium",6.22,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-06,42
+"357",NA,"Syzygium",7.39,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-22,27
+"358",NA,"Syzygium",6.57,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-09,45
+"359",NA,"Syzygium",6.69,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-03,39
+"360",NA,"Syzygium",6.89,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-22,27
+"361",NA,"Syzygium",6.88,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-28,33
+"362",NA,"Syzygium",6.64,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-07,12
+"363",NA,"Syzygium",7.59,"Gut Passed, Unwashed","0","0","",2023-07-26,NA,100
+"364",NA,"Syzygium",7.45,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-19,24
+"365",NA,"Syzygium",6.78,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-06,42
+"366",NA,"Syzygium",6.94,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-06,42
+"367",NA,"Syzygium",6.01,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-06,42
+"368",NA,"Syzygium",5.81,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-09,45
+"369",NA,"Syzygium",6.94,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-09,45
+"370",NA,"Syzygium",7.1,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-06,42
+"371",NA,"Syzygium",7.5,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-09,45
+"372",NA,"Syzygium",7.12,"Gut Passed, Unwashed","0","0","",2023-07-26,NA,100
+"373",NA,"Syzygium",6.49,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-06,42
+"374",NA,"Syzygium",6.5,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-03,39
+"375",NA,"Syzygium",5.31,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-03,39
+"376",NA,"Syzygium",4.53,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-28,33
+"377",NA,"Syzygium",12.13,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-09-09,45
+"378",NA,"Syzygium",14.56,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-16,21
+"379",NA,"Syzygium",15.18,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-16,21
+"380",NA,"Grewia",10.2,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-07,12
+"381",NA,"Grewia",9.21,"Gut Passed, Unwashed","0","0","",2023-07-26,NA,100
+"382","Eulemur rubriventer","Syzygium",7.34,"Gut Passed, Unwashed","0","1","",2023-07-26,2023-08-16,21
+"383",NA,"Syzygium",11.67,"Gut Passed, Unwashed","0","1","",2023-07-27,2023-08-10,14
+"384",NA,"Syzygium",15.52,"Gut Passed, Unwashed","0","0","",2023-07-27,NA,100
+"385",NA,"Syzygium",9.61,"Gut Passed, Unwashed","0","0","",2023-07-27,NA,100
+"386",NA,"Syzygium",10.92,"Gut Passed, Unwashed","0","1","",2023-07-27,2023-08-17,21
+"387",NA,"Syzygium",8.73,"Gut Passed, Unwashed","0","1","",2023-07-27,2023-08-10,14
+"388",NA,"Syzygium",6.04,"Gut Passed, Unwashed","0","1","",2023-07-27,2023-08-10,14
+"389",NA,"Syzygium",5.94,"Gut Passed, Unwashed","0","1","",2023-07-27,2023-09-09,44
+"390",NA,"Syzygium",7.22,"Gut Passed, Unwashed","0","1","",2023-07-27,2023-08-04,8
+"391","Eulemur rubriventer","Syzygium",9.77,"Gut Passed, Unwashed","0","1","",2023-07-27,2023-10-12,77
+"392","Eulemur rubriventer","Syzygium",9.84,"Gut Passed, Unwashed","0","1","",2023-07-27,2023-08-16,20
+"393","Eulemur rubriventer","Syzygium",9.6,"Gut Passed, Unwashed","0","1","",2023-07-27,2023-09-03,38
+"394",NA,"Syzygium",8.34,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-16,19
+"395",NA,"Syzygium",8.36,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-16,19
+"396",NA,"Syzygium",8.01,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-09-09,43
+"397",NA,"Syzygium",8.02,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-28,31
+"398",NA,"Syzygium",7.47,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-09-15,49
+"399",NA,"Syzygium",6.83,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-09-09,43
+"400",NA,"Syzygium",7.26,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-09-15,49
+"401",NA,"Syzygium",7.59,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-28,31
+"402",NA,"Syzygium",7.47,"Gut Passed, Unwashed","0","0","",2023-07-28,NA,100
+"403",NA,"Syzygium",6.94,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-28,31
+"404",NA,"Syzygium",6.87,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-07,10
+"405",NA,"Syzygium",6.47,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-04,7
+"406",NA,"Syzygium",5.42,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-28,31
+"407",NA,"Syzygium",5.73,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-07,10
+"408",NA,"Syzygium",5.69,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-28,31
+"409",NA,"Syzygium",5.94,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-28,31
+"410",NA,"Syzygium",5.87,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-16,19
+"411",NA,"Syzygium",6.26,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-07,10
+"412",NA,"Syzygium",5.33,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-28,31
+"413",NA,"Syzygium",8,"Gut Passed, Unwashed","0","1","",2023-07-28,2023-08-07,10
+"414",NA,"Syzygium",9.57,"Gut Passed, Unwashed","0","1","",2023-07-29,2023-08-16,18
+"415",NA,"Syzygium",7.16,"Gut Passed, Unwashed","0","1","",2023-07-29,2023-08-16,18
+"416",NA,"Syzygium",14.36,"Gut Passed, Unwashed","0","1","",2023-07-29,2023-08-16,18
+"417",NA,"Syzygium",10.92,"Gut Passed, Unwashed","0","1","",2023-07-29,2023-08-19,21
+"418",NA,"Syzygium",9.73,"Gut Passed, Unwashed","0","1","",2023-07-29,2023-09-18,51
+"419",NA,"Syzygium",12.08,"Gut Passed, Unwashed","0","1","",2023-07-29,2023-08-16,18
+"420",NA,"Syzygium",10.96,"Gut Passed, Unwashed","0","1","",2023-07-29,2023-08-28,30
+"421",NA,"Syzygium",14.89,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-16,16
+"422",NA,"Syzygium",13.46,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-16,16
+"423",NA,"Syzygium",9.14,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-16,16
+"424",NA,"Syzygium",9.65,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-16,16
+"425",NA,"Syzygium",8.73,"Gut Passed, Unwashed","0","0","",2023-07-31,NA,100
+"426",NA,"Syzygium",9.78,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-16,16
+"427",NA,"Syzygium",14.27,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-10,10
+"428",NA,"Syzygium",8.99,"Gut Passed, Unwashed","0","0","",2023-07-31,2023-11-11,100
+"429",NA,"Syzygium",8.88,"Gut Passed, Unwashed","0","0","",2023-07-31,NA,100
+"430",NA,"Syzygium",10.03,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-10-12,73
+"431",NA,"Syzygium",7.14,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-07,7
+"432",NA,"Syzygium",13.25,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-10,10
+"433",NA,"Syzygium",14.43,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-16,16
+"434",NA,"Syzygium",14.35,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-28,28
+"435",NA,"Syzygium",10.49,"Gut Passed, Unwashed","0","0","",2023-07-31,2023-11-14,100
+"436",NA,"Syzygium",12.64,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-13,13
+"437",NA,"Syzygium",13.69,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-19,19
+"438",NA,"Syzygium",13.31,"Gut Passed, Unwashed","0","1","",2023-07-31,2023-08-19,19
+"439",NA,"Grewia",9.83,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-16,14
+"440",NA,"Syzygium",9.93,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-09-03,32
+"441",NA,"Syzygium",8.84,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-19,17
+"442",NA,"Syzygium",10.03,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-28,26
+"443",NA,"Syzygium",8.36,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-09-03,32
+"444",NA,"Syzygium",9.74,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-28,26
+"445",NA,"Syzygium",9.44,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-28,26
+"446",NA,"Syzygium",10.06,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-28,26
+"447",NA,"Syzygium",7.98,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-28,26
+"448",NA,"Syzygium",7.67,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-28,26
+"449",NA,"Syzygium",7.46,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-10,8
+"450",NA,"Syzygium",6.6,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-16,14
+"451",NA,"Syzygium",6.8,"Gut Passed, Unwashed","0","0","",2023-08-02,NA,100
+"452",NA,"Syzygium",6.57,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-16,14
+"453",NA,"Syzygium",6.08,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-10,8
+"454",NA,"Syzygium",5.99,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-07,5
+"455",NA,"Syzygium",6.25,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-10,8
+"456",NA,"Syzygium",5.52,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-16,14
+"457",NA,"Syzygium",5.24,"Gut Passed, Unwashed","0","0","",2023-08-02,NA,100
+"458",NA,"Syzygium",4.94,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-07,5
+"459",NA,"Syzygium",4.25,"Gut Passed, Unwashed","0","1","",2023-08-02,2023-08-16,14
+"460",NA,"Syzygium",7.93,"Gut Passed, Unwashed","0","1","",2023-08-04,2023-09-09,36
+"461",NA,"Syzygium",6.75,"Gut Passed, Unwashed","0","1","",2023-08-04,2023-08-28,24
+"462",NA,"Syzygium",8.56,"Gut Passed, Unwashed","0","1","",2023-08-04,2023-09-30,57
+"463",NA,"Syzygium",18.47,"Gut Passed, Unwashed","0","0","",2023-08-04,NA,100
+"464",NA,"Syzygium",16.67,"Gut Passed, Unwashed","0","1","",2023-08-04,2023-08-25,21
+"465",NA,"Syzygium",17.9,"Gut Passed, Unwashed","0","0","",2023-08-04,NA,100
+"466",NA,"Cryptocaria",19.16,"Gut Passed, Unwashed","0","1","",2023-08-04,2023-08-28,24
+"467",NA,"Cryptocaria",17.11,"Gut Passed, Unwashed","0","1","",2023-08-04,2023-08-25,21
+"468",NA,"Cryptocaria",17.44,"Gut Passed, Unwashed","0","1","",2023-08-04,2023-08-28,24
+"469",NA,"Syzygium",6.6,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-10,5
+"470",NA,"Syzygium",5.74,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-16,11
+"471",NA,"Syzygium",6.03,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-19,14
+"472",NA,"Syzygium",6.29,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-16,11
+"473",NA,"Syzygium",7.15,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-16,11
+"474",NA,"Syzygium",7.2,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-16,11
+"475",NA,"Syzygium",6.74,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-16,11
+"476",NA,"Syzygium",6.12,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-16,11
+"477",NA,"Syzygium",5.05,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-16,11
+"478",NA,"Syzygium",7.22,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-10,5
+"479",NA,"Syzygium",8,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-09-03,29
+"480",NA,"Syzygium",11.88,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-22,17
+"481",NA,"Syzygium",9.4,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-16,11
+"482",NA,"Syzygium",6.46,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-22,17
+"483",NA,"Syzygium",5.6,"Gut Passed, Unwashed","0","1","",2023-08-05,2023-08-28,23
+"484",NA,"Syzygium",12.29,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-09-12,35
+"485",NA,"Syzygium",13.35,"Gut Passed, Unwashed","0","0","",2023-08-08,NA,100
+"486",NA,"Syzygium",13.16,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-08-19,11
+"487",NA,"Syzygium",11.41,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-08-19,11
+"488",NA,"Syzygium",9.11,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-09-18,41
+"489",NA,"Syzygium",8.98,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-09-27,50
+"490",NA,"Syzygium",8.94,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-10-03,56
+"491",NA,"Syzygium",9.31,"Gut Passed, Unwashed","0","0","",2023-08-08,NA,100
+"492",NA,"Syzygium",8.33,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-08-31,23
+"493",NA,"Syzygium",8.19,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-11-02,86
+"494",NA,"Syzygium",8,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-09-27,50
+"495",NA,"Syzygium",14.06,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-08-22,14
+"496",NA,"Cryptocaria",17.01,"Gut Passed, Unwashed","0","1","",2023-08-08,2023-08-28,20
+"497",NA,"Syzygium",3.97,"Gut Passed, Unwashed","0","1","",2023-08-09,2023-08-25,16
+"498",NA,"Cryptocaria",18.77,"Gut Passed, Unwashed","0","1","",2023-08-09,2023-08-28,19
+"499",NA,"Cryptocaria",19.57,"Gut Passed, Unwashed","0","0","",2023-08-09,NA,100
+"500",NA,"Syzygium",14.5,"Gut Passed, Unwashed","0","1","",2023-08-09,2023-09-24,46
+"501","Control","Cryptocaria",19.5,"Control","1","0","",2023-08-09,NA,100
+"502","Control","Cryptocaria",17.68,"Control","1","0","",2023-08-09,NA,100
+"503","Control","Cryptocaria",18.96,"Control","1","0","",2023-08-09,NA,100
+"504","Control","Cryptocaria",17.93,"Control","1","0","",2023-08-09,NA,100
+"505","Control","Cryptocaria",18.74,"Control","1","1","",2023-08-09,2023-09-24,46
+"506",NA,"Syzygium",13.46,"Gut Passed, Unwashed","0","1","",2023-08-11,2023-08-28,17
+"507",NA,"Syzygium",14.55,"Gut Passed, Unwashed","0","1","",2023-08-11,2023-08-28,17
+"508",NA,"Syzygium",4.56,"Gut Passed, Unwashed","0","1","",2023-08-11,2023-08-22,11
+"509",NA,"Syzygium",4.8,"Gut Passed, Unwashed","0","1","",2023-08-11,2023-08-19,8
+"510",NA,"Syzygium",5.85,"Gut Passed, Unwashed","0","1","",2023-08-11,2023-08-19,8
+"511",NA,"Grewia",8.47,"Gut Passed, Unwashed","0","0","",2023-08-11,NA,100
+"512",NA,"Grewia",9.71,"Gut Passed, Unwashed","0","1","",2023-08-11,2023-08-28,17
+"513",NA,"Grewia",9.93,"Gut Passed, Unwashed","0","1","",2023-08-11,2023-08-16,5
+"514",NA,"Syzygium",7.49,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-21,13
+"515",NA,"Syzygium",7.7,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-18,10
+"516",NA,"Syzygium",6.2,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-18,10
+"517",NA,"Syzygium",6.27,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-18,10
+"518",NA,"Syzygium",6.27,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-18,10
+"519",NA,"Syzygium",6.66,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-18,10
+"520",NA,"Syzygium",7,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-30,22
+"521",NA,"Syzygium",5.67,"Gut Passed, Unwashed","0","1","",2023-09-08,2023-09-18,10
+"522",NA,"Syzygium",4.71,"Gut Passed, Unwashed","0","1","",2023-09-08,2023-09-18,10
+"523",NA,"Syzygium",5.31,"Gut Passed, Unwashed","0","1","",2023-09-08,2023-09-18,10
+"524",NA,"Syzygium",3.93,"Gut Passed, Unwashed","0","1","",2023-09-08,2023-09-18,10
+"525",NA,"Syzygium",6.18,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-15,7
+"526",NA,"Syzygium",5.72,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-21,13
+"527",NA,"Syzygium",5.33,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-24,16
+"528",NA,"Syzygium",6.64,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-24,16
+"529",NA,"Syzygium",5.05,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-12,4
+"530",NA,"Syzygium",4.29,"Gut Passed, Washed","0","1","",2023-09-08,2023-09-24,16
+"531",NA,"Syzygium",18.79,"Gut Passed, Unwashed","0","1","",2023-09-09,2023-10-27,48
+"532",NA,"Syzygium",5.27,"Gut Passed, Unwashed","0","1","",2023-09-09,2023-09-18,9
+"533",NA,"Syzygium",5.1,"Gut Passed, Unwashed","0","1","",2023-09-09,2023-09-18,9
+"534",NA,"Syzygium",5.33,"Gut Passed, Unwashed","0","1","",2023-09-09,2023-09-30,21
+"535",NA,"Syzygium",5.69,"Gut Passed, Unwashed","0","1","",2023-09-09,2023-10-09,30
+"536",NA,"Syzygium",5.55,"Gut Passed, Washed","0","0","",2023-09-09,NA,100
+"537",NA,"Syzygium",5.54,"Gut Passed, Washed","0","0","",2023-09-09,NA,100
+"538",NA,"Syzygium",7.41,"Gut Passed, Washed","0","0","",2023-09-09,NA,100
+"539",NA,"Syzygium",8.23,"Gut Passed, Washed","0","0","",2023-09-09,NA,100
+"540",NA,"Cryptocaria",13.19,"Gut Passed, Washed","0","0","",2023-09-09,NA,100
+"541",NA,"Syzygium",17.37,"Gut Passed, Unwashed","0","1","",2023-09-11,2023-09-24,13
+"542",NA,"Syzygium",17.1,"Gut Passed, Unwashed","0","1","",2023-09-11,2023-09-21,10
+"543",NA,"Cryptocaria",18.44,"Gut Passed, Washed","0","1","",2023-09-13,2023-11-17,65
+"544",NA,"Cryptocaria",18.22,"Gut Passed, Washed","0","1","",2023-09-13,2023-10-06,23
+"545",NA,"Syzygium",7,"Gut Passed, Washed","0","1","",2023-09-14,2023-09-21,7
+"546",NA,"Syzygium",8.09,"Gut Passed, Unwashed","0","0","",2023-09-14,NA,100
+"547",NA,"Cryptocaria",11.93,"Gut Passed, Washed","0","1","",2023-09-14,2023-10-06,22
+"548",NA,"Cryptocaria",12.15,"Gut Passed, Washed","0","0","",2023-09-14,NA,100
+"549","Control","Syzygium",6.38,"Control","1","1","",2023-09-14,2023-09-24,10
+"550","Control","Syzygium",6.24,"Control","1","1","",2023-09-14,2023-09-21,7
+"551","Control","Syzygium",5.9,"Control","1","1","",2023-09-14,2023-09-24,10
+"552","Control","Syzygium",5.88,"Control","1","1","",2023-09-14,2023-10-06,22
+"553","Control","Syzygium",5.84,"Control","1","0","",2023-09-14,NA,100
+"554","Control","Syzygium",7.16,"Control, Washed","1","1","",2023-09-14,2023-09-24,10
+"555","Control","Syzygium",8.5,"Control, Washed","1","1","",2023-09-14,2023-09-24,10
+"556","Control","Syzygium",7.61,"Control, Washed","1","1","",2023-09-14,2023-09-24,10
+"557","Control","Syzygium",8.49,"Control, Washed","1","1","",2023-09-14,2023-09-24,10
+"558","Control","Syzygium",7.39,"Control, Washed","1","1","",2023-09-14,2023-10-15,31
+"559","Control","Syzygium",7.83,"Control, Washed","1","1","",2023-09-14,2023-09-24,10
+"560","Control","Syzygium",7.58,"Control, Washed","1","1","",2023-09-14,2023-11-02,49
+"561",NA,"Syzygium",13.38,"Gut Passed, Unwashed","0","1","",2023-09-15,2023-10-12,27
+"562",NA,"Syzygium",14.36,"Gut Passed, Unwashed","0","1","",2023-09-15,2023-10-12,27
+"563","Eulemur rubriventer","Syzygium",5.72,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"564","Eulemur rubriventer","Syzygium",5.77,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"565","Eulemur rubriventer","Syzygium",5.19,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"566","Eulemur rubriventer","Syzygium",4.92,"Gut Passed, Washed","0","0","",2023-09-15,NA,100
+"567","Eulemur rubriventer","Syzygium",3.67,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"568","Eulemur rubriventer","Syzygium",4.42,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-30,15
+"569","Eulemur rubriventer","Syzygium",4.05,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-30,15
+"570","Eulemur rubriventer","Syzygium",4.13,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"571","Eulemur rubriventer","Syzygium",4.1,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-30,15
+"572","Eulemur rubriventer","Syzygium",5.77,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"573","Eulemur rubriventer","Syzygium",4.53,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"574","Eulemur rubriventer","Syzygium",4.44,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"575","Eulemur rubriventer","Syzygium",4.99,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"576","Eulemur rubriventer","Syzygium",4.52,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-30,15
+"577","Eulemur rubriventer","Syzygium",6.07,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"578","Eulemur rubriventer","Syzygium",5.73,"Gut Passed, Washed","0","1","",2023-09-15,2023-09-24,9
+"579","Control","Cryptocaria",13.51,"Control","1","0","",2023-09-15,NA,100
+"580","Control","Cryptocaria",12.63,"Control","1","0","",2023-09-15,NA,100
+"581",NA,"Cryptocaria",7.81,"Gut Passed, Washed","0","1","",2023-09-18,2023-09-27,9
+"582",NA,"Cryptocaria",14.32,"Gut Passed, Washed","0","0","",2023-09-18,2024-01-28,100
+"583",NA,"Cryptocaria",15.05,"Gut Passed, Washed","0","0","",2023-09-18,NA,100
+"584",NA,"Cryptocaria",14.8,"Gut Passed, Washed","0","1","",2023-09-18,2023-10-06,18
+"585",NA,"Cryptocaria",14.48,"Gut Passed, Washed","0","1","",2023-09-18,2023-10-06,18
+"586",NA,"Cryptocaria",13.69,"Gut Passed, Washed","0","1","",2023-09-18,2023-10-06,18
+"587",NA,"Cryptocaria",15.1,"Gut Passed, Unwashed","0","1","",2023-09-18,2023-10-18,30
+"588",NA,"Cryptocaria",14.87,"Gut Passed, Unwashed","0","0","",2023-09-18,NA,100
+"589",NA,"Cryptocaria",17.73,"Gut Passed, Unwashed","0","0","",2023-09-19,NA,100
+"590","Eulemur rubriventer","Syzygium",5.67,"Gut Passed, Unwashed","0","1","M",2023-09-21,2023-10-03,12
+"591","Eulemur rubriventer","Syzygium",4.64,"Gut Passed, Unwashed","0","0","M",2023-09-21,NA,100
+"592","Eulemur rubriventer","Syzygium",5.29,"Gut Passed, Unwashed","0","1","M",2023-09-21,2023-10-03,12
+"593","Eulemur rubriventer","Syzygium",5.07,"Gut Passed, Unwashed","0","1","M",2023-09-21,2023-10-03,12
+"594","Eulemur rubriventer","Syzygium",4.39,"Gut Passed, Unwashed","0","0","M",2023-09-21,NA,100
+"595",NA,"Cryptocaria",12.99,"Gut Passed, Washed","0","1","",2023-09-22,2023-10-09,17
+"596",NA,"Cryptocaria",12.34,"Gut Passed, Washed","0","1","",2023-09-22,2023-10-09,17
+"597",NA,"Cryptocaria",12.06,"Gut Passed, Washed","0","0","",2023-09-22,NA,100
+"598",NA,"Cryptocaria",15.07,"Gut Passed, Washed","0","0","",2023-09-22,NA,100
+"599",NA,"Cryptocaria",16.98,"Gut Passed, Unwashed","0","0","",2023-09-23,NA,100
+"600","Eulemur rubriventer","Cryptocaria",8.84,"Gut Passed, Washed","0","0","",2023-09-25,NA,100
+"601","Eulemur rubriventer","Cryptocaria",9.46,"Gut Passed, Washed","0","1","",2023-09-25,2023-11-02,38
+"602",NA,"Cryptocaria",13.89,"Gut Passed, Washed","0","1","",2023-09-29,2023-10-18,19
+"603",NA,"Cryptocaria",12.63,"Gut Passed, Washed","0","1","",2023-09-29,2023-10-24,25
+"604",NA,"Cryptocaria",12.84,"Gut Passed, Washed","0","1","",2023-09-29,2023-10-18,19
+"605",NA,"Cryptocaria",12.18,"Gut Passed, Washed","0","1","",2023-09-29,2023-10-18,19
+"606",NA,"Cryptocaria",11.9,"Gut Passed, Washed","0","1","",2023-09-29,2023-10-24,25
+"607",NA,"Cryptocaria",16.17,"Gut Passed, Unwashed","0","0","",2023-09-29,NA,100
+"608",NA,"Cryptocaria",13.79,"Gut Passed, Unwashed","0","0","",2023-10-02,NA,100
+"609",NA,"Cryptocaria",9.7,"Gut Passed, Washed","0","1","",2023-10-03,2023-10-15,12
+"610",NA,"Cryptocaria",15.45,"Gut Passed, Unwashed","0","1","",2023-10-04,2023-10-24,20
+"611",NA,"Cryptocaria",16.15,"Gut Passed, Unwashed","0","1","",2023-10-04,2023-11-02,29
+"612",NA,"Cryptocaria",16.16,"Gut Passed, Unwashed","0","1","",2023-10-05,2023-11-17,43
+"613",NA,"Cryptocaria",15.29,"Gut Passed, Unwashed","0","0","",2023-10-05,NA,100
+"614",NA,"Cryptocaria",16.44,"Gut Passed, Washed","0","1","",2023-10-05,2023-10-27,22
+"615",NA,"Cryptocaria",16.39,"Gut Passed, Unwashed","0","0","",2023-10-06,NA,100
+"616",NA,"Cryptocaria",13.3,"Gut Passed, Unwashed","0","0","",2023-10-06,NA,100
+"617",NA,"Cryptocaria",15.62,"Gut Passed, Unwashed","0","0","",2023-10-07,NA,100
+"618","Control","Cryptocaria",14.23,"Control, Washed","1","1","",2023-10-07,2023-10-24,17
+"619","Control","Cryptocaria",15.25,"Control, Washed","1","0","",2023-10-07,NA,100
+"620","Control","Cryptocaria",13.8,"Control, Washed","1","0","",2023-10-07,NA,100
+"621","Control","Cryptocaria",14.54,"Control, Washed","1","0","",2023-10-07,NA,100
+"622","Control","Cryptocaria",11.76,"Control, Washed","1","0","",2023-10-07,NA,100
+"623","Control","Cryptocaria",13.4,"Control, Washed","1","0","",2023-10-07,NA,100
+"624","Control","Cryptocaria",14.27,"Control, Washed","1","0","",2023-10-07,NA,100
+"625","Control","Cryptocaria",12.67,"Control, Washed","1","0","",2023-10-07,NA,100
+"626","Control","Cryptocaria",13.02,"Control, Washed","1","0","",2023-10-07,NA,100
+"627","Control","Cryptocaria",14.53,"Control","1","1","",2023-10-07,2023-10-18,11
+"628","Control","Cryptocaria",16.81,"Control","1","0","",2023-10-07,NA,100
+"629","Control","Cryptocaria",13.78,"Control","1","0","",2023-10-07,NA,100
+"630","Control","Cryptocaria",15.07,"Control","1","0","",2023-10-07,NA,100
+"631","Control","Cryptocaria",14.45,"Control","1","0","",2023-10-07,NA,100
+"632","Control","Cryptocaria",12.7,"Control","1","1","",2023-10-07,2023-10-24,17
+"633","Control","Cryptocaria",12.91,"Control","1","0","",2023-10-07,NA,100
+"634",NA,"Cryptocaria",16.99,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"635",NA,"Cryptocaria",18.9,"Gut Passed, Washed","0","0","",2023-10-10,NA,100
+"636",NA,"Cryptocaria",18.69,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"637",NA,"Cryptocaria",17.61,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"638",NA,"Cryptocaria",17.93,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"639",NA,"Cryptocaria",17.28,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"640",NA,"Cryptocaria",18.21,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"641",NA,"Cryptocaria",17.35,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"642",NA,"Cryptocaria",19.12,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"643",NA,"Cryptocaria",18.61,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"644",NA,"Cryptocaria",17.88,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"645",NA,"Cryptocaria",18.07,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"646",NA,"Cryptocaria",16.96,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"647",NA,"Cryptocaria",17.05,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"648",NA,"Cryptocaria",16.81,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"649",NA,"Cryptocaria",17.35,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"650",NA,"Cryptocaria",18.4,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"651",NA,"Cryptocaria",20.32,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"652",NA,"Cryptocaria",15.66,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"653",NA,"Cryptocaria",18.62,"Gut Passed, Unwashed","0","1","",2023-10-10,2023-11-05,26
+"654",NA,"Cryptocaria",16.88,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"655",NA,"Cryptocaria",18.68,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"656",NA,"Cryptocaria",15.62,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"657",NA,"Cryptocaria",18.42,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"658",NA,"Cryptocaria",16.85,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"659",NA,"Cryptocaria",16.58,"Gut Passed, Unwashed","0","0","",2023-10-10,NA,100
+"660","Control","Cryptocaria",18.03,"Control","1","0","",2023-10-10,NA,100
+"661","Control","Cryptocaria",18.54,"Control","1","0","",2023-10-10,NA,100
+"662","Control","Cryptocaria",19.72,"Control","1","0","",2023-10-10,NA,100
+"663","Control","Cryptocaria",19.44,"Control","1","0","",2023-10-10,NA,100
+"664","Control","Cryptocaria",18.39,"Control","1","0","",2023-10-10,NA,100
+"665","Control","Cryptocaria",17.72,"Control","1","0","",2023-10-10,NA,100
+"666","Control","Cryptocaria",17.39,"Control","1","0","",2023-10-10,NA,100
+"667","Control","Cryptocaria",18.52,"Control","1","0","",2023-10-10,NA,100
+"668","Control","Cryptocaria",17.54,"Control","1","0","",2023-10-10,NA,100
+"669",NA,"Cryptocaria",17.22,"Gut Passed, Washed","0","0","",2023-10-13,NA,100
+"670",NA,"Cryptocaria",18.57,"Gut Passed, Washed","0","0","",2023-10-13,NA,100
+"671",NA,"Cryptocaria",17.86,"Gut Passed, Washed","0","0","",2023-10-13,NA,100
+"672",NA,"Cryptocaria",16.75,"Gut Passed, Washed","0","0","",2023-10-13,NA,100
+"673",NA,"Cryptocaria",14.75,"Gut Passed, Washed","0","0","",2023-10-13,NA,100
+"674",NA,"Cryptocaria",13.74,"Gut Passed, Washed","0","1","",2023-10-13,2023-11-11,29
+"675",NA,"Cryptocaria",13.61,"Gut Passed, Washed","0","0","",2023-10-13,NA,100
+"676",NA,"Cryptocaria",12.54,"Gut Passed, Washed","0","0","",2023-10-13,NA,100
+"677",NA,"Cryptocaria",14.38,"Gut Passed, Washed","0","1","",2023-10-13,2023-11-11,29
+"678",NA,"Cryptocaria",16.25,"Gut Passed, Unwashed","0","0","",2023-10-13,NA,100
+"679",NA,"Cryptocaria",17.17,"Gut Passed, Unwashed","0","0","",2023-10-13,NA,100
+"680","Eulemur rubriventer","Cryptocaria",15.58,"Gut Passed, Washed","0","1","F",2023-10-13,2023-11-02,20
+"681","Eulemur rubriventer","Cryptocaria",14.36,"Gut Passed, Washed","0","1","F",2023-10-13,2023-11-02,20
+"682","Eulemur rubriventer","Cryptocaria",17.81,"Gut Passed, Unwashed","0","1","F",2023-10-13,2023-11-08,26
+"683","Eulemur rubriventer","Cryptocaria",14.12,"Gut Passed, Unwashed","0","0","F",2023-10-13,NA,100
+"684","Eulemur rubriventer","Cryptocaria",13.18,"Gut Passed, Unwashed","0","0","F",2023-10-13,NA,100
+"685","Eulemur rubriventer","Cryptocaria",14.56,"Gut Passed, Unwashed","0","1","F",2023-10-13,2023-11-02,20
+"686","Eulemur rubriventer","Cryptocaria",14.09,"Gut Passed, Washed","0","1","",2023-10-13,2023-11-02,20
+"687","Eulemur rubriventer","Cryptocaria",14.93,"Gut Passed, Washed","0","0","",2023-10-13,NA,100
+"688",NA,"Cryptocaria",15.48,"Gut Passed, Unwashed","0","0","",2023-10-14,NA,100
+"689",NA,"Cryptocaria",14.2,"Gut Passed, Unwashed","0","0","",2023-10-14,NA,100
+"690",NA,"Cryptocaria",13.34,"Gut Passed, Unwashed","0","0","",2023-10-14,NA,100
+"691",NA,"Cryptocaria",13.69,"Gut Passed, Washed","0","1","",2023-10-14,2023-11-17,34
+"692",NA,"Cryptocaria",14.63,"Gut Passed, Unwashed","0","1","",2023-10-14,2023-10-18,4
+"693",NA,"Pandanus",10.01,"Gut Passed, Washed","0","0","",2023-10-14,NA,100
+"694",NA,"Pandanus",10.4,"Gut Passed, Washed","0","0","",2023-10-14,NA,100
+"695",NA,"Pandanus",11.53,"Gut Passed, Washed","0","0","",2023-10-14,NA,100
+"696",NA,"Pandanus",11.25,"Gut Passed, Washed","0","0","",2023-10-14,NA,100
+"697",NA,"Cryptocaria",13.1,"Gut Passed, Washed","0","1","",2023-10-14,2023-11-02,19
+"698",NA,"Cryptocaria",12,"Gut Passed, Washed","0","0","",2023-10-14,NA,100
+"699",NA,"Cryptocaria",13.53,"Gut Passed, Washed","0","1","",2023-10-14,2023-11-17,34
+"700",NA,"Cryptocaria",9.21,"Gut Passed, Washed","0","0","",2023-10-14,NA,100
+"701",NA,"Cryptocaria",13.69,"Gut Passed, Washed","0","0","",2023-10-14,NA,100
+"702",NA,"Cryptocaria",13.52,"Gut Passed, Washed","0","0","",2023-10-14,NA,100
+"703",NA,"Cryptocaria",13.58,"Gut Passed, Washed","0","1","",2023-10-14,2023-11-17,34
+"704",NA,"Cryptocaria",14.26,"Gut Passed, Washed","0","1","",2023-10-14,2023-11-17,34
+"705",NA,"Cryptocaria",15.04,"Gut Passed, Washed","0","1","",2023-10-14,2023-11-14,31
+"706",NA,"Cryptocaria",14.5,"Gut Passed, Washed","0","0","",2023-10-14,NA,100
+"707",NA,"Cryptocaria",14.12,"Gut Passed, Washed","0","1","",2023-10-14,2023-11-17,34
+"708",NA,"Cryptocaria",33.42,"Gut Passed, Washed","0","0","",2023-10-16,NA,100
+"709",NA,"Cryptocaria",17.14,"Gut Passed, Unwashed","0","0","",2023-10-16,NA,100
+"710",NA,"Cryptocaria",13.36,"Gut Passed, Unwashed","0","0","",2023-10-16,NA,100
+"711",NA,"Cryptocaria",19.89,"Gut Passed, Unwashed","0","1","",2023-10-16,2023-12-02,47
+"712",NA,"Cryptocaria",12.88,"Gut Passed, Unwashed","0","0","",2023-10-16,NA,100
+"713",NA,"Cryptocaria",15.01,"Gut Passed, Washed","0","0","",2023-10-16,NA,100
+"714",NA,"Pandanus",14.68,"Gut Passed, Unwashed","0","0","",2023-10-17,NA,100
+"715","Control","Pandanus",11.2,"Control, Washed","1","0","",2023-10-19,NA,100
+"716","Control","Pandanus",12.3,"Control, Washed","1","0","",2023-10-19,NA,100
+"717","Control","Pandanus",10.8,"Control, Washed","1","0","",2023-10-19,NA,100
+"718","Control","Pandanus",8.14,"Control, Washed","1","0","",2023-10-19,NA,100
+"719","Control","Pandanus",11.52,"Control, Washed","1","0","",2023-10-19,NA,100
+"720","Control","Pandanus",11.64,"Control, Washed","1","0","",2023-10-19,NA,100
+"721","Control","Pandanus",11.36,"Control, Washed","1","0","",2023-10-19,NA,100
+"722","Control","Pandanus",11.55,"Control, Washed","1","0","",2023-10-19,NA,100
+"723","Control","Pandanus",10.74,"Control, Washed","1","0","",2023-10-19,NA,100
+"724","Control","Pandanus",9.37,"Control, Washed","1","0","",2023-10-19,NA,100
+"725","Control","Pandanus",14.24,"Control","1","0","",2023-10-19,NA,100
+"726","Control","Pandanus",17.43,"Control","1","0","",2023-10-19,NA,100
+"727","Control","Pandanus",16.3,"Control","1","0","",2023-10-19,NA,100
+"728","Control","Pandanus",14.72,"Control","1","0","",2023-10-19,NA,100
+"729","Control","Pandanus",13.79,"Control","1","0","",2023-10-19,NA,100
+"730","Control","Pandanus",14.35,"Control","1","0","",2023-10-19,NA,100
+"731","Control","Pandanus",14.24,"Control","1","0","",2023-10-19,NA,100
+"732","Control","Pandanus",13.26,"Control","1","0","",2023-10-19,NA,100
+"733","Control","Pandanus",14.99,"Control","1","0","",2023-10-19,NA,100
+"734","Control","Pandanus",11.17,"Control","1","0","",2023-10-19,NA,100
+"735",NA,"Cryptocaria",14.02,"Gut Passed, Unwashed","0","0","",2023-10-21,NA,100
+"736",NA,"Cryptocaria",14.68,"Gut Passed, Unwashed","0","1","",2023-10-21,2023-11-05,15
+"737","Eulemur rubriventer","Grewia",4.52,"Gut Passed, Washed","0","0","M",2023-10-21,NA,100
+"738","Eulemur rubriventer","Grewia",7.62,"Gut Passed, Washed","0","0","M",2023-10-21,NA,100
+"739","Eulemur rubriventer","Grewia",8.35,"Gut Passed, Washed","0","0","M",2023-10-21,NA,100
+"740","Eulemur rubriventer","Grewia",5.7,"Gut Passed, Washed","0","0","M",2023-10-21,NA,100
+"741","Eulemur rubriventer","Grewia",7.21,"Gut Passed, Washed","0","0","M",2023-10-21,NA,100
+"742",NA,"Cryptocaria",24.05,"Gut Passed, Unwashed","0","1","",2023-10-21,2023-11-05,15
+"743","Eulemur rubriventer","Cryptocaria",17.18,"Gut Passed, Washed","0","0","",2023-10-21,NA,100
+"744","Eulemur rubriventer","Cryptocaria",15.58,"Gut Passed, Washed","0","0","",2023-10-21,NA,100
+"745",NA,"Cryptocaria",19.06,"Gut Passed, Unwashed","0","0","",2023-10-23,NA,100
+"746",NA,"Cryptocaria",15.45,"Gut Passed, Unwashed","0","0","",2023-10-23,NA,100
+"747",NA,"Cryptocaria",17.29,"Gut Passed, Unwashed","0","0","",2023-10-23,NA,100
+"748",NA,"Cryptocaria",15.66,"Gut Passed, Washed","0","0","",2023-10-23,NA,100
+"749","Control","Cryptocaria",33.89,"Control","1","0","",2023-10-23,NA,100
+"750",NA,"Cryptocaria",15.35,"Gut Passed, Unwashed","0","0","",2023-10-24,NA,100
+"751",NA,"Cryptocaria",14.46,"Gut Passed, Unwashed","0","0","",2023-10-24,NA,100
+"752",NA,"Cryptocaria",14.48,"Gut Passed, Unwashed","0","1","",2023-10-25,2023-11-17,23
+"753",NA,"Cryptocaria",19.64,"Gut Passed, Unwashed","0","1","",2023-10-25,2023-11-11,17
+"754",NA,"Cryptocaria",16.17,"Gut Passed, Washed","0","1","",2023-10-25,2023-11-11,17
+"755",NA,"Cryptocaria",17.2,"Gut Passed, Unwashed","0","1","",2023-10-26,2023-11-20,25
+"756",NA,"Cryptocaria",17.13,"Gut Passed, Washed","0","1","",2023-10-26,2023-11-20,25
+"757",NA,"Cryptocaria",16.48,"Gut Passed, Washed","0","1","",2023-10-26,2023-12-02,37
+"758",NA,"Cryptocaria",18.5,"Gut Passed, Washed","0","0","",2023-10-26,NA,100
+"759",NA,"Cryptocaria",18.17,"Gut Passed, Washed","0","0","",2023-10-26,NA,100
+"760",NA,"Cryptocaria",15.18,"Gut Passed, Washed","0","0","",2023-10-26,NA,100
+"761",NA,"Cryptocaria",14.15,"Gut Passed, Unwashed","0","1","",2023-10-26,2023-11-05,10
+"762",NA,"Cryptocaria",17.05,"Gut Passed, Washed","0","1","",2023-10-27,2023-11-17,21
+"763",NA,"Cryptocaria",14.2,"Gut Passed, Washed","0","1","",2023-10-27,2023-12-02,36
+"764",NA,"Cryptocaria",19.87,"Gut Passed, Unwashed","0","0","",2023-10-31,NA,100
+"765",NA,"Cryptocaria",18.24,"Gut Passed, Unwashed","0","0","",2023-10-31,NA,100
+"766",NA,"Cryptocaria",18.77,"Gut Passed, Unwashed","0","1","",2023-10-31,2023-11-29,29
+"767",NA,"Cryptocaria",16.09,"Gut Passed, Washed","0","1","",2023-10-31,2023-12-02,32
+"768",NA,"Cryptocaria",17.61,"Gut Passed, Washed","0","0","",2023-10-31,NA,100
+"769",NA,"Cryptocaria",18.25,"Gut Passed, Washed","0","0","",2023-10-31,NA,100
+"770",NA,"Cryptocaria",19.58,"Gut Passed, Unwashed","0","1","",2023-10-31,2023-11-14,14
+"771",NA,"Cryptocaria",19.74,"Gut Passed, Unwashed","0","1","",2023-10-31,2023-11-14,14
+"772",NA,"Cryptocaria",16.62,"Gut Passed, Washed","0","0","",2023-10-31,NA,100
+"773",NA,"Cryptocaria",15.61,"Gut Passed, Washed","0","0","",2023-11-01,NA,100
+"774",NA,"Cryptocaria",17.8,"Gut Passed, Washed","0","0","",2023-11-01,NA,100
+"775",NA,"Cryptocaria",18.2,"Gut Passed, Washed","0","0","",2023-11-01,NA,100
+"776",NA,"Cryptocaria",12.8,"Gut Passed, Washed","0","0","",2023-11-01,NA,100
+"777",NA,"Cryptocaria",17.74,"Gut Passed, Unwashed","0","0","",2023-11-01,NA,100
+"778",NA,"Cryptocaria",16.23,"Gut Passed, Unwashed","0","0","",2023-11-01,NA,100
+"779",NA,"Cryptocaria",16.15,"Gut Passed, Unwashed","0","0","",2023-11-01,NA,100
+"780",NA,"Cryptocaria",16.26,"Gut Passed, Washed","0","0","",2023-11-01,NA,100
+"781",NA,"Cryptocaria",17.85,"Gut Passed, Washed","0","1","",2023-11-01,2023-12-02,31
+"782",NA,"Cryptocaria",17.11,"Gut Passed, Washed","0","0","",2023-11-01,NA,100
+"783",NA,"Cryptocaria",14.68,"Gut Passed, Washed","0","0","",2023-11-01,NA,100
+"784",NA,"Cryptocaria",15.98,"Gut Passed, Unwashed","0","0","",2023-11-01,NA,100
+"785",NA,"Cryptocaria",14.07,"Gut Passed, Washed","0","0","",2023-11-02,NA,100
+"786",NA,"Cryptocaria",16.62,"Gut Passed, Washed","0","0","",2023-11-02,NA,100
+"787",NA,"Cryptocaria",12.27,"Gut Passed, Washed","0","1","",2023-11-02,2023-11-26,24
+"788","Eulemur rubriventer","Cryptocaria",18.5,"Gut Passed, Unwashed","0","0","M",2023-11-02,NA,100
+"789","Eulemur rubriventer","Cryptocaria",18.07,"Gut Passed, Unwashed","0","0","M",2023-11-02,NA,100
+"790",NA,"Cryptocaria",15.12,"Gut Passed, Washed","0","0","",2023-11-02,NA,100
+"791",NA,"Cryptocaria",14.08,"Gut Passed, Washed","0","0","",2023-11-02,NA,100
+"792",NA,"Cryptocaria",12.73,"Gut Passed, Washed","0","0","",2023-11-02,NA,100
+"793","Eulemur albifrons","Cryptocaria",16.38,"Gut Passed, Unwashed","0","0","F",2023-11-02,NA,100
+"794","Eulemur albifrons","Cryptocaria",15.12,"Gut Passed, Unwashed","0","0","F",2023-11-02,NA,100
+"795","Control","Pandanus",20.09,"Control","1","0","",2023-11-02,NA,100
+"796","Control","Pandanus",15.3,"Control","1","0","",2023-11-02,NA,100
+"797","Control","Pandanus",15.25,"Control","1","0","",2023-11-02,NA,100
+"798","Control","Pandanus",11.94,"Control","1","0","",2023-11-02,NA,100
+"799","Control","Pandanus",13.19,"Control","1","0","",2023-11-02,NA,100
+"800","Control","Pandanus",11.2,"Control","1","0","",2023-11-02,NA,100
+"801","Control","Pandanus",11.01,"Control","1","0","",2023-11-02,NA,100
+"802","Control","Pandanus",12.31,"Control","1","0","",2023-11-02,NA,100
+"803","Control","Pandanus",10.89,"Control","1","0","",2023-11-02,NA,100
+"804","Control","Pandanus",12.19,"Control","1","0","",2023-11-02,NA,100
+"805",NA,"Cryptocaria",16.68,"Gut Passed, Unwashed","0","1","",2023-11-03,2023-11-26,23
+"806","Eulemur rubriventer","Cryptocaria",14.87,"Gut Passed, Washed","0","1","",2023-11-03,2023-11-11,8
+"807",NA,"Cryptocaria",15.99,"Gut Passed, Unwashed","0","1","",2023-11-04,2023-12-05,31
+"808","Eulemur rubriventer","Pandanus",17.61,"Gut Passed, Unwashed","0","0","M",2023-11-04,NA,100
+"809",NA,"Cryptocaria",18.94,"Gut Passed, Washed","0","1","",2023-11-04,2023-12-02,28
+"810",NA,"Cryptocaria",15.35,"Gut Passed, Washed","0","0","",2023-11-04,NA,100
+"811",NA,"Cryptocaria",17.64,"Gut Passed, Washed","0","1","",2023-11-04,2023-12-02,28
+"812",NA,"Pandanus",9.19,"Gut Passed, Washed","0","0","",2023-11-07,NA,100
+"813",NA,"Cryptocaria",45.02,"Gut Passed, Washed","0","0","",2023-11-08,NA,100
+"814",NA,"Cryptocaria",23.31,"Gut Passed, Washed","0","0","",2023-11-08,NA,100
+"815",NA,"Cryptocaria",20.37,"Gut Passed, Washed","0","0","",2023-11-08,NA,100
+"816",NA,"Cryptocaria",20.64,"Gut Passed, Washed","0","0","",2023-11-08,NA,100
+"817",NA,"Cryptocaria",18.71,"Gut Passed, Washed","0","0","",2023-11-08,NA,100
+"818",NA,"Cryptocaria",17.28,"Gut Passed, Washed","0","0","",2023-11-08,NA,100
+"819",NA,"Cryptocaria",18.52,"Gut Passed, Washed","0","0","",2023-11-08,NA,100
+"820",NA,"Cryptocaria",17.29,"Gut Passed, Washed","0","0","",2023-11-08,NA,100
+"821",NA,"Cryptocaria",13.76,"Gut Passed, Washed","0","0","",2023-11-08,NA,100
+"822","Control","Cryptocaria",21.96,"Control","1","0","",2023-11-08,NA,100
+"823","Control","Cryptocaria",21.3,"Control","1","0","",2023-11-08,NA,100
+"824","Control","Cryptocaria",19.08,"Control","1","0","",2023-11-08,NA,100
+"825","Control","Cryptocaria",18.22,"Control","1","0","",2023-11-08,NA,100
+"826","Control","Cryptocaria",18.44,"Control","1","0","",2023-11-08,NA,100
+"827","Control","Cryptocaria",17.68,"Control","1","0","",2023-11-08,NA,100
+"828","Control","Cryptocaria",16.07,"Control","1","0","",2023-11-08,NA,100
+"829","Control","Cryptocaria",16.78,"Control","1","0","",2023-11-08,NA,100
+"830","Control","Cryptocaria",16.04,"Control","1","0","",2023-11-08,NA,100
+"831","Control","Cryptocaria",13.99,"Control","1","0","",2023-11-08,NA,100
+"832","Control","Cryptocaria",28.13,"Control, Washed","1","0","",2023-11-08,NA,100
+"833","Control","Cryptocaria",29.69,"Control, Washed","1","0","",2023-11-08,NA,100
+"834","Control","Cryptocaria",26.73,"Control, Washed","1","0","",2023-11-08,NA,100
+"835","Control","Cryptocaria",26.44,"Control, Washed","1","0","",2023-11-08,NA,100
+"836","Control","Cryptocaria",28.18,"Control, Washed","1","0","",2023-11-08,NA,100
+"837","Control","Cryptocaria",27.26,"Control, Washed","1","0","",2023-11-08,NA,100
+"838","Control","Cryptocaria",24.52,"Control, Washed","1","0","",2023-11-08,NA,100
+"839","Control","Cryptocaria",27.76,"Control, Washed","1","0","",2023-11-08,NA,100
+"840",NA,"Cryptocaria",15.64,"Gut Passed, Washed","0","0","",2023-11-09,NA,100
+"841","Eulemur rubriventer","Cryptocaria",14.89,"Gut Passed, Unwashed","0","0","F",2023-11-09,NA,100
+"842","Eulemur rubriventer","Cryptocaria",14.28,"Gut Passed, Unwashed","0","0","F",2023-11-09,NA,100
+"843","Eulemur rubriventer","Pandanus",15.95,"Gut Passed, Washed","0","0","",2023-11-09,NA,100
+"844",NA,"Cryptocaria",23.97,"Gut Passed, Washed","0","1","",2023-11-09,2023-11-14,5
+"845",NA,"Cryptocaria",24.9,"Gut Passed, Washed","0","1","",2023-11-09,2023-11-17,8
+"846",NA,"Cryptocaria",25.2,"Gut Passed, Washed","0","1","",2023-11-09,2023-11-17,8
+"847",NA,"Cryptocaria",25.37,"Gut Passed, Washed","0","1","",2023-11-09,2023-11-17,8
+"848",NA,"Cryptocaria",26.14,"Gut Passed, Washed","0","1","",2023-11-09,2023-11-29,20
+"849",NA,"Cryptocaria",25.58,"Gut Passed, Washed","0","1","",2023-11-09,2023-11-29,20
+"850",NA,"Cryptocaria",17.74,"Gut Passed, Unwashed","0","0","",2023-11-09,NA,100
+"851",NA,"Cryptocaria",16.85,"Gut Passed, Unwashed","0","0","",2023-11-09,NA,100
+"852",NA,"Cryptocaria",25.32,"Gut Passed, Unwashed","0","1","",2023-11-10,2023-11-11,1
+"853",NA,"Cryptocaria",2.06,"Gut Passed, Unwashed","0","1","",2023-11-10,2023-11-20,10
+"854",NA,"Cryptocaria",20.09,"Gut Passed, Unwashed","0","1","",2023-11-10,2023-11-20,10
+"855",NA,"Cryptocaria",21.77,"Gut Passed, Unwashed","0","1","",2023-11-10,2023-11-14,4
+"856",NA,"Cryptocaria",16.7,"Gut Passed, Unwashed","0","1","",2023-11-10,2023-11-14,4
+"857",NA,"Cryptocaria",19.32,"Gut Passed, Unwashed","0","0","",2023-11-10,NA,100
+"858",NA,"Cryptocaria",19.05,"Gut Passed, Unwashed","0","0","",2023-11-10,NA,100
+"859",NA,"Cryptocaria",18.45,"Gut Passed, Unwashed","0","0","",2023-11-10,NA,100
+"860",NA,"Cryptocaria",15.41,"Gut Passed, Unwashed","0","0","",2023-11-10,NA,100
+"861",NA,"Cryptocaria",19.84,"Gut Passed, Washed","0","1","",2023-11-10,2023-11-29,19
+"862",NA,"Cryptocaria",18.53,"Gut Passed, Washed","0","0","",2023-11-10,NA,100
+"863",NA,"Cryptocaria",15.51,"Gut Passed, Washed","0","0","",2023-11-10,NA,100
+"864",NA,"Cryptocaria",14,"Gut Passed, Washed","0","0","",2023-11-10,NA,100
+"865",NA,"Cryptocaria",17.18,"Gut Passed, Washed","0","1","",2023-11-13,2023-11-20,7
+"866",NA,"Cryptocaria",20.96,"Gut Passed, Washed","0","0","",2023-11-13,NA,100
+"867",NA,"Cryptocaria",19.1,"Gut Passed, Washed","0","0","",2023-11-13,NA,100
+"868",NA,"Cryptocaria",17.28,"Gut Passed, Washed","0","0","",2023-11-13,NA,100
+"869",NA,"Cryptocaria",18.89,"Gut Passed, Washed","0","0","",2023-11-13,NA,100
+"870",NA,"Pandanus",19.87,"Gut Passed, Unwashed","0","0","",2023-11-14,NA,100
+"871",NA,"Cryptocaria",29.91,"Gut Passed, Unwashed","0","1","",2023-11-14,2023-11-26,12
+"872","Eulemur rubriventer","Pandanus",16.54,"Gut Passed, Unwashed","0","0","M",2023-11-22,NA,100
+"873","Eulemur rubriventer","Pandanus",17.07,"Gut Passed, Unwashed","0","0","M",2023-11-22,NA,100
+"874","Eulemur rubriventer","Pandanus",16.45,"Gut Passed, Unwashed","0","0","M",2023-11-22,NA,100
+"875","Eulemur rubriventer","Pandanus",15.75,"Gut Passed, Unwashed","0","0","M",2023-11-22,NA,100
+"876","Eulemur rubriventer","Pandanus",17.87,"Gut Passed, Unwashed","0","0","M",2023-11-22,NA,100
+"877","Eulemur rubriventer","Pandanus",16.59,"Gut Passed, Washed","0","0","F",2023-11-22,NA,100
+"878","Eulemur rubriventer","Pandanus",14.83,"Gut Passed, Washed","0","0","F",2023-11-22,NA,100
+"879","Eulemur rubriventer","Pandanus",15.74,"Gut Passed, Washed","0","0","F",2023-11-22,NA,100
+"880","Eulemur rubriventer","Pandanus",14.34,"Gut Passed, Unwashed","0","0","",2023-11-22,NA,100
+"881","Eulemur rubriventer","Pandanus",15.75,"Gut Passed, Unwashed","0","0","",2023-11-22,NA,100
+"882","Eulemur rubriventer","Pandanus",13.9,"Gut Passed, Unwashed","0","0","",2023-11-22,NA,100
+"883","Eulemur rubriventer","Pandanus",12.67,"Gut Passed, Unwashed","0","0","",2023-11-22,NA,100
+"884","Eulemur rubriventer","Pandanus",12.12,"Gut Passed, Unwashed","0","0","",2023-11-22,NA,100
+"885","Eulemur rubriventer","Pandanus",11.55,"Gut Passed, Unwashed","0","0","",2023-11-22,NA,100
+"886","Eulemur rubriventer","Pandanus",13.22,"Gut Passed, Unwashed","0","0","",2023-11-22,NA,100
+"887","Eulemur rubriventer","Pandanus",14.08,"Gut Passed, Unwashed","0","0","",2023-11-22,NA,100
+"888","Eulemur rubriventer","Pandanus",11.96,"Gut Passed, Unwashed","0","0","",2023-11-22,NA,100
+"889",NA,"Cryptocaria",15.95,"Gut Passed, Washed","0","0","",2023-11-22,NA,100
+"890",NA,"Cryptocaria",17.6,"Gut Passed, Washed","0","0","",2023-11-22,NA,100
+"891",NA,"Pandanus",11.92,"Gut Passed, Unwashed","0","0","",2023-11-22,NA,100
+"892",NA,"Cryptocaria",21.33,"Gut Passed, Washed","0","0","",2023-11-22,NA,100
+"893",NA,"Cryptocaria",18.31,"Gut Passed, Washed","0","0","",2023-11-22,NA,100
+"894",NA,"Cryptocaria",14.87,"Gut Passed, Washed","0","0","",2023-11-22,NA,100
+"895",NA,"Cryptocaria",16.32,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"896",NA,"Cryptocaria",15.31,"Gut Passed, Washed","0","1","",2023-11-24,2023-12-17,23
+"897",NA,"Pandanus",14.94,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"898",NA,"Pandanus",10.98,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"899",NA,"Cryptocaria",14.9,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"900",NA,"Cryptocaria",26.84,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"901",NA,"Cryptocaria",20.05,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"902",NA,"Cryptocaria",20.12,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"903",NA,"Cryptocaria",17.26,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"904",NA,"Cryptocaria",17.53,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"905",NA,"Cryptocaria",17.63,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"906",NA,"Cryptocaria",17.75,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"907",NA,"Cryptocaria",17.11,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"908",NA,"Cryptocaria",17.52,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"909",NA,"Cryptocaria",14.93,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"910",NA,"Cryptocaria",15.61,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"911",NA,"Cryptocaria",14.93,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"912",NA,"Cryptocaria",16.61,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"913",NA,"Cryptocaria",13.41,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"914",NA,"Cryptocaria",16.54,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"915",NA,"Cryptocaria",13.6,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"916",NA,"Cryptocaria",14.41,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"917",NA,"Cryptocaria",13.66,"Gut Passed, Unwashed","0","1","",2023-11-24,2023-12-11,17
+"918",NA,"Cryptocaria",15.65,"Gut Passed, Unwashed","0","0","",2023-11-24,NA,100
+"919",NA,"Cryptocaria",17.43,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"920",NA,"Cryptocaria",18.53,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"921",NA,"Cryptocaria",17.69,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"922",NA,"Cryptocaria",17.08,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"923",NA,"Cryptocaria",18.89,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"924",NA,"Cryptocaria",17.74,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"925",NA,"Cryptocaria",14.4,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"926",NA,"Cryptocaria",15.55,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"927",NA,"Cryptocaria",14.7,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"928",NA,"Cryptocaria",13.22,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"929",NA,"Cryptocaria",16.35,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"930",NA,"Cryptocaria",15.87,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"931",NA,"Cryptocaria",16.45,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"932",NA,"Cryptocaria",13.78,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"933",NA,"Cryptocaria",14.72,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"934",NA,"Cryptocaria",13.48,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"935",NA,"Cryptocaria",16.69,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"936",NA,"Cryptocaria",14.02,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"937",NA,"Cryptocaria",14.21,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"938",NA,"Cryptocaria",15.03,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"939",NA,"Cryptocaria",13.68,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"940",NA,"Cryptocaria",13.49,"Gut Passed, Washed","0","0","",2023-11-24,NA,100
+"941",NA,"Cryptocaria",19.49,"Gut Passed, Unwashed","0","0","",2023-11-27,NA,100
+"942",NA,"Cryptocaria",19.28,"Gut Passed, Unwashed","0","0","",2023-11-27,NA,100
+"943",NA,"Cryptocaria",15.5,"Gut Passed, Unwashed","0","0","",2023-11-27,NA,100
+"944",NA,"Cryptocaria",15.62,"Gut Passed, Unwashed","0","0","",2023-11-27,NA,100
+"945",NA,"Cryptocaria",15.54,"Gut Passed, Unwashed","0","0","",2023-11-27,NA,100
+"946",NA,"Pandanus",13.06,"Gut Passed, Washed","0","0","",2023-11-27,NA,100
+"947","Control","Cryptocaria",21.24,"Control, Washed","1","0","",2023-11-27,NA,100
+"948","Control","Cryptocaria",19.22,"Control, Washed","1","0","",2023-11-27,NA,100
+"949","Control","Cryptocaria",18.11,"Control, Washed","1","0","",2023-11-27,NA,100
+"950","Control","Cryptocaria",16.69,"Control, Washed","1","0","",2023-11-27,NA,100
+"951","Control","Cryptocaria",15.53,"Control, Washed","1","0","",2023-11-27,NA,100
+"952","Control","Cryptocaria",14.73,"Control, Washed","1","0","",2023-11-27,NA,100
+"953","Control","Cryptocaria",14.05,"Control, Washed","1","0","",2023-11-27,NA,100
+"954","Eulemur rubriventer","Adina",15.82,"Gut Passed, Unwashed","0","1","M",2023-11-28,2024-01-10,43
+"955",NA,"Adina",16.16,"Gut Passed, Washed","0","1","",2023-11-28,2024-02-03,67
+"956",NA,"Adina",16.9,"Gut Passed, Washed","0","1","",2023-11-28,2023-12-17,19
+"957",NA,"Adina",17.06,"Gut Passed, Washed","0","1","",2023-11-28,2024-01-07,40
+"958",NA,"Adina",15.72,"Gut Passed, Washed","0","1","",2023-11-28,2023-12-29,31
+"959",NA,"Adina",15.97,"Gut Passed, Washed","0","1","",2023-11-28,2023-12-26,28
+"960",NA,"Adina",16.46,"Gut Passed, Washed","0","1","",2023-11-28,2024-01-07,40
+"961",NA,"Adina",14.78,"Gut Passed, Washed","0","0","",2023-11-28,NA,100
+"962",NA,"Adina",17.46,"Gut Passed, Unwashed","0","0","",2023-11-28,NA,100
+"963",NA,"Adina",15.05,"Gut Passed, Unwashed","0","0","",2023-11-28,NA,100
+"964",NA,"Adina",16.37,"Gut Passed, Unwashed","0","1","",2023-11-28,2024-01-01,34
+"965",NA,"Adina",15.95,"Gut Passed, Unwashed","0","0","",2023-11-28,NA,100
+"966",NA,"Adina",14.92,"Gut Passed, Unwashed","0","1","",2023-11-28,2023-12-26,28
+"967",NA,"Adina",16.84,"Gut Passed, Unwashed","0","0","",2023-11-28,NA,100
+"968",NA,"Adina",14.83,"Gut Passed, Unwashed","0","0","",2023-11-28,NA,100
+"969",NA,"Adina",13.77,"Gut Passed, Unwashed","0","0","",2023-11-28,NA,100
+"970",NA,"Adina",13.49,"Gut Passed, Unwashed","0","1","",2023-11-28,2024-01-04,37
+"971",NA,"Adina",12.46,"Gut Passed, Unwashed","0","0","",2023-11-28,NA,100
+"972",NA,"Adina",12.24,"Gut Passed, Unwashed","0","1","",2023-11-28,2024-01-01,34
+"973",NA,"Adina",13.15,"Gut Passed, Unwashed","0","1","",2023-11-28,2023-12-23,25
+"974",NA,"Adina",12.79,"Gut Passed, Unwashed","0","1","",2023-11-28,2024-01-07,40
+"975",NA,"Adina",16.36,"Gut Passed, Unwashed","0","0","",2023-11-28,NA,100
+"976","Control","Adina",18.46,"Control, Washed","1","1","",2023-11-28,2024-01-31,64
+"977","Control","Adina",15.25,"Control, Washed","1","0","",2023-11-28,NA,100
+"978","Control","Adina",14.44,"Control, Washed","1","0","",2023-11-28,NA,100
+"979","Control","Adina",15.25,"Control, Washed","1","0","",2023-11-28,NA,100
+"980",NA,"Cryptocaria",16.7,"Gut Passed, Unwashed","0","0","",2023-11-29,NA,100
+"981",NA,"Cryptocaria",15.83,"Gut Passed, Unwashed","0","0","",2023-11-29,NA,100
+"982",NA,"Cryptocaria",14.63,"Gut Passed, Unwashed","0","0","",2023-11-29,NA,100
+"983",NA,"Cryptocaria",12.78,"Gut Passed, Unwashed","0","0","",2023-11-29,NA,100
+"984","Eulemur rubriventer","Pandanus",14.48,"Gut Passed, Washed","0","0","M",2023-11-29,NA,100
+"985","Eulemur rubriventer","Pandanus",11.66,"Gut Passed, Washed","0","0","M",2023-11-29,NA,100
+"986","Eulemur rubriventer","Pandanus",18.47,"Gut Passed, Unwashed","0","0","M",2023-11-29,NA,100
+"987","Eulemur rubriventer","Pandanus",14.68,"Gut Passed, Unwashed","0","0","M",2023-11-29,NA,100
+"988","Eulemur rubriventer","Pandanus",12.7,"Gut Passed, Unwashed","0","0","M",2023-11-29,NA,100
+"989","Eulemur rubriventer","Pandanus",10.68,"Gut Passed, Unwashed","0","0","M",2023-11-29,NA,100
+"990","Eulemur rubriventer","Pandanus",10.6,"Gut Passed, Unwashed","0","0","M",2023-11-29,NA,100
+"991","Eulemur rubriventer","Pandanus",14,"Gut Passed, Unwashed","0","0","F",2023-11-29,NA,100
+"992","Eulemur rubriventer","Pandanus",10.99,"Gut Passed, Washed","0","0","F",2023-11-29,NA,100
+"993","Eulemur rubriventer","Pandanus",14.5,"Gut Passed, Washed","0","0","F",2023-11-29,NA,100
+"994","Eulemur rubriventer","Pandanus",11.73,"Gut Passed, Washed","0","0","F",2023-11-29,NA,100
+"995","Eulemur rubriventer","Pandanus",12.07,"Gut Passed, Washed","0","0","F",2023-11-29,NA,100
+"996","Eulemur rubriventer","Pandanus",15.64,"Gut Passed, Washed","0","0","F",2023-11-29,NA,100
+"997","Eulemur rubriventer","Pandanus",13.54,"Gut Passed, Washed","0","0","F",2023-11-29,NA,100
+"998",NA,"Adina",14.55,"Gut Passed, Unwashed","0","0","",2023-11-30,NA,100
+"999",NA,"Adina",14.26,"Gut Passed, Washed","0","0","",2023-11-30,NA,100
+"1000",NA,"Adina",14.26,"Gut Passed, Washed","0","1","",2023-11-30,2024-01-28,59
+"1001",NA,"Adina",16.2,"Gut Passed, Unwashed","0","1","",2023-11-30,2024-01-07,38
+"1002",NA,"Adina",15.08,"Gut Passed, Unwashed","0","0","",2023-11-30,NA,100
+"1003",NA,"Adina",14.75,"Gut Passed, Unwashed","0","0","",2023-11-30,NA,100
+"1004",NA,"Adina",12.16,"Gut Passed, Unwashed","0","0","",2023-11-30,NA,100
+"1005",NA,"Cryptocaria",16.4,"Gut Passed, Washed","0","0","",2023-11-30,NA,100
+"1006",NA,"Cryptocaria",17.08,"Gut Passed, Washed","0","0","",2023-12-01,NA,100
+"1007",NA,"Cryptocaria",16.12,"Gut Passed, Washed","0","0","",2023-12-01,NA,100
+"1008",NA,"Cryptocaria",14.5,"Gut Passed, Washed","0","0","",2023-12-01,NA,100
+"1009","Eulemur rubriventer","Adina",14.24,"Gut Passed, Washed","0","1","F",2023-12-01,2023-12-17,16
+"1010",NA,"Adina",15.31,"Gut Passed, Washed","0","1","",2023-12-02,2023-12-11,9
+"1011",NA,"Adina",15.54,"Gut Passed, Washed","0","1","",2023-12-01,2023-12-11,10
+"1012","Eulemur albifrons","Adina",14.58,"Gut Passed, Unwashed","0","1","",2023-12-02,2023-12-11,9
+"1013","Eulemur albifrons","Adina",15.18,"Gut Passed, Unwashed","0","0","",2023-12-02,NA,100
+"1014","Eulemur albifrons","Adina",13.22,"Gut Passed, Unwashed","0","1","",2023-12-02,2023-12-11,9
+"1015","Eulemur albifrons","Adina",12.12,"Gut Passed, Unwashed","0","0","",2023-12-02,NA,100
+"1016","Eulemur albifrons","Adina",10.79,"Gut Passed, Unwashed","0","1","",2023-12-02,2023-12-23,21
+"1017","Eulemur albifrons","Adina",14.75,"Gut Passed, Washed","0","0","F",2023-12-02,NA,100
+"1018","Eulemur albifrons","Adina",12.26,"Gut Passed, Washed","0","0","F",2023-12-02,NA,100
+"1019","Eulemur rubriventer","Adina",14.69,"Gut Passed, Unwashed","0","0","M",2023-12-02,NA,100
+"1020","Eulemur rubriventer","Adina",14.82,"Gut Passed, Unwashed","0","0","M",2023-12-02,NA,100
+"1021","Eulemur rubriventer","Adina",14.8,"Gut Passed, Unwashed","0","0","M",2023-12-02,NA,100
+"1022","Eulemur rubriventer","Adina",14.49,"Gut Passed, Unwashed","0","0","M",2023-12-02,NA,100
+"1023","Eulemur rubriventer","Adina",15,"Gut Passed, Unwashed","0","0","M",2023-12-02,NA,100
+"1024","Eulemur rubriventer","Adina",15.36,"Gut Passed, Unwashed","0","0","M",2023-12-02,NA,100
+"1025","Eulemur rubriventer","Adina",13.32,"Gut Passed, Unwashed","0","0","M",2023-12-02,NA,100
+"1026","Eulemur rubriventer","Adina",15.48,"Gut Passed, Washed","0","0","",2023-12-02,NA,100
+"1027","Eulemur rubriventer","Adina",14.17,"Gut Passed, Washed","0","0","",2023-12-02,NA,100
+"1028","Eulemur rubriventer","Adina",14.96,"Gut Passed, Washed","0","1","",2023-12-02,2024-01-01,30
+"1029","Eulemur rubriventer","Adina",14.85,"Gut Passed, Unwashed","0","0","F",2023-12-02,NA,100
+"1030","Eulemur rubriventer","Adina",13.08,"Gut Passed, Unwashed","0","0","F",2023-12-02,NA,100
+"1031","Eulemur rubriventer","Adina",13.95,"Gut Passed, Unwashed","0","0","F",2023-12-02,NA,100
+"1032","Eulemur rubriventer","Pandanus",15.67,"Gut Passed, Washed","0","0","M",2023-12-02,NA,100
+"1033",NA,"Cryptocaria",15.64,"Gut Passed, Unwashed","0","0","",2023-12-02,NA,100
+"1034",NA,"Adina",14.9,"Gut Passed, Unwashed","0","1","",2023-12-02,2024-01-07,36
+"1035",NA,"Adina",16.64,"Gut Passed, Unwashed","0","1","",2023-12-02,2024-02-03,63
+"1036",NA,"Adina",13.69,"Gut Passed, Unwashed","0","0","",2023-12-02,NA,100
+"1037",NA,"Cryptocaria",21.68,"Gut Passed, Washed","0","0","",2023-12-02,NA,100
+"1038",NA,"Cryptocaria",19.33,"Gut Passed, Washed","0","0","",2023-12-02,NA,100
+"1039",NA,"Cryptocaria",18.76,"Gut Passed, Washed","0","0","",2023-12-02,NA,100
+"1040",NA,"Cryptocaria",16.3,"Gut Passed, Washed","0","0","",2023-12-02,NA,100
+"1041",NA,"Cryptocaria",14.62,"Gut Passed, Washed","0","0","",2023-12-02,NA,100
+"1042",NA,"Cryptocaria",14.86,"Gut Passed, Washed","0","0","",2023-12-02,NA,100
+"1043",NA,"Cryptocaria",14.81,"Gut Passed, Washed","0","0","",2023-12-02,NA,100
+"1044",NA,"Cryptocaria",13.66,"Gut Passed, Washed","0","0","",2023-12-02,NA,100
+"1045",NA,"Adina",14.38,"Gut Passed, Unwashed","0","1","",2023-12-04,2024-02-03,61
+"1046",NA,"Adina",14.16,"Gut Passed, Unwashed","0","0","",2023-12-04,NA,100
+"1047",NA,"Adina",15.43,"Gut Passed, Unwashed","0","0","",2023-12-04,NA,100
+"1048",NA,"Adina",13.69,"Gut Passed, Unwashed","0","1","",2023-12-04,2024-03-13,100
+"1049",NA,"Adina",12.57,"Gut Passed, Unwashed","0","0","",2023-12-04,NA,100
+"1050",NA,"Adina",12.12,"Gut Passed, Washed","0","1","",2023-12-04,2023-12-11,7
+"1051",NA,"Adina",14.5,"Gut Passed, Washed","0","1","",2023-12-04,2023-12-11,7
+"1052",NA,"Adina",13.83,"Gut Passed, Washed","0","1","",2023-12-04,2023-12-14,10
+"1053",NA,"Adina",12.07,"Gut Passed, Washed","0","0","",2023-12-04,NA,100
+"1054",NA,"Adina",13.4,"Gut Passed, Unwashed","0","1","",2023-12-05,2023-12-29,24
+"1055",NA,"Adina",15.05,"Gut Passed, Washed","0","0","",2023-12-05,NA,100
+"1056",NA,"Adina",14.04,"Gut Passed, Washed","0","1","",2023-12-05,2024-01-07,33
+"1057",NA,"Adina",14.85,"Gut Passed, Washed","0","0","",2023-12-05,NA,100
+"1058",NA,"Adina",13.37,"Gut Passed, Washed","0","1","",2023-12-05,2024-01-07,33
+"1059",NA,"Adina",14.38,"Gut Passed, Washed","0","1","",2023-12-05,2024-01-01,27
+"1060",NA,"Adina",12.58,"Gut Passed, Washed","0","1","",2023-12-05,2024-01-07,33
+"1061",NA,"Adina",15.76,"Gut Passed, Washed","0","0","",2023-12-05,NA,100
+"1062",NA,"Adina",12.58,"Gut Passed, Washed","0","0","",2023-12-05,NA,100
+"1063",NA,"Adina",14.27,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1064",NA,"Adina",14.8,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1065",NA,"Adina",15.2,"Gut Passed, Unwashed","0","1","",2023-12-05,2024-01-19,45
+"1066",NA,"Adina",13.25,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1067",NA,"Adina",16.24,"Gut Passed, Unwashed","0","1","",2023-12-05,2023-12-29,24
+"1068",NA,"Adina",16.41,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1069",NA,"Adina",14.41,"Gut Passed, Unwashed","0","1","",2023-12-05,2024-01-10,36
+"1070",NA,"Adina",13.69,"Gut Passed, Unwashed","0","1","",2023-12-05,2023-12-26,21
+"1071",NA,"Adina",14.24,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1072","Eulemur albifrons","Adina",16.03,"Gut Passed, Washed","0","0","M",2023-12-05,NA,100
+"1073","Eulemur albifrons","Adina",14.93,"Gut Passed, Washed","0","0","M",2023-12-05,NA,100
+"1074","Eulemur albifrons","Adina",14.98,"Gut Passed, Washed","0","1","M",2023-12-05,2024-02-06,63
+"1075","Eulemur albifrons","Adina",14.72,"Gut Passed, Washed","0","1","M",2023-12-05,2024-01-13,39
+"1076","Eulemur albifrons","Adina",13.94,"Gut Passed, Washed","0","1","M",2023-12-05,2024-01-31,57
+"1077","Eulemur albifrons","Adina",15.38,"Gut Passed, Washed","0","0","M",2023-12-05,NA,100
+"1078","Eulemur albifrons","Adina",14.32,"Gut Passed, Washed","0","0","M",2023-12-05,NA,100
+"1079","Eulemur rubriventer","Pandanus",12.85,"Gut Passed, Washed","0","0","",2023-12-05,NA,100
+"1080","Eulemur rubriventer","Pandanus",11.72,"Gut Passed, Washed","0","0","",2023-12-05,NA,100
+"1081","Eulemur rubriventer","Pandanus",12.55,"Gut Passed, Washed","0","0","",2023-12-05,NA,100
+"1082","Eulemur rubriventer","Pandanus",13.29,"Gut Passed, Washed","0","0","",2023-12-05,NA,100
+"1083","Eulemur rubriventer","Pandanus",11.04,"Gut Passed, Washed","0","0","",2023-12-05,NA,100
+"1084",NA,"Pandanus",15.13,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1085",NA,"Pandanus",13.5,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1086",NA,"Pandanus",12.64,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1087",NA,"Pandanus",14.67,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1088",NA,"Pandanus",15.6,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1089",NA,"Pandanus",11.88,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1090",NA,"Pandanus",12.71,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1091",NA,"Pandanus",13.29,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1092",NA,"Pandanus",14.16,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1093",NA,"Pandanus",12.69,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1094",NA,"Pandanus",12.12,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1095",NA,"Pandanus",11.47,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1096",NA,"Pandanus",13,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1097",NA,"Pandanus",12.02,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1098",NA,"Pandanus",12.35,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1099",NA,"Pandanus",12.74,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1100",NA,"Pandanus",12.61,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1101",NA,"Pandanus",13.15,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1102",NA,"Pandanus",11.33,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1103",NA,"Pandanus",12.46,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1104",NA,"Pandanus",10.78,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1105",NA,"Pandanus",12.04,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1106",NA,"Pandanus",12.8,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1107",NA,"Pandanus",12.38,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1108",NA,"Pandanus",11.43,"Gut Passed, Unwashed","0","1","",2023-12-05,2024-02-27,84
+"1109",NA,"Pandanus",12.25,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1110",NA,"Pandanus",12.5,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1111",NA,"Pandanus",12.78,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1112",NA,"Pandanus",13.13,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1113",NA,"Pandanus",11.14,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1114",NA,"Pandanus",11.24,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1115",NA,"Pandanus",12.51,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1116",NA,"Pandanus",10.87,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1117",NA,"Pandanus",13.19,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1118",NA,"Pandanus",10.16,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1119",NA,"Pandanus",11.24,"Gut Passed, Unwashed","0","1","",2023-12-05,2024-01-28,54
+"1120",NA,"Pandanus",12.02,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1121",NA,"Pandanus",11.48,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1122",NA,"Pandanus",12.79,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1123",NA,"Pandanus",11.53,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1124",NA,"Pandanus",11.75,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1125",NA,"Pandanus",14.02,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1126",NA,"Pandanus",12.73,"Gut Passed, Unwashed","0","1","",2023-12-05,2024-01-28,54
+"1127",NA,"Pandanus",12.07,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1128",NA,"Pandanus",11.84,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1129",NA,"Pandanus",11.4,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1130",NA,"Pandanus",10.5,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1131",NA,"Pandanus",9.75,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1132",NA,"Pandanus",11.27,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1133",NA,"Pandanus",11.24,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1134",NA,"Pandanus",11.79,"Gut Passed, Unwashed","0","0","",2023-12-05,NA,100
+"1135",NA,"Adina",12.93,"Gut Passed, Washed","0","0","",2023-12-06,NA,100
+"1136",NA,"Pandanus",14.56,"Gut Passed, Unwashed","0","0","",2023-12-06,NA,100
+"1137",NA,"Adina",18.07,"Gut Passed, Unwashed","0","0","",2023-12-06,NA,100
+"1138",NA,"Adina",17.68,"Gut Passed, Unwashed","0","1","",2023-12-06,2024-01-04,29
+"1139",NA,"Adina",15.62,"Gut Passed, Unwashed","0","1","",2023-12-06,2024-01-25,50
+"1140",NA,"Adina",15.5,"Gut Passed, Unwashed","0","0","",2023-12-06,NA,100
+"1141",NA,"Adina",15.46,"Gut Passed, Washed","0","0","",2023-12-06,NA,100
+"1142",NA,"Adina",14.45,"Gut Passed, Washed","0","0","",2023-12-06,NA,100
+"1143",NA,"Adina",13.43,"Gut Passed, Washed","0","0","",2023-12-06,NA,100
+"1144",NA,"Adina",14.19,"Gut Passed, Washed","0","0","",2023-12-06,NA,100
+"1145",NA,"Adina",14.05,"Gut Passed, Washed","0","0","",2023-12-06,NA,100
+"1146",NA,"Adina",13.47,"Gut Passed, Washed","0","0","",2023-12-06,NA,100
+"1147",NA,"Adina",15.62,"Gut Passed, Washed","0","0","",2023-12-06,NA,100
+"1148",NA,"Adina",14.52,"Gut Passed, Washed","0","0","",2023-12-06,NA,100
+"1149",NA,"Adina",13.39,"Gut Passed, Washed","0","1","",2023-12-06,2023-12-26,20
+"1150",NA,"Adina",12.71,"Gut Passed, Washed","0","1","",2023-12-06,2024-02-15,71
+"1151",NA,"Adina",13.51,"Gut Passed, Unwashed","0","0","",2023-12-06,NA,100
+"1152",NA,"Adina",13.77,"Gut Passed, Washed","0","0","",2023-12-07,NA,100
+"1153",NA,"Adina",14.35,"Gut Passed, Unwashed","0","1","",2023-12-07,2023-12-17,10
+"1154",NA,"Adina",15.3,"Gut Passed, Unwashed","0","1","",2023-12-07,2024-01-31,55
+"1155",NA,"Adina",14.22,"Gut Passed, Unwashed","0","1","",2023-12-07,2023-12-17,10
+"1156",NA,"Pandanus",12.12,"Gut Passed, Washed","0","0","",2023-12-07,NA,100
+"1157",NA,"Adina",17.06,"Gut Passed, Washed","0","1","",2023-12-07,2024-01-07,31
+"1158",NA,"Adina",18.27,"Gut Passed, Washed","0","0","",2023-12-07,NA,100
+"1159",NA,"Adina",16.65,"Gut Passed, Washed","0","0","",2023-12-07,NA,100
+"1160",NA,"Adina",16.35,"Gut Passed, Washed","0","0","",2023-12-07,NA,100
+"1161",NA,"Adina",15.08,"Gut Passed, Washed","0","1","",2023-12-07,2024-01-07,31
+"1162",NA,"Adina",14.69,"Gut Passed, Washed","0","0","",2023-12-07,NA,100
+"1163",NA,"Adina",9.95,"Gut Passed, Washed","0","1","",2023-12-07,2024-01-10,34
+"1164",NA,"Adina",14.75,"Gut Passed, Washed","0","1","",2023-12-08,2023-12-14,6
+"1165",NA,"Adina",12.75,"Gut Passed, Washed","0","1","",2023-12-08,2023-12-14,6
+"1166",NA,"Adina",15.58,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1167",NA,"Adina",15.74,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1168",NA,"Adina",14.47,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1169",NA,"Adina",12.67,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1170",NA,"Adina",13.95,"Gut Passed, Unwashed","0","1","",2023-12-08,2024-01-19,42
+"1171",NA,"Adina",15.47,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1172",NA,"Adina",12.9,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1173",NA,"Adina",14.41,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1174",NA,"Adina",14.29,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1175",NA,"Adina",13.89,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1176",NA,"Adina",12.02,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1177",NA,"Adina",14.49,"Gut Passed, Unwashed","0","0","",2023-12-08,NA,100
+"1178","Eulemur albifrons","Adina",14.68,"Gut Passed, Washed","0","0","",2023-12-09,NA,100
+"1179","Eulemur albifrons","Adina",14.23,"Gut Passed, Washed","0","0","",2023-12-09,NA,100
+"1180",NA,"Adina",11.74,"Gut Passed, Unwashed","0","0","",2023-12-09,NA,100
+"1181",NA,"Adina",13.52,"Gut Passed, Unwashed","0","0","",2023-12-09,NA,100
+"1182",NA,"Adina",15.08,"Gut Passed, Unwashed","0","0","",2023-12-09,NA,100
+"1183",NA,"Adina",15.4,"Gut Passed, Washed","0","1","",2023-12-09,2024-01-13,35
+"1184",NA,"Adina",17.02,"Gut Passed, Washed","0","1","",2023-12-09,2023-12-29,20
+"1185",NA,"Adina",15.01,"Gut Passed, Washed","0","0","",2023-12-09,NA,100
+"1186",NA,"Adina",15.46,"Gut Passed, Unwashed","0","0","",2023-12-09,NA,100
+"1187",NA,"Adina",15.83,"Gut Passed, Unwashed","0","0","",2023-12-09,NA,100
+"1188",NA,"Adina",16.95,"Gut Passed, Unwashed","0","0","",2023-12-09,NA,100
+"1189",NA,"Adina",15.41,"Gut Passed, Unwashed","0","0","",2023-12-09,NA,100
+"1190",NA,"Adina",13.75,"Gut Passed, Unwashed","0","1","",2023-12-09,2024-02-15,68
+"1191",NA,"Adina",13.95,"Gut Passed, Washed","0","0","",2023-12-09,NA,100
+"1192",NA,"Syzygium",15.79,"Gut Passed, Unwashed","0","1","",2023-12-11,2023-12-14,3
+"1193",NA,"Syzygium",16.26,"Gut Passed, Unwashed","0","0","",2023-12-11,NA,100
+"1194",NA,"Syzygium",15.28,"Gut Passed, Unwashed","0","1","",2023-12-11,2024-01-13,33
+"1195",NA,"Adina",15.36,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1196",NA,"Adina",14.36,"Gut Passed, Unwashed","0","1","",2023-12-12,2024-01-07,26
+"1197",NA,"Adina",15.11,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1198",NA,"Adina",13.6,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1199",NA,"Adina",13.16,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1200",NA,"Adina",14.28,"Gut Passed, Washed","0","0","",2023-12-12,NA,100
+"1201",NA,"Adina",14.53,"Gut Passed, Washed","0","0","",2023-12-12,NA,100
+"1202",NA,"Adina",13.97,"Gut Passed, Washed","0","1","",2023-12-12,2024-02-27,77
+"1203",NA,"Adina",15.73,"Gut Passed, Unwashed","0","1","",2023-12-12,2024-01-28,47
+"1204",NA,"Pandanus",16.65,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1205",NA,"Pandanus",16.18,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1206",NA,"Pandanus",17.41,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1207",NA,"Pandanus",13.43,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1208",NA,"Pandanus",14.76,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1209",NA,"Pandanus",15.26,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1210",NA,"Pandanus",14.31,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1211",NA,"Pandanus",18.5,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1212",NA,"Pandanus",16.45,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1213",NA,"Pandanus",13.5,"Gut Passed, Unwashed","0","0","",2023-12-12,NA,100
+"1214","Control","Syzygium",27.37,"Control, Washed","1","0","",2023-12-12,NA,100
+"1215","Control","Syzygium",24.44,"Control, Washed","1","0","",2023-12-12,NA,100
+"1216","Control","Syzygium",24.77,"Control, Washed","1","0","",2023-12-12,NA,100
+"1217","Control","Syzygium",21.29,"Control, Washed","1","1","",2023-12-12,2024-03-13,92
+"1218","Control","Syzygium",19.63,"Control, Washed","1","1","",2023-12-12,2024-03-13,92
+"1219",NA,"Adina",16.05,"Gut Passed, Unwashed","0","0","",2023-12-13,NA,100
+"1220",NA,"Adina",13.93,"Gut Passed, Unwashed","0","1","",2023-12-13,2024-02-06,55
+"1221",NA,"Adina",13.7,"Gut Passed, Unwashed","0","1","",2023-12-13,2024-01-28,46
+"1222",NA,"Adina",13.16,"Gut Passed, Unwashed","0","0","",2023-12-13,NA,100
+"1223",NA,"Adina",14.32,"Gut Passed, Unwashed","0","1","",2023-12-13,2024-01-01,19
+"1224",NA,"Adina",13.62,"Gut Passed, Unwashed","0","0","",2023-12-13,NA,100
+"1225",NA,"Adina",12.42,"Gut Passed, Unwashed","0","1","",2023-12-13,2024-01-13,31
+"1226",NA,"Adina",13.22,"Gut Passed, Unwashed","0","1","",2023-12-13,2024-01-25,43
+"1227",NA,"Adina",14.69,"Gut Passed, Unwashed","0","0","",2023-12-13,NA,100
+"1228",NA,"Adina",15.85,"Gut Passed, Unwashed","0","1","",2023-12-13,2024-02-12,61
+"1229",NA,"Adina",14,"Gut Passed, Unwashed","0","0","",2023-12-13,NA,100
+"1230",NA,"Adina",12.76,"Gut Passed, Unwashed","0","1","",2023-12-13,2024-01-13,31
+"1231",NA,"Adina",13.22,"Gut Passed, Unwashed","0","0","",2023-12-13,NA,100
+"1232",NA,"Adina",15.4,"Gut Passed, Washed","0","1","",2023-12-13,2024-01-01,19
+"1233",NA,"Adina",15.56,"Gut Passed, Washed","0","0","",2023-12-13,NA,100
+"1234",NA,"Adina",15.99,"Gut Passed, Washed","0","0","",2023-12-13,NA,100
+"1235",NA,"Adina",13.84,"Gut Passed, Washed","0","1","",2023-12-13,2023-12-29,16
+"1236",NA,"Adina",13.89,"Gut Passed, Washed","0","1","",2023-12-13,2023-12-26,13
+"1237",NA,"Adina",13.81,"Gut Passed, Washed","0","1","",2023-12-13,2024-01-07,25
+"1238","Control","Adina",17.26,"Control, Washed","1","0","",2023-12-13,NA,100
+"1239","Control","Adina",15.89,"Control, Washed","1","0","",2023-12-13,NA,100
+"1240","Control","Adina",17.98,"Control, Washed","1","0","",2023-12-13,NA,100
+"1241","Control","Adina",17.68,"Control, Washed","1","0","",2023-12-13,NA,100
+"1242","Control","Adina",16.21,"Control, Washed","1","0","",2023-12-13,NA,100
+"1243","Control","Adina",15.21,"Control, Washed","1","0","",2023-12-13,NA,100
+"1244","Control","Adina",16.54,"Control, Washed","1","0","",2023-12-13,NA,100
+"1245","Control","Adina",19.98,"Control, Washed","1","0","",2023-12-13,NA,100
+"1246","Control","Adina",17.68,"Control, Washed","1","0","",2023-12-13,NA,100
+"1247","Control","Adina",16.08,"Control, Washed","1","0","",2023-12-13,NA,100
+"1248","Control","Adina",18.55,"Control, Washed","1","0","",2023-12-13,NA,100
+"1249","Control","Adina",13.93,"Control, Washed","1","0","",2023-12-13,NA,100
+"1250","Control","Adina",21.25,"Control","1","0","",2023-12-13,NA,100
+"1251","Control","Adina",15.6,"Control","1","1","",2023-12-13,2024-02-27,76
+"1252","Control","Adina",13.22,"Control","1","0","",2023-12-13,NA,100
+"1253","Control","Adina",17.07,"Control","1","0","",2023-12-13,NA,100
+"1254","Control","Adina",16.23,"Control","1","0","",2023-12-13,NA,100
+"1255","Control","Adina",16.76,"Control","1","0","",2023-12-13,NA,100
+"1256","Control","Adina",17.74,"Control","1","0","",2023-12-13,NA,100
+"1257","Control","Adina",15.81,"Control","1","0","",2023-12-13,NA,100
+"1258","Control","Adina",15.62,"Control","1","0","",2023-12-13,NA,100
+"1259","Control","Adina",16.14,"Control","1","0","",2023-12-13,NA,100
+"1260","Control","Adina",16.79,"Control","1","0","",2023-12-13,NA,100
+"1261","Control","Adina",16.22,"Control","1","0","",2023-12-13,NA,100
+"1262","Eulemur rubriventer","Pandanus",27.35,"Gut Passed, Washed","0","1","",2023-12-14,2024-02-27,75
+"1263","Eulemur rubriventer","Pandanus",17.91,"Gut Passed, Washed","0","0","",2023-12-14,NA,100
+"1264","Eulemur rubriventer","Pandanus",18.76,"Gut Passed, Washed","0","1","",2023-12-14,2024-02-27,75
+"1265",NA,"Adina",13.89,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1266",NA,"Adina",13.53,"Gut Passed, Washed","0","1","",2023-12-16,2024-01-07,22
+"1267",NA,"Adina",15.83,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1268",NA,"Adina",15.58,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1269",NA,"Adina",14.87,"Gut Passed, Washed","0","1","",2023-12-16,2024-01-25,40
+"1270",NA,"Adina",15.02,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1271",NA,"Adina",15.21,"Gut Passed, Washed","0","1","",2023-12-16,2024-01-22,37
+"1272",NA,"Adina",14.3,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1273",NA,"Adina",11.98,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1274",NA,"Adina",14.12,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-04,19
+"1275",NA,"Adina",16.93,"Gut Passed, Unwashed","0","0","",2023-12-16,NA,100
+"1276",NA,"Adina",15.43,"Gut Passed, Unwashed","0","0","",2023-12-16,NA,100
+"1277",NA,"Adina",15.66,"Gut Passed, Unwashed","0","0","",2023-12-16,NA,100
+"1278",NA,"Adina",15.46,"Gut Passed, Washed","0","1","",2023-12-16,2024-01-22,37
+"1279",NA,"Adina",15.57,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1280",NA,"Adina",14.59,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1281",NA,"Adina",13.86,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1282",NA,"Adina",14.78,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1283",NA,"Adina",16.23,"Gut Passed, Washed","0","1","",2023-12-16,2024-01-25,40
+"1284","Eulemur rubriventer","Adina",13.76,"Gut Passed, Unwashed","0","1","F",2023-12-16,2023-12-29,13
+"1285","Eulemur rubriventer","Adina",13.64,"Gut Passed, Unwashed","0","1","F",2023-12-16,2024-01-07,22
+"1286","Eulemur rubriventer","Adina",13.54,"Gut Passed, Unwashed","0","1","F",2023-12-16,2024-01-04,19
+"1287","Eulemur rubriventer","Adina",14.37,"Gut Passed, Unwashed","0","1","F",2023-12-16,2024-01-01,16
+"1288","Eulemur rubriventer","Adina",14.38,"Gut Passed, Unwashed","0","1","F",2023-12-16,2023-12-26,10
+"1289","Eulemur rubriventer","Adina",13.26,"Gut Passed, Unwashed","0","1","F",2023-12-16,2023-12-29,13
+"1290","Eulemur rubriventer","Adina",13.42,"Gut Passed, Unwashed","0","1","F",2023-12-16,2024-01-04,19
+"1291","Eulemur rubriventer","Adina",15.84,"Gut Passed, Washed","0","1","",2023-12-16,2024-02-06,52
+"1292","Eulemur rubriventer","Adina",16.36,"Gut Passed, Washed","0","1","",2023-12-16,2024-02-03,49
+"1293","Eulemur rubriventer","Adina",15.69,"Gut Passed, Washed","0","1","",2023-12-16,2024-01-31,46
+"1294","Eulemur rubriventer","Adina",16.22,"Gut Passed, Washed","0","1","",2023-12-16,2024-01-25,40
+"1295","Eulemur rubriventer","Adina",17.15,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1296","Eulemur rubriventer","Adina",16.09,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1297","Eulemur rubriventer","Adina",15.83,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1298",NA,"Adina",13.07,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-01,16
+"1299",NA,"Adina",13.79,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-04,19
+"1300",NA,"Adina",14.36,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-01,16
+"1301",NA,"Adina",13.78,"Gut Passed, Unwashed","0","0","",2023-12-16,NA,100
+"1302",NA,"Adina",15.05,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-19,34
+"1303",NA,"Adina",14.28,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-04,19
+"1304",NA,"Adina",14.45,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-04,19
+"1305",NA,"Adina",14.6,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-07,22
+"1306",NA,"Adina",15.52,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-13,28
+"1307",NA,"Adina",13.96,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-13,28
+"1308",NA,"Adina",14.77,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-10,25
+"1309",NA,"Adina",13.07,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-04,19
+"1310",NA,"Adina",15.04,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-10,25
+"1311",NA,"Adina",15.77,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-10,25
+"1312",NA,"Adina",13.88,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-19,34
+"1313",NA,"Adina",14.41,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-01,16
+"1314",NA,"Adina",13.22,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-10,25
+"1315",NA,"Adina",12.89,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-10,25
+"1316",NA,"Adina",13.83,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-10,25
+"1317",NA,"Adina",13.24,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-04,19
+"1318",NA,"Adina",14.6,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-25,40
+"1319",NA,"Adina",14.13,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-02-12,58
+"1320",NA,"Adina",14.78,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-01,16
+"1321",NA,"Adina",13.43,"Gut Passed, Unwashed","0","0","",2023-12-16,NA,100
+"1322",NA,"Adina",15.37,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-13,28
+"1323",NA,"Adina",14.42,"Gut Passed, Unwashed","0","1","",2023-12-16,2024-01-04,19
+"1324",NA,"Adina",16.02,"Gut Passed, Washed","0","0","",2023-12-16,NA,100
+"1325",NA,"Adina",16.51,"Gut Passed, Washed","0","0","",2023-12-18,NA,100
+"1326",NA,"Syzygium",17.67,"Gut Passed, Washed","0","1","",2023-12-19,2024-01-25,37
+"1327",NA,"Syzygium",17.29,"Gut Passed, Washed","0","0","",2023-12-19,NA,100
+"1328",NA,"Adina",14.78,"Gut Passed, Unwashed","0","1","",2023-12-20,2024-02-09,51
+"1329",NA,"Adina",9.11,"Gut Passed, Unwashed","0","0","",2023-12-20,NA,100
+"1330",NA,"Adina",9.38,"Gut Passed, Unwashed","0","0","",2023-12-20,NA,100
+"1331","Eulemur rubriventer","Adina",17.35,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1332","Eulemur rubriventer","Adina",14.75,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1333","Eulemur rubriventer","Adina",14.91,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1334","Eulemur rubriventer","Adina",13.66,"Gut Passed, Washed","0","1","F",2023-12-20,2024-01-25,36
+"1335","Eulemur rubriventer","Adina",13.3,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1336","Eulemur rubriventer","Adina",14,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1337","Eulemur rubriventer","Adina",16.57,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1338","Eulemur rubriventer","Adina",17.06,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1339","Eulemur rubriventer","Adina",16.14,"Gut Passed, Washed","0","1","F",2023-12-20,2024-03-10,81
+"1340","Eulemur rubriventer","Adina",15.68,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1341","Eulemur rubriventer","Adina",15.75,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1342","Eulemur rubriventer","Adina",16.56,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1343","Eulemur rubriventer","Adina",14.45,"Gut Passed, Washed","0","1","F",2023-12-20,2024-01-10,21
+"1344","Eulemur rubriventer","Adina",14.49,"Gut Passed, Washed","0","1","F",2023-12-20,2024-01-19,30
+"1345","Eulemur rubriventer","Adina",14.39,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1346","Eulemur rubriventer","Pandanus",13.27,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1347","Eulemur rubriventer","Pandanus",12,"Gut Passed, Washed","0","0","F",2023-12-20,NA,100
+"1348","Eulemur rubriventer","Adina",16.19,"Gut Passed, Unwashed","0","0","M",2023-12-20,NA,100
+"1349","Eulemur rubriventer","Adina",14.37,"Gut Passed, Unwashed","0","0","M",2023-12-20,NA,100
+"1350",NA,"Adina",13.42,"Gut Passed, Unwashed","0","0","",2023-12-21,NA,100
+"1351",NA,"Adina",15.15,"Gut Passed, Unwashed","0","1","",2023-12-21,2024-01-28,38
+"1352",NA,"Adina",13.45,"Gut Passed, Unwashed","0","0","",2023-12-21,NA,100
+"1353",NA,"Adina",14.29,"Gut Passed, Unwashed","0","0","",2023-12-21,NA,100
+"1354",NA,"Adina",14.83,"Gut Passed, Unwashed","0","0","",2023-12-21,NA,100
+"1355",NA,"Adina",13.7,"Gut Passed, Unwashed","0","1","",2023-12-21,2024-01-28,38
+"1356",NA,"Adina",13.21,"Gut Passed, Unwashed","0","0","",2023-12-21,NA,100
+"1357",NA,"Adina",13.91,"Gut Passed, Unwashed","0","0","",2023-12-21,NA,100
+"1358",NA,"Adina",15.57,"Gut Passed, Unwashed","0","0","",2023-12-21,NA,100
+"1359",NA,"Adina",15.23,"Gut Passed, Unwashed","0","0","",2023-12-21,NA,100
+"1360",NA,"Adina",15.49,"Gut Passed, Washed","0","0","",2023-12-21,NA,100
+"1361",NA,"Adina",14.71,"Gut Passed, Washed","0","0","",2023-12-21,NA,100
+"1362",NA,"Adina",14.49,"Gut Passed, Washed","0","0","",2023-12-21,NA,100
+"1363",NA,"Adina",14.61,"Gut Passed, Washed","0","1","",2023-12-21,2024-01-25,35
+"1364",NA,"Adina",14.29,"Gut Passed, Washed","0","1","",2023-12-21,2024-02-18,59
+"1365",NA,"Adina",14.21,"Gut Passed, Washed","0","1","",2023-12-21,2024-01-28,38
+"1366",NA,"Adina",17.14,"Gut Passed, Washed","0","0","",2023-12-21,NA,100
+"1367",NA,"Adina",15.48,"Gut Passed, Unwashed","0","1","",2023-12-22,2024-01-28,37
+"1368",NA,"Adina",15.3,"Gut Passed, Unwashed","0","0","",2023-12-22,NA,100
+"1369",NA,"Adina",13.74,"Gut Passed, Unwashed","0","0","",2023-12-22,NA,100
+"1370",NA,"Adina",15.66,"Gut Passed, Unwashed","0","0","",2023-12-22,NA,100
+"1371",NA,"Adina",14.87,"Gut Passed, Unwashed","0","0","",2023-12-22,NA,100
+"1372",NA,"Adina",17.03,"Gut Passed, Washed","0","0","",2023-12-22,NA,100
+"1373",NA,"Adina",15.15,"Gut Passed, Washed","0","1","",2023-12-22,2024-01-28,37
+"1374",NA,"Adina",16.36,"Gut Passed, Washed","0","0","",2023-12-22,NA,100
+"1375",NA,"Adina",15.11,"Gut Passed, Washed","0","0","",2023-12-22,NA,100
+"1376",NA,"Adina",14.94,"Gut Passed, Washed","0","0","",2023-12-22,NA,100
+"1377",NA,"Adina",14.33,"Gut Passed, Washed","0","1","",2023-12-22,2024-01-22,31
+"1378",NA,"Adina",15.84,"Gut Passed, Washed","0","0","",2023-12-22,NA,100
+"1379","Eulemur rubriventer","Adina",16.18,"Gut Passed, Unwashed","0","0","M",2023-12-22,NA,100
+"1380",NA,"Adina",15.54,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1381",NA,"Adina",13.62,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1382",NA,"Adina",15.09,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1383",NA,"Adina",15.48,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1384",NA,"Adina",14.18,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1385",NA,"Adina",16.19,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1386",NA,"Adina",15.05,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1387",NA,"Adina",13.31,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1388",NA,"Adina",13.73,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1389",NA,"Adina",12.71,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1390",NA,"Adina",14.3,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1391",NA,"Adina",12.83,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1392",NA,"Adina",13.92,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1393",NA,"Adina",10.56,"Gut Passed, Washed","0","0","",2023-12-28,NA,100
+"1394",NA,"Adina",16.36,"Gut Passed, Washed","0","1","",2023-12-28,2024-02-06,40
+"1395",NA,"Adina",14.09,"Gut Passed, Washed","0","0","",2023-12-28,NA,100
+"1396",NA,"Adina",13.69,"Gut Passed, Washed","0","0","",2023-12-28,NA,100
+"1397",NA,"Adina",14.44,"Gut Passed, Washed","0","0","",2023-12-28,NA,100
+"1398",NA,"Adina",13.82,"Gut Passed, Washed","0","0","",2023-12-28,NA,100
+"1399",NA,"Adina",13.98,"Gut Passed, Washed","0","0","",2023-12-28,NA,100
+"1400",NA,"Adina",12.84,"Gut Passed, Washed","0","0","",2023-12-28,NA,100
+"1401",NA,"Pandanus",17.3,"Gut Passed, Unwashed","0","0","",2023-12-28,NA,100
+"1402",NA,"Pandanus",13.24,"Gut Passed, Unwashed","0","1","",2023-12-28,2024-02-27,61
+"1403",NA,"Sterculia",13.85,"Gut Passed, Washed","0","1","",2023-12-29,2024-01-13,15
+"1404",NA,"Sterculia",9.17,"Gut Passed, Washed","0","1","",2023-12-29,2024-01-04,6
+"1405",NA,"Adina",15.61,"Gut Passed, Unwashed","0","1","",2023-12-29,2024-02-21,54
+"1406",NA,"Adina",14.2,"Gut Passed, Unwashed","0","0","",2023-12-29,NA,100
+"1407",NA,"Adina",15.64,"Gut Passed, Unwashed","0","0","",2023-12-29,NA,100
+"1408",NA,"Adina",16.28,"Gut Passed, Unwashed","0","1","",2023-12-29,2024-01-31,33
+"1409",NA,"Adina",15.4,"Gut Passed, Unwashed","0","1","",2023-12-29,2024-01-25,27
+"1410",NA,"Adina",15.88,"Gut Passed, Washed","0","1","",2023-12-29,2024-01-31,33
+"1411",NA,"Adina",14.1,"Gut Passed, Washed","0","0","",2023-12-29,NA,100
+"1412",NA,"Adina",13.82,"Gut Passed, Unwashed","0","0","",2023-12-29,NA,100
+"1413",NA,"Adina",14.87,"Gut Passed, Unwashed","0","1","",2023-12-29,2024-01-16,18
+"1414",NA,"Adina",12.95,"Gut Passed, Unwashed","0","0","",2023-12-29,NA,100
+"1415",NA,"Adina",15.47,"Gut Passed, Unwashed","0","1","",2023-12-29,2024-02-15,48
+"1416",NA,"Adina",13.04,"Gut Passed, Unwashed","0","0","",2023-12-29,NA,100
+"1417",NA,"Adina",13.08,"Gut Passed, Unwashed","0","0","",2023-12-29,NA,100
+"1418",NA,"Adina",17.13,"Gut Passed, Washed","0","1","",2023-12-29,2024-01-25,27
+"1419",NA,"Adina",14.85,"Gut Passed, Washed","0","0","",2023-12-29,NA,100
+"1420",NA,"Pandanus",13.43,"Gut Passed, Washed","0","0","",2023-12-29,NA,100
+"1421",NA,"Pandanus",13.09,"Gut Passed, Washed","0","0","",2023-12-29,NA,100
+"1422",NA,"Pandanus",11.36,"Gut Passed, Washed","0","0","",2023-12-29,NA,100
+"1423","Eulemur rubriventer","Sterculia",9.78,"Gut Passed, Unwashed","0","1","",2023-12-29,2024-01-01,3
+"1424","Eulemur rubriventer","Sterculia",7.57,"Gut Passed, Unwashed","0","1","",2023-12-29,2024-02-06,39
+"1425",NA,"Adina",16.83,"Gut Passed, Unwashed","0","1","",2023-12-29,2024-02-21,54
+"1426",NA,"Adina",15.55,"Gut Passed, Unwashed","0","0","",2023-12-29,NA,100
+"1427",NA,"Adina",13.42,"Gut Passed, Unwashed","0","1","",2023-12-29,2024-01-19,21
+"1428",NA,"Adina",15.06,"Gut Passed, Washed","0","0","",2023-12-29,NA,100
+"1429",NA,"Adina",14.86,"Gut Passed, Washed","0","0","",2023-12-29,NA,100
+"1430",NA,"Adina",17.46,"Gut Passed, Washed","0","0","",2023-12-29,NA,100
+"1431",NA,"Adina",15.45,"Gut Passed, Washed","0","1","",2023-12-29,2024-02-06,39
+"1432",NA,"Adina",15.95,"Gut Passed, Washed","0","1","",2023-12-29,2024-02-09,42
+"1433",NA,"Adina",14.69,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1434",NA,"Adina",14.86,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1435",NA,"Sterculia",9.72,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1436",NA,"Sterculia",9.74,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1437",NA,"Sterculia",8,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1438",NA,"Sterculia",9.27,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1439",NA,"Sterculia",9.49,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1440",NA,"Sterculia",9.07,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1441",NA,"Sterculia",9.22,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1442",NA,"Sterculia",9.42,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1443",NA,"Sterculia",6.48,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1444",NA,"Syzygium",15.11,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-22,23
+"1445",NA,"Sterculia",7.61,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-01,2
+"1446",NA,"Adina",13.73,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1447",NA,"Adina",16.66,"Gut Passed, Washed","0","1","",2023-12-30,2024-02-03,35
+"1448",NA,"Adina",16.47,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-31,32
+"1449",NA,"Adina",14.63,"Gut Passed, Washed","0","1","",2023-12-30,2024-02-09,41
+"1450",NA,"Adina",15.79,"Gut Passed, Washed","0","0","",2023-12-30,NA,100
+"1451",NA,"Adina",13.01,"Gut Passed, Washed","0","0","",2023-12-30,NA,100
+"1452",NA,"Adina",13.94,"Gut Passed, Washed","0","0","",2023-12-30,NA,100
+"1453",NA,"Adina",15.05,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-13,14
+"1454",NA,"Adina",15.51,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-13,14
+"1455",NA,"Adina",13.72,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-13,14
+"1456",NA,"Adina",14.9,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-16,17
+"1457",NA,"Adina",15.22,"Gut Passed, Washed","0","0","",2023-12-30,NA,100
+"1458",NA,"Adina",15.22,"Gut Passed, Unwashed","0","1","",2023-12-30,2024-01-22,23
+"1459",NA,"Adina",15.89,"Gut Passed, Unwashed","0","1","",2023-12-30,2024-01-22,23
+"1460",NA,"Adina",14.93,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1461",NA,"Adina",16.18,"Gut Passed, Unwashed","0","1","",2023-12-30,2024-01-19,20
+"1462",NA,"Adina",14.34,"Gut Passed, Washed","0","0","",2023-12-30,NA,100
+"1463",NA,"Adina",14.26,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-19,20
+"1464",NA,"Adina",14.84,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-13,14
+"1465",NA,"Adina",14.9,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-19,20
+"1466",NA,"Adina",14.32,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-13,14
+"1467",NA,"Adina",14.55,"Gut Passed, Washed","0","1","",2023-12-30,2024-01-13,14
+"1468",NA,"Adina",13.65,"Gut Passed, Washed","0","0","",2023-12-30,NA,100
+"1469",NA,"Adina",16.09,"Gut Passed, Unwashed","0","1","",2023-12-30,2024-01-13,14
+"1470",NA,"Adina",14.93,"Gut Passed, Unwashed","0","1","",2023-12-30,2024-01-13,14
+"1471",NA,"Adina",16.73,"Gut Passed, Unwashed","0","1","",2023-12-30,2024-01-07,8
+"1472",NA,"Adina",16.21,"Gut Passed, Unwashed","0","1","",2023-12-30,2024-01-19,20
+"1473",NA,"Adina",14.84,"Gut Passed, Washed","0","0","",2023-12-30,NA,100
+"1474",NA,"Adina",13.6,"Gut Passed, Washed","0","0","",2023-12-30,NA,100
+"1475",NA,"Adina",13.97,"Gut Passed, Washed","0","1","",2023-12-30,2024-03-01,62
+"1476",NA,"Adina",14.52,"Gut Passed, Washed","0","1","",2023-12-30,2024-02-12,44
+"1477",NA,"Adina",14.12,"Gut Passed, Washed","0","0","",2023-12-30,NA,100
+"1478",NA,"Sterculia",9.2,"Gut Passed, Unwashed","0","1","",2023-12-30,2024-03-01,62
+"1479",NA,"Sterculia",8.63,"Gut Passed, Unwashed","0","1","",2023-12-30,2024-03-10,71
+"1480",NA,"Sterculia",9.32,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1481",NA,"Sterculia",9.21,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1482",NA,"Sterculia",9.36,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1483",NA,"Sterculia",9.55,"Gut Passed, Unwashed","0","1","",2023-12-30,2024-02-18,50
+"1484",NA,"Sterculia",8.91,"Gut Passed, Unwashed","0","0","",2023-12-30,NA,100
+"1485",NA,"Adina",14.57,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1486",NA,"Adina",14.39,"Gut Passed, Washed","0","1","",2024-01-02,2024-02-18,47
+"1487",NA,"Adina",16.25,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1488",NA,"Adina",15.41,"Gut Passed, Washed","0","1","",2024-01-02,2024-02-18,47
+"1489",NA,"Adina",14.77,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1490",NA,"Adina",14.85,"Gut Passed, Washed","0","1","",2024-01-02,2024-02-06,35
+"1491",NA,"Adina",15.58,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1492",NA,"Adina",14.18,"Gut Passed, Washed","0","1","",2024-01-02,2024-01-16,14
+"1493",NA,"Adina",16.39,"Gut Passed, Washed","0","1","",2024-01-02,2024-02-18,47
+"1494",NA,"Adina",15.9,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1495",NA,"Adina",13.05,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1496",NA,"Adina",13.77,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1497",NA,"Adina",14.44,"Gut Passed, Washed","0","1","",2024-01-02,2024-02-06,35
+"1498",NA,"Adina",14.2,"Gut Passed, Washed","0","1","",2024-01-02,2024-01-22,20
+"1499",NA,"Adina",14.03,"Gut Passed, Washed","0","1","",2024-01-02,2024-01-19,17
+"1500",NA,"Adina",15.8,"Gut Passed, Washed","0","1","",2024-01-02,2024-01-19,17
+"1501",NA,"Adina",14.47,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1502",NA,"Sterculia",10.01,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1503",NA,"Sterculia",9.99,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1504",NA,"Sterculia",9.58,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1505",NA,"Sterculia",9.06,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1506",NA,"Sterculia",9.39,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1507",NA,"Sterculia",9.27,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1508",NA,"Adina",15.41,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1509",NA,"Adina",14.79,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1510",NA,"Adina",15.23,"Gut Passed, Unwashed","0","1","",2024-01-02,2024-01-10,8
+"1511",NA,"Adina",15.97,"Gut Passed, Unwashed","0","1","",2024-01-02,2024-01-25,23
+"1512",NA,"Adina",14.03,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1513",NA,"Adina",14.42,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1514",NA,"Adina",15.26,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1515",NA,"Adina",16.03,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1516",NA,"Adina",14.12,"Gut Passed, Unwashed","0","1","",2024-01-02,2024-01-28,26
+"1517",NA,"Adina",12.9,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1518",NA,"Sterculia",9.84,"Gut Passed, Unwashed","0","1","",2024-01-02,2024-03-10,68
+"1519","Eulemur albifrons","Adina",15.51,"Gut Passed, Washed","0","1","F",2024-01-02,2024-01-07,5
+"1520",NA,"Adina",15.88,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1521",NA,"Adina",14.43,"Gut Passed, Washed","0","1","",2024-01-02,2024-01-13,11
+"1522",NA,"Adina",16.59,"Gut Passed, Washed","0","1","",2024-01-02,2024-01-19,17
+"1523",NA,"Syzygium",15.66,"Gut Passed, Washed","0","1","",2024-01-02,2024-02-03,32
+"1524",NA,"Adina",13.92,"Gut Passed, Washed","0","0","",2024-01-02,NA,100
+"1525",NA,"Adina",16.18,"Gut Passed, Washed","0","1","",2024-01-02,2024-01-16,14
+"1526",NA,"Adina",15.24,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1527",NA,"Adina",16.76,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1528",NA,"Adina",16.03,"Gut Passed, Unwashed","0","1","",2024-01-02,2024-01-19,17
+"1529",NA,"Adina",14.31,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1530",NA,"Sterculia",9.81,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1531",NA,"Sterculia",9.08,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1532","Eulemur albifrons","Sterculia",9.62,"Gut Passed, Unwashed","0","0","M",2024-01-02,NA,100
+"1533","Eulemur albifrons","Sterculia",9.51,"Gut Passed, Unwashed","0","0","M",2024-01-02,NA,100
+"1534",NA,"Adina",15.9,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1535",NA,"Sterculia",9.38,"Gut Passed, Washed","0","1","",2024-01-02,2024-03-10,68
+"1536",NA,"Pandanus",15.04,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1537",NA,"Pandanus",14.79,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1538",NA,"Pandanus",15.93,"Gut Passed, Unwashed","0","0","",2024-01-02,NA,100
+"1539",NA,"Sterculia",9.95,"Gut Passed, Washed","0","0","",2024-01-03,NA,100
+"1540",NA,"Adina",15.57,"Gut Passed, Unwashed","0","0","",2024-01-03,NA,100
+"1541",NA,"Adina",16.74,"Gut Passed, Unwashed","0","1","",2024-01-03,2024-02-03,31
+"1542",NA,"Adina",14.6,"Gut Passed, Unwashed","0","0","",2024-01-03,NA,100
+"1543",NA,"Adina",14.24,"Gut Passed, Washed","0","1","",2024-01-04,2024-01-31,27
+"1544",NA,"Adina",13.57,"Gut Passed, Washed","0","0","",2024-01-04,NA,100
+"1545",NA,"Adina",15.68,"Gut Passed, Washed","0","0","",2024-01-04,NA,100
+"1546",NA,"Adina",13.56,"Gut Passed, Washed","0","1","",2024-01-04,2024-02-09,36
+"1547",NA,"Adina",15.58,"Gut Passed, Washed","0","0","",2024-01-04,NA,100
+"1548",NA,"Adina",13.33,"Gut Passed, Washed","0","0","",2024-01-04,NA,100
+"1549",NA,"Sterculia",9.2,"Gut Passed, Washed","0","1","",2024-01-04,2024-03-01,57
+"1550",NA,"Sterculia",9.18,"Gut Passed, Unwashed","0","0","",2024-01-04,NA,100
+"1551",NA,"Adina",15.86,"Gut Passed, Unwashed","0","1","",2024-01-04,2024-01-31,27
+"1552",NA,"Adina",14.73,"Gut Passed, Unwashed","0","0","",2024-01-04,NA,100
+"1553",NA,"Adina",14.76,"Gut Passed, Unwashed","0","1","",2024-01-04,2024-01-28,24
+"1554",NA,"Adina",12.98,"Gut Passed, Unwashed","0","1","",2024-01-04,2024-02-09,36
+"1555",NA,"Adina",15.09,"Gut Passed, Unwashed","0","0","",2024-01-04,NA,100
+"1556",NA,"Adina",15.12,"Gut Passed, Unwashed","0","1","",2024-01-04,2024-02-15,42
+"1557",NA,"Adina",13.16,"Gut Passed, Unwashed","0","1","",2024-01-04,2024-01-28,24
+"1558",NA,"Adina",16.76,"Gut Passed, Washed","0","1","",2024-01-04,2024-01-31,27
+"1559",NA,"Adina",14.77,"Gut Passed, Washed","0","1","",2024-01-04,2024-02-06,33
+"1560",NA,"Adina",14.87,"Gut Passed, Washed","0","1","",2024-01-04,2024-01-31,27
+"1561",NA,"Adina",16.33,"Gut Passed, Washed","0","1","",2024-01-04,2024-01-28,24
+"1562",NA,"Adina",13.27,"Gut Passed, Washed","0","1","",2024-01-04,2024-01-31,27
+"1563",NA,"Adina",15.99,"Gut Passed, Washed","0","1","",2024-01-04,2024-01-22,18
+"1564",NA,"Adina",16.16,"Gut Passed, Washed","0","1","",2024-01-04,2024-01-22,18
+"1565",NA,"Adina",11.87,"Gut Passed, Washed","0","1","",2024-01-04,2024-01-28,24
+"1566",NA,"Sterculia",8.44,"Gut Passed, Washed","0","0","",2024-01-05,NA,100
+"1567",NA,"Adina",15.07,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1568",NA,"Adina",14.54,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1569",NA,"Adina",15.74,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1570",NA,"Adina",15.07,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1571",NA,"Adina",12.31,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1572",NA,"Adina",14.99,"Gut Passed, Unwashed","0","1","",2024-01-06,2024-02-18,43
+"1573",NA,"Adina",14.64,"Gut Passed, Unwashed","0","1","",2024-01-06,2024-03-13,67
+"1574",NA,"Adina",13.73,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1575",NA,"Adina",13.37,"Gut Passed, Unwashed","0","1","",2024-01-06,2024-01-25,19
+"1576",NA,"Adina",14.32,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1577",NA,"Adina",12.83,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1578",NA,"Adina",13.12,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1579","Eulemur rubriventer","Pandanus",14.22,"Gut Passed, Washed","0","1","F",2024-01-06,2024-01-19,13
+"1580","Eulemur rubriventer","Pandanus",11.41,"Gut Passed, Washed","0","1","F",2024-01-06,2024-01-19,13
+"1581",NA,"Adina",19.95,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-19,13
+"1582",NA,"Adina",15.44,"Gut Passed, Washed","0","1","",2024-01-06,2024-02-18,43
+"1583",NA,"Adina",15.32,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-31,25
+"1584",NA,"Adina",14.78,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-19,13
+"1585",NA,"Adina",16.51,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1586",NA,"Adina",16.63,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1587",NA,"Adina",14.52,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1588",NA,"Adina",15.67,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1589",NA,"Adina",16.51,"Gut Passed, Unwashed","0","1","",2024-01-06,2024-01-22,16
+"1590",NA,"Adina",16.21,"Gut Passed, Unwashed","0","1","",2024-01-06,2024-01-28,22
+"1591",NA,"Adina",13.05,"Gut Passed, Unwashed","0","0","",2024-01-06,NA,100
+"1592",NA,"Adina",14.38,"Gut Passed, Unwashed","0","1","",2024-01-06,2024-01-19,13
+"1593",NA,"Adina",14.73,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1594",NA,"Adina",13.92,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-13,7
+"1595",NA,"Adina",16.25,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-25,19
+"1596",NA,"Adina",15.52,"Gut Passed, Washed","0","0","",2024-01-06,2024-01-03,0
+"1597",NA,"Adina",13.01,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1598",NA,"Adina",16.44,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-19,13
+"1599",NA,"Adina",12.7,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1600",NA,"Adina",16.27,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-19,13
+"1601",NA,"Adina",14.52,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-19,13
+"1602",NA,"Adina",14.76,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1603",NA,"Adina",13.75,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-13,7
+"1604",NA,"Adina",15.45,"Gut Passed, Washed","0","1","",2024-01-06,2024-02-21,46
+"1605",NA,"Adina",16.45,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-19,13
+"1606",NA,"Adina",14.64,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1607",NA,"Adina",15.44,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-25,19
+"1608",NA,"Adina",14.64,"Gut Passed, Washed","0","0","",2024-01-06,2024-01-03,0
+"1609",NA,"Adina",13.72,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1610",NA,"Adina",14.45,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-19,13
+"1611",NA,"Adina",14.84,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-19,13
+"1612",NA,"Adina",13.27,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1613",NA,"Adina",14.65,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-19,13
+"1614",NA,"Adina",14.94,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-19,13
+"1615",NA,"Adina",13.64,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-25,19
+"1616",NA,"Adina",14.76,"Gut Passed, Washed","0","1","",2024-01-06,2024-02-06,31
+"1617",NA,"Adina",14.56,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-25,19
+"1618",NA,"Adina",14.35,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1619",NA,"Adina",12.03,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1620",NA,"Adina",15.08,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1621",NA,"Adina",15.28,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-25,19
+"1622",NA,"Adina",14.44,"Gut Passed, Washed","0","1","",2024-01-06,2024-01-25,19
+"1623",NA,"Adina",13.96,"Gut Passed, Washed","0","0","",2024-01-06,NA,100
+"1624",NA,"Adina",14.12,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-01-28,20
+"1625",NA,"Adina",15.85,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1626",NA,"Adina",16.54,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-01-28,20
+"1627",NA,"Adina",17.84,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-01-16,8
+"1628",NA,"Adina",14.5,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1629",NA,"Adina",16.55,"Gut Passed, Washed","0","1","",2024-01-08,2024-02-03,26
+"1630",NA,"Adina",16.16,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1631",NA,"Adina",16.11,"Gut Passed, Washed","0","1","",2024-01-08,2024-03-13,65
+"1632",NA,"Adina",14.08,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1633",NA,"Adina",13.76,"Gut Passed, Washed","0","1","",2024-01-08,2024-02-12,35
+"1634",NA,"Adina",15.89,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1635",NA,"Adina",14.08,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1636",NA,"Adina",13.5,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1637",NA,"Adina",13.87,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1638",NA,"Adina",13.73,"Gut Passed, Washed","0","1","",2024-01-08,2024-02-21,44
+"1639",NA,"Adina",14.6,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1640",NA,"Sterculia",8.91,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1641",NA,"Adina",14.57,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1642",NA,"Adina",15.37,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1643",NA,"Adina",15.78,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1644",NA,"Adina",14.03,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1645",NA,"Adina",15.1,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1646",NA,"Adina",13.06,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1647",NA,"Adina",14.46,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1648",NA,"Adina",14.24,"Gut Passed, Washed","0","1","",2024-01-08,2024-01-25,17
+"1649",NA,"Adina",14.88,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1650",NA,"Adina",12.8,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1651",NA,"Adina",14.25,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1652",NA,"Adina",14.02,"Gut Passed, Washed","0","0","",2024-01-08,NA,100
+"1653",NA,"Adina",10.92,"Gut Passed, Washed","0","1","",2024-01-08,2024-02-06,29
+"1654",NA,"Adina",15.98,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1655",NA,"Adina",16.84,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-03-01,53
+"1656",NA,"Adina",16.49,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1657",NA,"Adina",14.4,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1658",NA,"Adina",15.98,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-02-03,26
+"1659",NA,"Adina",15.34,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-01-31,23
+"1660",NA,"Adina",15.27,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-01-22,14
+"1661",NA,"Adina",15.26,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-01-22,14
+"1662",NA,"Adina",13.09,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1663",NA,"Adina",15.86,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-01-31,23
+"1664",NA,"Adina",13.84,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-01-25,17
+"1665",NA,"Adina",14.77,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-01-25,17
+"1666",NA,"Adina",12.86,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-01-25,17
+"1667",NA,"Adina",15.26,"Gut Passed, Washed","0","1","",2024-01-08,2024-02-06,29
+"1668",NA,"Adina",15.57,"Gut Passed, Washed","0","1","",2024-01-08,2024-02-18,41
+"1669",NA,"Adina",13.49,"Gut Passed, Washed","0","1","",2024-01-08,2024-02-03,26
+"1670",NA,"Adina",15.48,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1671",NA,"Adina",15.08,"Gut Passed, Unwashed","0","1","",2024-01-08,2024-02-12,35
+"1672",NA,"Adina",13.41,"Gut Passed, Unwashed","0","0","",2024-01-08,NA,100
+"1673",NA,"Sterculia",9.24,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1674",NA,"Sterculia",9.35,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1675",NA,"Sterculia",9.51,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1676",NA,"Adina",15.86,"Gut Passed, Unwashed","0","1","",2024-01-09,2024-01-19,10
+"1677",NA,"Adina",17.63,"Gut Passed, Unwashed","0","0","",2024-01-09,NA,100
+"1678",NA,"Pandanus",14.89,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1679",NA,"Pandanus",15.65,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1680",NA,"Pandanus",13.59,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1681",NA,"Pandanus",13.14,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1682",NA,"Pandanus",14.29,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1683",NA,"Pandanus",11.7,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1684",NA,"Adina",16.08,"Gut Passed, Washed","0","1","",2024-01-09,2024-03-10,61
+"1685",NA,"Adina",13.95,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1686",NA,"Adina",14.61,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1687",NA,"Adina",16.12,"Gut Passed, Washed","0","1","",2024-01-09,2024-01-31,22
+"1688",NA,"Adina",14.85,"Gut Passed, Washed","0","1","",2024-01-09,2024-02-18,40
+"1689",NA,"Adina",14.92,"Gut Passed, Washed","0","0","",2024-01-09,NA,100
+"1690",NA,"Sterculia",10.06,"Gut Passed, Unwashed","0","0","",2024-01-09,NA,100
+"1691","Eulemur rubriventer","Adina",14.68,"Gut Passed, Washed","0","0","F",2024-01-10,NA,100
+"1692","Eulemur rubriventer","Adina",15.44,"Gut Passed, Washed","0","0","F",2024-01-10,NA,100
+"1693",NA,"Adina",16.3,"Gut Passed, Washed","0","1","",2024-01-10,2024-03-01,51
+"1694",NA,"Adina",16.05,"Gut Passed, Washed","0","1","",2024-01-10,2024-01-31,21
+"1695",NA,"Adina",15.46,"Gut Passed, Washed","0","0","",2024-01-10,NA,100
+"1696",NA,"Adina",13.91,"Gut Passed, Washed","0","0","",2024-01-10,NA,100
+"1697",NA,"Adina",13.84,"Gut Passed, Washed","0","0","",2024-01-10,NA,100
+"1698",NA,"Adina",15.4,"Gut Passed, Washed","0","1","",2024-01-10,2024-02-06,27
+"1699",NA,"Adina",12.72,"Gut Passed, Washed","0","1","",2024-01-10,2024-01-28,18
+"1700",NA,"Adina",16.88,"Gut Passed, Unwashed","0","0","",2024-01-10,NA,100
+"1701",NA,"Adina",16.31,"Gut Passed, Unwashed","0","1","",2024-01-10,2024-01-22,12
+"1702",NA,"Adina",16.17,"Gut Passed, Unwashed","0","1","",2024-01-11,2024-02-21,41
+"1703","Eulemur albifrons","Sterculia",9.91,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1704","Eulemur albifrons","Sterculia",10.45,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1705","Eulemur albifrons","Sterculia",9.54,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1706","Eulemur albifrons","Sterculia",10.54,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1707","Eulemur albifrons","Sterculia",10.15,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1708","Eulemur albifrons","Sterculia",10.81,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1709","Eulemur albifrons","Sterculia",10.8,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1710","Eulemur albifrons","Sterculia",10.4,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1711","Eulemur albifrons","Sterculia",10.51,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1712","Eulemur albifrons","Sterculia",10.42,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1713","Eulemur albifrons","Sterculia",11.07,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1714","Eulemur albifrons","Sterculia",10.4,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1715","Eulemur albifrons","Sterculia",10.22,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1716","Eulemur albifrons","Sterculia",10.57,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1717","Eulemur albifrons","Sterculia",10.54,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1718","Eulemur albifrons","Sterculia",9.92,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1719",NA,"Adina",14.86,"Gut Passed, Washed","0","1","",2024-01-11,2024-02-18,38
+"1720",NA,"Adina",14.07,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-28,17
+"1721",NA,"Adina",15.3,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1722",NA,"Adina",15.05,"Gut Passed, Unwashed","0","0","",2024-01-11,NA,100
+"1723",NA,"Adina",18.08,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-25,14
+"1724",NA,"Adina",16.87,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-25,14
+"1725",NA,"Adina",16.55,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-19,8
+"1726",NA,"Adina",17.5,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-31,20
+"1727",NA,"Adina",16.35,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-25,14
+"1728",NA,"Adina",15.05,"Gut Passed, Washed","0","0","",2024-01-11,NA,100
+"1729",NA,"Adina",15.38,"Gut Passed, Washed","0","1","",2024-01-11,2024-02-27,47
+"1730",NA,"Adina",17.47,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-25,14
+"1731",NA,"Adina",13.92,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-25,14
+"1732",NA,"Adina",16.92,"Gut Passed, Unwashed","0","1","",2024-01-11,2024-01-28,17
+"1733",NA,"Adina",16.2,"Gut Passed, Unwashed","0","1","",2024-01-11,2024-01-22,11
+"1734",NA,"Adina",13.81,"Gut Passed, Unwashed","0","1","",2024-01-11,2024-01-22,11
+"1735",NA,"Adina",13.78,"Gut Passed, Unwashed","0","1","",2024-01-11,2024-03-10,59
+"1736",NA,"Adina",16.46,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-22,11
+"1737",NA,"Adina",15.79,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-25,14
+"1738",NA,"Adina",16.27,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-28,17
+"1739",NA,"Adina",15.19,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-22,11
+"1740",NA,"Adina",15.57,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-25,14
+"1741",NA,"Adina",16.37,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-25,14
+"1742",NA,"Adina",14.36,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-22,11
+"1743",NA,"Adina",14.17,"Gut Passed, Washed","0","1","",2024-01-11,2024-01-22,11
+"1744",NA,"Adina",14.34,"Gut Passed, Washed","0","1","",2024-01-11,2024-03-01,50
+"1745",NA,"Adina",15.04,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-01-25,13
+"1746",NA,"Grewia",5.24,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1747",NA,"Cryptocaria",12.75,"Gut Passed, Washed","0","0","",2024-01-12,NA,100
+"1748",NA,"Cryptocaria",12.21,"Gut Passed, Washed","0","0","",2024-01-12,NA,100
+"1749",NA,"Adina",14.86,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1750",NA,"Adina",14,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-02-18,37
+"1751","Eulemur rubriventer","Pandanus",16.97,"Gut Passed, Unwashed","0","0","F",2024-01-12,NA,100
+"1752","Eulemur rubriventer","Pandanus",16.72,"Gut Passed, Washed","0","0","M",2024-01-12,NA,100
+"1753",NA,"Adina",16.77,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1754",NA,"Adina",15.23,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1755",NA,"Adina",13.58,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1756",NA,"Adina",14.78,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1757",NA,"Adina",15.57,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-02-21,40
+"1758",NA,"Adina",15.01,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-02-15,34
+"1759",NA,"Adina",16.03,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-01-28,16
+"1760",NA,"Adina",13.35,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1761",NA,"Adina",14.6,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-02-06,25
+"1762",NA,"Adina",15.04,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-01-22,10
+"1763",NA,"Adina",12.76,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1764",NA,"Adina",13.77,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1765",NA,"Adina",13.37,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1766",NA,"Adina",17.15,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-01-31,19
+"1767",NA,"Adina",15.62,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1768",NA,"Adina",15.56,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1769",NA,"Adina",14.81,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-02-03,22
+"1770",NA,"Adina",15.5,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1771",NA,"Adina",13.97,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1772",NA,"Adina",14.17,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1773",NA,"Adina",16.73,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1774",NA,"Adina",13.42,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1775",NA,"Adina",15.33,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1776",NA,"Adina",14,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1777",NA,"Adina",14.16,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-02-27,46
+"1778",NA,"Adina",14.77,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1779",NA,"Adina",14.71,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-03-10,58
+"1780",NA,"Adina",12.99,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1781",NA,"Adina",15.02,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1782",NA,"Adina",13.58,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1783",NA,"Adina",15.12,"Gut Passed, Unwashed","0","1","",2024-01-12,2024-02-18,37
+"1784",NA,"Adina",14.79,"Gut Passed, Unwashed","0","0","",2024-01-12,NA,100
+"1785","Control","Sterculia",8.72,"Control","1","1","",2024-01-12,2024-03-01,49
+"1786","Control","Sterculia",9.53,"Control","1","1","",2024-01-12,2024-03-01,49
+"1787","Control","Sterculia",8.74,"Control","1","0","",2024-01-12,NA,100
+"1788","Control","Sterculia",9.56,"Control","1","0","",2024-01-12,NA,100
+"1789","Control","Sterculia",9.24,"Control","1","0","",2024-01-12,NA,100
+"1790","Control","Sterculia",9.04,"Control","1","0","",2024-01-12,NA,100
+"1791","Control","Sterculia",9.3,"Control","1","0","",2024-01-12,NA,100
+"1792","Control","Sterculia",9.95,"Control","1","0","",2024-01-12,NA,100
+"1793","Control","Sterculia",9.25,"Control","1","0","",2024-01-12,NA,100
+"1794","Control","Sterculia",8,"Control","1","1","",2024-01-12,2024-03-13,61
+"1795","Control","Sterculia",8.8,"Control","1","0","",2024-01-12,NA,100
+"1796","Control","Sterculia",9.75,"Control","1","0","",2024-01-12,NA,100
+"1797","Control","Sterculia",8.79,"Control","1","0","",2024-01-12,NA,100
+"1798","Control","Sterculia",9.15,"Control","1","0","",2024-01-12,NA,100
+"1799","Control","Sterculia",9.85,"Control","1","0","",2024-01-12,NA,100
+"1800","Control","Sterculia",9.73,"Control","1","0","",2024-01-12,NA,100
+"1801","Control","Sterculia",9.91,"Control","1","0","",2024-01-12,NA,100
+"1802","Control","Sterculia",9.45,"Control","1","0","",2024-01-12,NA,100
+"1803","Control","Sterculia",9.04,"Control","1","0","",2024-01-12,NA,100
+"1804","Control","Sterculia",9.59,"Control","1","0","",2024-01-12,NA,100
+"1805","Control","Sterculia",8.97,"Control","1","0","",2024-01-12,NA,100
+"1806","Control","Sterculia",9.23,"Control","1","0","",2024-01-12,NA,100
+"1807",NA,"Adina",14.41,"Gut Passed, Washed","0","0","",2024-01-18,NA,100
+"1808","Eulemur rubriventer","Adina",15.28,"Gut Passed, Unwashed","0","0","F",2024-01-18,NA,100
+"1809","Eulemur rubriventer","Adina",13.38,"Gut Passed, Unwashed","0","0","F",2024-01-18,NA,100
+"1810","Eulemur rubriventer","Adina",12.29,"Gut Passed, Unwashed","0","0","F",2024-01-18,NA,100
+"1811",NA,"Grewia",5.64,"Gut Passed, Washed","0","1","",2024-01-18,2024-01-25,7
+"1812",NA,"Grewia",5.8,"Gut Passed, Washed","0","1","",2024-01-18,2024-01-25,7
+"1813",NA,"Grewia",6.06,"Gut Passed, Washed","0","1","",2024-01-18,2024-01-28,10
+"1814",NA,"Grewia",5.46,"Gut Passed, Washed","0","1","",2024-01-18,2024-02-06,19
+"1815","Control","Grewia",6.09,"Control, Washed","1","0","",2024-01-24,NA,100
+"1816","Control","Grewia",5.96,"Control, Washed","1","0","",2024-01-24,NA,100
+"1817","Control","Grewia",5.21,"Control, Washed","1","1","",2024-01-24,2024-02-03,10
+"1818","Control","Grewia",5.56,"Control, Washed","1","0","",2024-01-24,NA,100
+"1819","Control","Grewia",4.92,"Control, Washed","1","0","",2024-01-24,NA,100
+"1820","Control","Grewia",4.19,"Control, Washed","1","0","",2024-01-24,NA,100
+"1821","Control","Grewia",4.91,"Control, Washed","1","1","",2024-01-24,2024-02-03,10
+"1822","Control","Grewia",3.93,"Control, Washed","1","1","",2024-01-24,2024-02-15,22
+"1823","Control","Grewia",5.29,"Control","1","0","",2024-01-24,NA,100
+"1824","Control","Grewia",5.42,"Control","1","0","",2024-01-24,NA,100
+"1825","Control","Grewia",5.07,"Control","1","0","",2024-01-24,NA,100
+"1826","Control","Grewia",5.97,"Control","1","1","",2024-01-24,2024-02-03,10
+"1827","Control","Grewia",4.79,"Control","1","0","",2024-01-24,NA,100
+"1828","Control","Grewia",5.44,"Control","1","0","",2024-01-24,NA,100
+"1829","Control","Grewia",5.53,"Control","1","0","",2024-01-24,NA,100
+"1830","Control","Grewia",5.48,"Control","1","1","",2024-01-24,2024-02-03,10
+"1831",NA,"Syzygium",14.17,"Gut Passed, Unwashed","0","1","",2024-01-24,2024-02-18,25
+"1832",NA,"Adina",15.76,"Gut Passed, Washed","0","0","",2024-01-25,NA,100
+"1833","Control","Adina",15.05,"Control","1","0","",2024-01-25,NA,100
+"1834","Control","Adina",15.78,"Control","1","0","",2024-01-25,NA,100
+"1835","Control","Adina",16.75,"Control","1","0","",2024-01-25,NA,100
+"1836","Control","Adina",13.67,"Control","1","1","",2024-01-25,2024-02-18,24
+"1837","Control","Adina",15.59,"Control","1","0","",2024-01-25,NA,100
+"1838","Control","Adina",15.96,"Control","1","0","",2024-01-25,NA,100
+"1839","Control","Adina",15.72,"Control","1","0","",2024-01-25,NA,100
+"1840","Control","Adina",15.26,"Control","1","0","",2024-01-25,NA,100
+"1841","Control","Adina",14.8,"Control","1","0","",2024-01-25,NA,100
+"1842","Control","Adina",15.53,"Control","1","0","",2024-01-25,NA,100
+"1843","Control","Adina",14.8,"Control","1","0","",2024-01-25,NA,100
+"1844","Control","Adina",14.18,"Control","1","0","",2024-01-25,NA,100
+"1845","Control","Adina",17.01,"Control","1","1","",2024-01-25,2024-02-18,24
+"1846","Control","Adina",14.65,"Control","1","0","",2024-01-25,NA,100
+"1847","Control","Adina",25.4,"Control, Washed","1","0","",2024-01-25,NA,100
+"1848","Control","Adina",28.24,"Control, Washed","1","0","",2024-01-25,NA,100
+"1849","Control","Adina",28.51,"Control, Washed","1","0","",2024-01-25,NA,100
+"1850","Control","Adina",30.57,"Control, Washed","1","0","",2024-01-25,NA,100
+"1851","Control","Adina",24.61,"Control, Washed","1","0","",2024-01-25,NA,100
+"1852","Control","Adina",23.21,"Control, Washed","1","0","",2024-01-25,NA,100
+"1853","Control","Adina",24.47,"Control, Washed","1","0","",2024-01-25,NA,100
+"1854",NA,"Grewia",7.29,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1855",NA,"Grewia",7.13,"Gut Passed, Unwashed","0","1","",2024-01-30,2024-02-12,13
+"1856",NA,"Grewia",4.09,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1857",NA,"Grewia",4.37,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1858",NA,"Grewia",4.41,"Gut Passed, Unwashed","0","1","",2024-01-30,2024-02-09,10
+"1859",NA,"Grewia",5.43,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1860",NA,"Grewia",5.46,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1861",NA,"Grewia",6.31,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1862",NA,"Grewia",5.51,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1863",NA,"Grewia",6.19,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1864",NA,"Grewia",4.78,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1865",NA,"Grewia",5.16,"Gut Passed, Unwashed","0","1","",2024-01-30,2024-02-12,13
+"1866",NA,"Grewia",5.16,"Gut Passed, Unwashed","0","1","",2024-01-30,2024-02-12,13
+"1867",NA,"Grewia",4.67,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1868",NA,"Grewia",4.22,"Gut Passed, Unwashed","0","0","",2024-01-30,NA,100
+"1869",NA,"Grewia",5.96,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1870",NA,"Grewia",5.77,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1871",NA,"Grewia",5.07,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1872",NA,"Grewia",5.71,"Gut Passed, Washed","0","1","",2024-01-30,2024-02-09,10
+"1873",NA,"Grewia",5.45,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1874",NA,"Grewia",5.01,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1875",NA,"Grewia",4.85,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1876",NA,"Grewia",6.17,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1877",NA,"Grewia",5.73,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1878",NA,"Grewia",5.82,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1879",NA,"Grewia",5.34,"Gut Passed, Washed","0","1","",2024-01-30,2024-02-12,13
+"1880",NA,"Grewia",5.86,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1881",NA,"Grewia",4.37,"Gut Passed, Washed","0","0","",2024-01-30,NA,100
+"1882",NA,"Grewia",4.36,"Gut Passed, Washed","0","1","",2024-01-30,2024-02-06,7
+"1883",NA,"Grewia",6.68,"Gut Passed, Washed","0","1","",2024-01-30,2024-02-09,10
+"1884",NA,"Grewia",5.1,"Gut Passed, Washed","0","1","",2024-01-30,2024-02-24,25
+"1885","Eulemur rubriventer","Grewia",5.3,"Gut Passed, Unwashed","0","1","M",2024-02-06,2024-02-12,6
+"1886","Eulemur rubriventer","Grewia",5.62,"Gut Passed, Unwashed","0","1","M",2024-02-06,2024-02-15,9
+"1887","Eulemur rubriventer","Grewia",7.61,"Gut Passed, Unwashed","0","1","M",2024-02-06,2024-02-15,9
+"1888","Eulemur rubriventer","Grewia",5.87,"Gut Passed, Unwashed","0","0","M",2024-02-06,NA,100
+"1889","Eulemur rubriventer","Grewia",6.22,"Gut Passed, Unwashed","0","1","M",2024-02-06,2024-02-12,6
+"1890","Eulemur rubriventer","Grewia",6.54,"Gut Passed, Unwashed","0","1","M",2024-02-06,2024-02-12,6
+"1891","Eulemur rubriventer","Grewia",5.13,"Gut Passed, Unwashed","0","0","M",2024-02-06,NA,100
+"1892","Eulemur rubriventer","Grewia",6.37,"Gut Passed, Unwashed","0","1","M",2024-02-06,2024-02-15,9
+"1893","Control","Adina",20.76,"Control","1","0","",2024-02-06,NA,100
+"1894","Control","Adina",12.27,"Control","1","0","",2024-02-06,NA,100
+"1895","Control","Adina",21.66,"Control","1","1","",2024-02-06,2024-02-09,3
+"1896","Control","Adina",19.64,"Control","1","1","",2024-02-06,2024-02-09,3
+"1897","Control","Adina",21.57,"Control","1","1","",2024-02-06,2024-02-24,18
+"1898","Control","Adina",19.78,"Control","1","0","",2024-02-06,NA,100
+"1899","Control","Adina",19.19,"Control","1","0","",2024-02-06,NA,100
+"1900","Control","Adina",20.81,"Control","1","0","",2024-02-06,NA,100
+"1901","Control","Adina",20.05,"Control","1","0","",2024-02-06,NA,100
+"1902","Control","Adina",20.69,"Control","1","1","",2024-02-06,2024-02-24,18
+"1903","Control","Adina",20.97,"Control","1","0","",2024-02-06,NA,100
+"1904","Control","Adina",20.11,"Control","1","0","",2024-02-06,NA,100
+"1905","Control","Adina",18.85,"Control","1","0","",2024-02-06,NA,100
+"1906","Control","Adina",17.64,"Control","1","0","",2024-02-06,NA,100
+"1907","Control","Adina",15.16,"Control, Washed","1","0","",2024-02-06,NA,100
+"1908","Control","Adina",15.52,"Control, Washed","1","0","",2024-02-06,NA,100
+"1909","Control","Adina",14.77,"Control, Washed","1","0","",2024-02-06,NA,100
+"1910","Control","Adina",15.87,"Control, Washed","1","0","",2024-02-06,NA,100
+"1911","Control","Adina",15.04,"Control, Washed","1","0","",2024-02-06,NA,100
+"1912","Control","Adina",13.65,"Control, Washed","1","0","",2024-02-06,NA,100
+"1913","Control","Adina",14.89,"Control, Washed","1","0","",2024-02-06,NA,100
+"1914","Control","Adina",13.81,"Control, Washed","1","0","",2024-02-06,NA,100
+"1915","Control","Adina",16.44,"Control, Washed","1","0","",2024-02-06,NA,100
+"1916","Control","Adina",14.98,"Control, Washed","1","1","",2024-02-06,2024-03-13,36
+"1917","Control","Adina",17.07,"Control, Washed","1","0","",2024-02-06,NA,100
+"1918","Control","Adina",15.29,"Control, Washed","1","1","",2024-02-06,2024-02-21,15
+"1919","Control","Adina",16.75,"Control, Washed","1","1","",2024-02-06,2024-02-12,6
+"1920","Control","Adina",15.36,"Control, Washed","1","0","",2024-02-06,NA,100
+"1921","Control","Adina",15.33,"Control, Washed","1","1","",2024-02-06,2024-02-15,9
+"1922","Control","Adina",15.12,"Control, Washed","1","1","",2024-02-06,2024-02-27,21
+"1923","Control","Adina",13.98,"Control, Washed","1","0","",2024-02-06,NA,100
+"1924","Control","Adina",14.52,"Control, Washed","1","0","",2024-02-06,NA,100
+"1925","Control","Adina",15.31,"Control","1","0","",2024-02-06,NA,100
+"1926","Control","Adina",13.44,"Control","1","0","",2024-02-06,NA,100
+"1927","Control","Adina",14.86,"Control","1","0","",2024-02-06,NA,100
+"1928","Control","Adina",14.2,"Control","1","0","",2024-02-06,NA,100
+"1929","Control","Adina",13.63,"Control","1","0","",2024-02-06,NA,100
+"1930","Control","Adina",14.46,"Control","1","0","",2024-02-06,NA,100
+"1931","Control","Adina",14.83,"Control","1","0","",2024-02-06,NA,100
+"1932","Control","Adina",14.22,"Control","1","0","",2024-02-06,NA,100
+"1933","Control","Adina",14.61,"Control","1","0","",2024-02-06,NA,100
+"1934","Control","Adina",14.86,"Control","1","0","",2024-02-06,NA,100
+"1935","Control","Adina",13.48,"Control","1","0","",2024-02-06,NA,100
+"1936","Control","Adina",13.47,"Control","1","0","",2024-02-06,NA,100
+"1937","Control","Adina",16.11,"Control","1","0","",2024-02-06,NA,100
+"1938","Control","Adina",15.6,"Control","1","0","",2024-02-06,NA,100
+"1939","Control","Adina",14.15,"Control","1","0","",2024-02-06,NA,100
+"1940","Control","Adina",14.63,"Control","1","0","",2024-02-06,NA,100
+"1941","Control","Adina",13.15,"Control","1","0","",2024-02-06,NA,100
+"1942","Control","Adina",15.71,"Control","1","0","",2024-02-06,NA,100
+"1943","Control","Adina",14.85,"Control","1","0","",2024-02-06,NA,100
+"1944","Control","Adina",15.46,"Control","1","0","",2024-02-06,NA,100
+"1945","Control","Adina",15.12,"Control","1","0","",2024-02-06,NA,100
+"1946","Control","Adina",13.57,"Control","1","0","",2024-02-06,NA,100
+"1947","Control","Adina",15.42,"Control","1","0","",2024-02-06,NA,100
+"1948","Eulemur albifrons","Grewia",5.71,"Gut Passed, Washed","0","1","",2024-02-08,2024-02-18,10
+"1949","Eulemur albifrons","Grewia",5.51,"Gut Passed, Washed","0","1","",2024-02-08,2024-02-18,10
+"1950","Eulemur albifrons","Grewia",5.04,"Gut Passed, Washed","0","0","",2024-02-08,NA,100
+"1951","Eulemur albifrons","Grewia",4.98,"Gut Passed, Washed","0","1","",2024-02-08,2024-02-18,10
+"1952","Eulemur albifrons","Grewia",5.32,"Gut Passed, Washed","0","0","",2024-02-08,NA,100
+"1953","Eulemur albifrons","Grewia",5.5,"Gut Passed, Washed","0","0","",2024-02-08,NA,100
+"1954","Eulemur albifrons","Grewia",4.56,"Gut Passed, Washed","0","0","",2024-02-08,NA,100
+"1955","Eulemur albifrons","Grewia",6.1,"Gut Passed, Unwashed","0","1","",2024-02-08,2024-02-18,10
+"1956","Control","Sterculia",9.9,"Control, Washed","1","0","",2024-02-08,NA,100
+"1957","Control","Sterculia",10.35,"Control, Washed","1","0","",2024-02-08,NA,100
+"1958","Control","Sterculia",9.87,"Control, Washed","1","0","",2024-02-08,NA,100
+"1959","Control","Sterculia",8.96,"Control, Washed","1","0","",2024-02-08,NA,100
+"1960","Control","Sterculia",8.91,"Control, Washed","1","0","",2024-02-08,NA,100
+"1961","Control","Sterculia",7.73,"Control, Washed","1","0","",2024-02-08,NA,100
+"1962","Control","Sterculia",9.28,"Control, Washed","1","0","",2024-02-08,NA,100
+"1963","Control","Sterculia",9.65,"Control, Washed","1","0","",2024-02-08,NA,100
+"1964","Control","Sterculia",9.85,"Control, Washed","1","0","",2024-02-08,NA,100
+"1965","Control","Sterculia",8.96,"Control, Washed","1","0","",2024-02-08,NA,100
+"1966","Control","Sterculia",9.68,"Control, Washed","1","0","",2024-02-08,NA,100
+"1967","Control","Sterculia",9.05,"Control, Washed","1","0","",2024-02-08,NA,100
+"1968","Control","Sterculia",8.84,"Control, Washed","1","0","",2024-02-08,NA,100
+"1969","Control","Sterculia",8.88,"Control, Washed","1","0","",2024-02-08,NA,100
+"1970","Control","Sterculia",9.78,"Control, Washed","1","0","",2024-02-08,NA,100
+"1971","Control","Sterculia",9.43,"Control, Washed","1","1","",2024-02-08,2024-02-27,19
+"1972","Control","Sterculia",9.48,"Control, Washed","1","1","",2024-02-08,2024-03-01,22
+"1973","Control","Sterculia",9.15,"Control, Washed","1","0","",2024-02-08,NA,100
+"1974","Control","Sterculia",9.3,"Control, Washed","1","0","",2024-02-08,NA,100
+"1975","Control","Sterculia",9.19,"Control","1","0","",2024-02-08,NA,100
+"1976","Control","Sterculia",8.16,"Control","1","0","",2024-02-08,NA,100
+"1977","Control","Sterculia",9.05,"Control","1","0","",2024-02-08,NA,100
+"1978","Control","Sterculia",9.13,"Control","1","0","",2024-02-08,NA,100
+"1979","Control","Sterculia",9.11,"Control","1","0","",2024-02-08,NA,100
+"1980","Control","Sterculia",8.88,"Control","1","0","",2024-02-08,NA,100
+"1981","Control","Sterculia",9.57,"Control","1","0","",2024-02-08,NA,100
+"1982","Control","Sterculia",9.22,"Control","1","0","",2024-02-08,NA,100
+"1983","Control","Sterculia",8.94,"Control","1","0","",2024-02-08,NA,100
+"1984","Control","Sterculia",9.01,"Control","1","0","",2024-02-08,NA,100
+"1985","Control","Sterculia",9.1,"Control","1","0","",2024-02-08,NA,100
+"1986","Control","Sterculia",8.21,"Control","1","0","",2024-02-08,NA,100
+"1987","Control","Sterculia",9.01,"Control","1","0","",2024-02-08,NA,100
+"1988","Control","Sterculia",8.89,"Control","1","0","",2024-02-08,NA,100
+"1989","Control","Sterculia",9.44,"Control","1","1","",2024-02-08,2024-03-04,25
+"1990","Control","Sterculia",8.33,"Control","1","1","",2024-02-08,2024-03-04,25
+"1991","Control","Sterculia",8.63,"Control","1","0","",2024-02-08,NA,100
+"1992","Control","Sterculia",9.2,"Control","1","0","",2024-02-08,NA,100
+"1993","Control","Sterculia",8.55,"Control","1","0","",2024-02-08,NA,100
+"1994","Control","Grewia",2.47,"Control","1","0","",2024-02-09,NA,100
+"1995","Control","Grewia",5.85,"Control","1","0","",2024-02-09,NA,100
+"1996","Control","Grewia",5.12,"Control","1","0","",2024-02-09,NA,100
+"1997","Control","Grewia",5.14,"Control","1","0","",2024-02-09,NA,100
+"1998","Control","Grewia",4.56,"Control","1","0","",2024-02-09,NA,100
+"1999","Control","Grewia",6.08,"Control","1","1","",2024-02-09,2024-02-15,6
+"2000","Control","Grewia",5.41,"Control","1","0","",2024-02-09,NA,100
+"2001","Control","Grewia",5.4,"Control","1","1","",2024-02-09,2024-02-15,6
+"2002","Control","Grewia",6.35,"Control","1","0","",2024-02-09,NA,100
+"2003","Control","Grewia",5.42,"Control","1","1","",2024-02-09,2024-02-21,12
+"2004","Control","Grewia",5.22,"Control","1","1","",2024-02-09,2024-02-15,6
+"2005","Control","Grewia",5.33,"Control","1","1","",2024-02-09,2024-02-18,9
+"2006","Control","Grewia",5.13,"Control","1","1","",2024-02-09,2024-02-18,9
+"2007","Control","Grewia",6.45,"Control","1","1","",2024-02-09,2024-02-18,9
+"2008","Control","Grewia",6.13,"Control","1","1","",2024-02-09,2024-02-21,12
+"2009","Control","Grewia",5.33,"Control","1","1","",2024-02-09,2024-02-18,9
+"2010","Control","Grewia",6.54,"Control","1","1","",2024-02-09,2024-02-21,12
+"2011","Control","Grewia",4.79,"Control","1","1","",2024-02-09,2024-02-15,6
+"2012","Control","Grewia",5.1,"Control","1","0","",2024-02-09,NA,100
+"2013","Control","Grewia",5.58,"Control, Washed","1","1","",2024-02-09,2024-02-21,12
+"2014","Control","Grewia",4.84,"Control, Washed","1","0","",2024-02-09,NA,100
+"2015","Control","Grewia",5.3,"Control, Washed","1","0","",2024-02-09,NA,100
+"2016","Control","Grewia",5.48,"Control, Washed","1","0","",2024-02-09,NA,100
+"2017","Control","Grewia",5.58,"Control, Washed","1","0","",2024-02-09,NA,100
+"2018","Control","Grewia",5.23,"Control, Washed","1","0","",2024-02-09,NA,100
+"2019","Control","Grewia",2.28,"Control, Washed","1","0","",2024-02-09,NA,100
+"2020","Control","Grewia",5.74,"Control, Washed","1","0","",2024-02-09,NA,100
+"2021","Control","Grewia",4.91,"Control, Washed","1","0","",2024-02-09,NA,100
+"2022","Control","Grewia",4.96,"Control, Washed","1","0","",2024-02-09,NA,100
+"2023","Control","Grewia",3.85,"Control, Washed","1","0","",2024-02-09,NA,100
+"2024","Control","Adina",15.72,"Control, Washed","1","0","",2024-02-21,NA,100
+"2025","Control","Adina",16.85,"Control, Washed","1","0","",2024-02-21,NA,100
+"2026","Control","Adina",15.27,"Control, Washed","1","0","",2024-02-21,NA,100
+"2027","Control","Adina",19.21,"Control, Washed","1","0","",2024-02-21,NA,100
+"2028","Control","Adina",14.82,"Control, Washed","1","0","",2024-02-21,NA,100
+"2029","Control","Adina",14.23,"Control, Washed","1","0","",2024-02-21,NA,100
+"2030","Control","Adina",16.24,"Control, Washed","1","0","",2024-02-21,NA,100
+"2031","Control","Adina",15.64,"Control, Washed","1","0","",2024-02-21,NA,100
+"2032","Control","Adina",13.65,"Control, Washed","1","0","",2024-02-21,NA,100
+"2033","Control","Adina",14.38,"Control, Washed","1","0","",2024-02-21,NA,100
+"2034","Control","Adina",17.12,"Control, Washed","1","0","",2024-02-21,NA,100
+"2035","Control","Adina",13.35,"Control, Washed","1","0","",2024-02-21,NA,100
+"2036","Control","Adina",15.05,"Control, Washed","1","0","",2024-02-21,NA,100
+"2037","Control","Adina",15.6,"Control, Washed","1","0","",2024-02-21,NA,100
+"2038","Control","Adina",14.45,"Control, Washed","1","0","",2024-02-21,NA,100
+"2039","Control","Adina",14.86,"Control, Washed","1","0","",2024-02-21,NA,100
+"2040","Control","Adina",18.38,"Control","1","0","",2024-02-21,NA,100
+"2041","Control","Adina",16.91,"Control","1","0","",2024-02-21,NA,100
+"2042","Control","Adina",16.32,"Control","1","0","",2024-02-21,NA,100
+"2043","Control","Adina",15.3,"Control","1","0","",2024-02-21,NA,100
+"2044","Control","Adina",18.03,"Control","1","0","",2024-02-21,NA,100
+"2045","Control","Adina",14.29,"Control","1","0","",2024-02-21,NA,100
+"2046","Control","Adina",14.47,"Control","1","0","",2024-02-21,NA,100
+"2047","Control","Adina",15.11,"Control","1","0","",2024-02-21,NA,100
+"2048","Control","Adina",16.54,"Control","1","0","",2024-02-21,NA,100
+"2049","Control","Adina",14.03,"Control","1","0","",2024-02-21,NA,100
+"2050","Control","Adina",15.58,"Control","1","0","",2024-02-21,NA,100
+"2051","Control","Adina",15,"Control","1","0","",2024-02-21,NA,100
+"2052","Control","Adina",13.63,"Control","1","0","",2024-02-21,NA,100
+"2053","Control","Adina",16.07,"Control","1","0","",2024-02-21,NA,100
+"2054","Control","Adina",15.09,"Control","1","0","",2024-02-21,NA,100
+"2055","Control","Adina",14.46,"Control","1","0","",2024-02-21,NA,100
+"2056","Control","Grewia",2.49,"Control, Washed","1","0","",2024-02-22,NA,100
+"2057","Control","Grewia",5.3,"Control, Washed","1","0","",2024-02-22,NA,100
+"2058","Control","Grewia",7.43,"Control, Washed","1","0","",2024-02-22,NA,100
+"2059","Control","Grewia",4.91,"Control, Washed","1","0","",2024-02-22,NA,100
+"2060","Control","Grewia",5.88,"Control, Washed","1","1","",2024-02-22,2024-03-10,17
+"2061","Control","Grewia",5.63,"Control, Washed","1","0","",2024-02-22,NA,100
+"2062","Control","Grewia",4.36,"Control, Washed","1","0","",2024-02-22,NA,100
+"2063","Control","Grewia",5.06,"Control, Washed","1","0","",2024-02-22,NA,100
+"2064","Control","Grewia",4.11,"Control, Washed","1","0","",2024-02-22,NA,100
+"2065","Control","Grewia",4.92,"Control, Washed","1","1","",2024-02-22,2024-03-04,11
+"2066","Control","Grewia",4.44,"Control, Washed","1","0","",2024-02-22,NA,100
+"2067","Control","Grewia",4.51,"Control, Washed","1","0","",2024-02-22,NA,100
+"2068","Control","Grewia",4.5,"Control, Washed","1","0","",2024-02-22,NA,100
+"2069","Control","Grewia",3.21,"Control, Washed","1","0","",2024-02-22,NA,100
+"2070","Control","Grewia",6.16,"Control","1","0","",2024-02-22,NA,100
+"2071","Control","Grewia",6.05,"Control","1","0","",2024-02-22,NA,100
+"2072","Control","Grewia",4.59,"Control","1","0","",2024-02-22,NA,100
+"2073","Control","Grewia",5.61,"Control","1","0","",2024-02-22,NA,100
+"2074","Control","Grewia",6.32,"Control","1","0","",2024-02-22,NA,100
+"2075","Control","Grewia",6.32,"Control","1","0","",2024-02-22,NA,100
+"2076","Control","Grewia",5.44,"Control","1","0","",2024-02-22,NA,100
+"2077","Control","Grewia",5.68,"Control","1","0","",2024-02-22,NA,100
+"2078","Control","Grewia",5.91,"Control","1","0","",2024-02-22,NA,100
+"2079","Control","Grewia",6.1,"Control","1","1","",2024-02-22,2024-03-10,17
+"2080","Control","Grewia",5.5,"Control","1","1","",2024-02-22,2024-03-10,17
+"2081","Control","Grewia",5.11,"Control","1","0","",2024-02-22,NA,100
+"2082","Control","Grewia",4.42,"Control","1","0","",2024-02-22,NA,100
+"2083","Control","Sterculia",9.53,"Control, Washed","1","0","",2024-02-22,NA,100
+"2084","Control","Sterculia",9.83,"Control, Washed","1","0","",2024-02-22,NA,100
+"2085","Control","Sterculia",10.84,"Control, Washed","1","0","",2024-02-22,NA,100
+"2086","Control","Sterculia",9.91,"Control, Washed","1","0","",2024-02-22,NA,100
+"2087","Control","Sterculia",8.32,"Control, Washed","1","0","",2024-02-22,NA,100
+"2088","Control","Sterculia",7.84,"Control, Washed","1","0","",2024-02-22,NA,100
+"2089","Control","Sterculia",10.15,"Control, Washed","1","0","",2024-02-22,NA,100
+"2090","Control","Sterculia",9.6,"Control, Washed","1","0","",2024-02-22,NA,100
+"2091","Control","Sterculia",10.37,"Control, Washed","1","0","",2024-02-22,NA,100
+"2092","Control","Sterculia",9.86,"Control, Washed","1","0","",2024-02-22,NA,100
+"2093","Control","Sterculia",10.45,"Control, Washed","1","0","",2024-02-22,NA,100
+"2094","Control","Sterculia",10.12,"Control, Washed","1","0","",2024-02-22,NA,100
+"2095","Control","Sterculia",9.63,"Control, Washed","1","0","",2024-02-22,NA,100
+"2096","Control","Sterculia",10.15,"Control, Washed","1","0","",2024-02-22,NA,100
+"2097","Control","Sterculia",8.96,"Control, Washed","1","0","",2024-02-22,NA,100
+"2098","Control","Sterculia",9.18,"Control, Washed","1","1","",2024-02-22,2024-03-13,20
+"2099","Control","Sterculia",10.44,"Control, Washed","1","0","",2024-02-22,NA,100
+"2100","Control","Sterculia",9.39,"Control, Washed","1","0","",2024-02-22,NA,100
+"2101","Control","Sterculia",10.23,"Control, Washed","1","0","",2024-02-22,NA,100
+"2102","Control","Sterculia",9.83,"Control, Washed","1","0","",2024-02-22,NA,100
+"2103","Control","Sterculia",9.87,"Control, Washed","1","0","",2024-02-22,NA,100
+"2104","Control","Sterculia",10.11,"Control, Washed","1","0","",2024-02-22,NA,100
+"2105","Control","Sterculia",9.14,"Control, Washed","1","0","",2024-02-22,NA,100
+"2106","Control","Sterculia",9,"Control, Washed","1","0","",2024-02-22,NA,100
+"2107","Control","Sterculia",9.73,"Control","1","0","",2024-02-22,NA,100
+"2108","Control","Sterculia",10.63,"Control","1","0","",2024-02-22,NA,100
+"2109","Control","Sterculia",10.32,"Control","1","0","",2024-02-22,NA,100
+"2110","Control","Sterculia",10.2,"Control","1","0","",2024-02-22,NA,100
+"2111","Control","Sterculia",9.72,"Control","1","0","",2024-02-22,NA,100
+"2112","Control","Sterculia",8.85,"Control","1","0","",2024-02-22,NA,100
+"2113","Control","Sterculia",9.67,"Control","1","0","",2024-02-22,NA,100
+"2114","Control","Sterculia",10.64,"Control","1","0","",2024-02-22,NA,100
+"2115","Control","Sterculia",10.34,"Control","1","0","",2024-02-22,NA,100
+"2116","Control","Sterculia",10.09,"Control","1","0","",2024-02-22,NA,100
+"2117","Control","Sterculia",9.59,"Control","1","0","",2024-02-22,NA,100
+"2118","Control","Sterculia",10.17,"Control","1","0","",2024-02-22,NA,100
+"2119","Control","Sterculia",9.62,"Control","1","0","",2024-02-22,NA,100
+"2120","Control","Sterculia",10.04,"Control","1","0","",2024-02-22,NA,100
+"2121","Control","Sterculia",9.52,"Control","1","0","",2024-02-22,NA,100
+"2122","Control","Sterculia",9.92,"Control","1","0","",2024-02-22,NA,100
+"2123","Control","Sterculia",8.39,"Control","1","0","",2024-02-22,NA,100
+"2124","Control","Sterculia",10.33,"Control","1","0","",2024-02-22,NA,100
+"2125","Control","Sterculia",9.36,"Control","1","0","",2024-02-22,NA,100
+"2126","Control","Sterculia",7.97,"Control","1","0","",2024-02-22,NA,100
+"2127","Control","Sterculia",9.27,"Control","1","0","",2024-02-22,NA,100
+"2128","Control","Sterculia",8.28,"Control","1","0","",2024-02-22,NA,100
+"2129","Control","Sterculia",9.94,"Control","1","0","",2024-02-22,NA,100
+"2130","Control","Sterculia",8.29,"Control","1","0","",2024-02-22,NA,100
