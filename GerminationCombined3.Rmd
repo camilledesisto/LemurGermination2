@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r Setup}
-library(tidyverse);library(lme4);library(emmeans);library(sjPlot);library(sjmisc);library(lmerTest);library(ggplot2);library(ggpubr);library(ggeffects);library(partR2);library(survival); library(cmprsk); library(tidycmprsk); library(ggsurvfit); library(paletteer);library(ape);library(phyr);library(phytools); library(V.PhyloMaker);library(BIOMASS);library(coda);library(MCMCglmm)
+library(tidyverse);library(lme4);library(emmeans);library(sjPlot);library(sjmisc);library(lmerTest);library(ggplot2);library(ggpubr);library(ggeffects);library(partR2); library(tidycmprsk); library(ggsurvfit); library(paletteer);library(ape);library(phyr);library(phytools); library(V.PhyloMaker);library(BIOMASS);library(coda);library(MCMCglmm)
 
 germ_combined <- read.csv("germ_combined.csv")
 germ_combined_time <- read.csv("germ_combined_time.csv")
@@ -94,6 +94,12 @@ ggarrange(combined_plot, combined_plot_time,common.legend = TRUE, labels = c("a"
 ggarrange(length_plot, weight_plot,common.legend = TRUE, labels = c("a", "b"))
 
 
+mean(na.omit(comatsa_seeds2$L))
+sd(na.omit(comatsa_seeds2$L))
+mean(na.omit(germ$Length))
+sd(na.omit(germ$Length))
+
+t.test(comatsa_seeds2$L, germ$Length)
 
 ```
 
@@ -502,19 +508,55 @@ treatment_phylo4_test <- MCMCglmm(
 
 summary(treatment_phylo4_test)
 
-#Survival Analysis
-#Set up data
-germ_time2 <- germ %>% select(Germination.Date, Date, germ, Treatment, Lemur_Species, Plant_Species_Common_Name, Length_log, mLength_log, Sex, Age, Weight, mWeight, GerminationTime)
+germ_time2 <- list(
+  G = list(
+    G1 = list(V = 1, nu = 0.002),  # Prior for 'animal' (phylogenetic random effect)
+    G2 = list(V = 1, nu = 0.002),  # Prior for 'species'
+    G3 = list(V = 1, nu = 0.002)   # Prior for 'Lemur_Name'
+  ),
+  R = list(
+    V = 1, nu = 0.002               # Prior for the residual variance
+  )
+)
 
+germ_time$animal <- germ_time$Lemur_Species
+germ_time$animal[germ_time$animal=="L. catta"] <- "Lemur_catta"
+germ_time$animal[germ_time$animal=="E. mongoz"] <- "Eulemur_mongoz"
+germ_time$animal[germ_time$animal=="E. flavifrons"] <- "Eulemur_flavifrons"
+germ_time$animal[germ_time$animal=="V. rubra"] <- "Varecia_rubra"
+germ_time$animal[germ_time$animal=="E. coronatus"] <- "Eulemur_coronatus"
+germ_time$animal[germ_time$animal=="V. variegata"] <- "Varecia_variegata"
+germ_time$animal[germ_time$animal=="M. murinus"] <- "Microcebus_murinus"
+germ_time$animal[germ_time$animal=="C. medius"] <- "Cheirogaleus_medius"
+germ_time_filtered <- germ_time[germ_time$animal!="*Control",] 
+germ_time_filtered <- germ_time_filtered[!is.na(germ_time_filtered$animal),]
 
-germ_time2$GerminationTime[is.na(germ_time2$GerminationTime)] <- 101
-germ_time2$germ <- as.factor(germ_time2$germ)
-germ_time2 <- germ_time2 %>% filter(GerminationTime <102) %>% filter(GerminationTime >0)
+germ_time_filtered$species <- germ_time_filtered$Plant_Species_Common_Name2
 
-#Treatment survival model
-treatment_survival_results <- cuminc(Surv(GerminationTime, germ) ~ Treatment, data = germ_time2)%>%
-tbl_cuminc() %>% 
-  add_p()
+prior_t2 <- list(
+  G = list(
+    G1 = list(V = 1, nu = 0.002),  # Prior for 'animal' (phylogenetic random effect)
+    G2 = list(V = 1, nu = 0.002),  # Prior for 'species'
+    G3 = list(V = 1, nu = 0.002)   # Prior for 'Lemur_Name'
+  ),
+  R = list(
+    V = 1, nu = 0.002               # Prior for residual variance (for gaussian family)
+  )
+)
+
+treatment_phylo5 <- MCMCglmm(
+  log(GerminationTime) ~ Treatment, 
+  random = ~ animal + species + Name, 
+  family = "gaussian",
+  ginverse = ginverse_list, 
+  data = germ_time_filtered, 
+  prior = prior_t2, 
+  verbose = FALSE,
+  nitt=15000,
+  burnin = 1500,
+  thin = 1
+)
+
 
 ```
 
@@ -538,6 +580,14 @@ cat("95% CI for λ:", lambda_animal_ci[1], "-", lambda_animal_ci[2], "\n\n")# 0.
 cat("Lambda for species:\n")
 cat("Mean λ:", lambda_species_mean, "\n")#0.78193 
 cat("95% CI for λ:", lambda_species_ci[1], "-", lambda_species_ci[2], "\n")#0.5912612 - 0.9520928 
+
+
+animal_variance_samples <- treatment_phylo5$VCV[,"animal"]
+residual_variance_samples <- treatment_phylo5$VCV[,"units"]
+lambda_samples <- animal_variance_samples / (animal_variance_samples + residual_variance_samples)
+lambda_CI <- HPDinterval(as.mcmc(lambda_samples), prob = 0.95)
+lambda_CI
+lambda_animal <- animal_variance / total_variance
 
 #Germination Rate Treatment Model
 vcv_samples <- treatment_phylo3$VCV
@@ -637,18 +687,8 @@ treatment_plotTime <- ggplot(data=predictions_df, aes(x= Treatment, y=Mean_Predi
   scale_alpha_manual(values= c(0.2,1))+
   scale_shape_manual(values = c(19,17,15,8))+guides(shape = "none")
 
-#Survival plot
-treatment_survival_plot <- cuminc(Surv(GerminationTime, germ) ~ Treatment, data = germ_time2)%>%
-ggcuminc()+ theme_classic()+
-add_confidence_interval()+
-ylab("Cumulative Germ.")+
-  xlab("Time (Days)")+ 
-scale_fill_manual(values = c("black", "gray56", "goldenrod4", "goldenrod1"))+
-scale_color_manual(values = c("black", "gray56", "goldenrod4", "goldenrod1"))+
- theme(legend.position="bottom")
-  
 
-ggarrange(treatment_plot, treatment_plotTime,treatment_survival_plot, labels = c("a", "b", "c"), ncol = 1, nrow=3)
+ggarrange(treatment_plot, treatment_plotTime, labels = c("a", "b"), ncol = 1, nrow=2)
 
 
 
@@ -774,11 +814,6 @@ species_output$pMCMC <- round(species_output$pMCMC, 3)
 
 write.csv(species_output, "species_output.csv")
 
-
-#Species survival model
-cumulative_species <- cuminc(Surv(GerminationTime, germ) ~ Lemur_Species, data = germ_time2)%>%
-  tbl_cuminc() %>% 
-  add_p()
 
 ```
 
@@ -913,18 +948,8 @@ geom_hline(aes(yintercept=13.10563), linetype="dashed", color="grey")+guides(lin
   guides(fill=guide_legend(title="Habitat"), alpha=FALSE)+
   scale_alpha_manual(values= c(0.3,1))
 
-#Species survival plot
-species_survival_plot <- cuminc(Surv(GerminationTime, germ) ~ Lemur_Species, data = germ_time2)%>%
-ggcuminc()+ theme_classic()+
-add_confidence_interval()+
-ylab("Cumulative Germ.")+
-  xlab("Time (Days)")+ 
-scale_fill_manual(values = c("black", custom_colors))+
-scale_color_manual(values = c("black", custom_colors))+
- theme(legend.position="bottom")
   
-  
-ggarrange(species_plot, species_plot_time,species_survival_plot, labels = c("a", "b", "c"), ncol = 1, nrow=3)
+ggarrange(species_plot, species_plot_time,labels = c("a", "b"), ncol = 1, nrow=2)
 
 ```
 
@@ -1429,7 +1454,7 @@ lemur_plot_rate <- ggplot(effect_summary_df[-1,], aes(x = Effect, y = mean))+
   geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.2) +
   coord_flip()+
   theme_classic() +
-  labs(x = "",
+  labs(x = "Traits and Treatment",
        y = "Estimated Effect")
 
 #Time-to-germination
@@ -1661,16 +1686,6 @@ wild_treatment$pMCMC <- round(wild_treatment$pMCMC, 3)
 
 write.csv(wild_treatment, "wild_treatment.csv")
 
-#Survival
-
-comatsa_seeds2_time <-comatsa_seeds2 
-comatsa_seeds2_time$Germination <- as.factor(comatsa_seeds2_time$Germination)
-comatsa_seeds2_time$Time[is.na(comatsa_seeds2_time$Time)] <- 100
-
-treatment_survival_comatsa <- cuminc(Surv(Time, Germination) ~ Treatment, data = comatsa_seeds2_time)%>%
-tbl_cuminc() %>% 
-  add_p()
-
 
 ```
 
@@ -1768,20 +1783,7 @@ treatment_plotTime_wild <- ggplot(data=predictions_df, aes(x= Treatment, y=Mean_
   scale_shape_manual(values = c(19,17,15,8))+guides(shape = "none")
 
 
-
-#Survival
-treatment_survival_plot_wild <- cuminc(Surv(Time, Germination) ~ Treatment, data = comatsa_seeds2_time)%>%
-ggcuminc()+ theme_classic()+
-add_confidence_interval()+
-ylab("Cumulative Germ.")+
-scale_color_manual(values =  c("black", "gray56", "goldenrod4", "goldenrod1"))+
-scale_fill_manual(values =  c("black", "gray56", "goldenrod4", "goldenrod1"))+
-xlab("Time (Days)")+
- theme(legend.position="bottom")
-
-
-
-ggarrange(treatment_plot_wild, treatment_plotTime_wild,treatment_survival_plot_wild, labels = c("a", "b", "c"), ncol = 1, nrow=3)
+ggarrange(treatment_plot_wild, treatment_plotTime_wild,labels = c("a", "b", "c"), ncol = 1, nrow=3)
 
 
 ```
